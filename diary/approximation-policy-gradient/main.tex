@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\title{Approximation of policy gradient in Clark and Manning (2016)}
+\begin{document}
+
+The approximation is provided in the equation right before Section 4 in Clark and Manning (2016)\cite{Clark2016a}. It is rather obscure but when we take into account the surprising fact that actions are really probabilistically independent (what's the point of reinforcement learning then?), we could (sort of) derive the formula.
+
+Consider a simplified setting where number of actions $T=2$:
+
+\begin{equation}
+\begin{split}
+J(\theta) &= \mathbb{E}_{[a_{1:2}  \sim p_\theta]} R(a_{1:2}) \\
+\Rightarrow J(\theta) &= \sum_{a^\prime_1 \in \mathcal{A}} \sum_{a^\prime_2 \in \mathcal{A}} p_\theta(a^\prime_1)p_\theta(a^\prime_2) R(a^\prime_1, a^\prime_2) \\
+\Rightarrow J(\theta) &= \sum_{a^\prime_1 \in \mathcal{A}}  p_\theta(a^\prime_1) \left[ \sum_{a^\prime_2 \in \mathcal{A}} p_\theta(a^\prime_2) R(a^\prime_1, a^\prime_2) \right] \\
+\Rightarrow J(\theta) &= \mathbb{E}_{a^\prime_1 \in \mathcal{A} \sim p_\theta}  \left[ \sum_{a^\prime_2 \in \mathcal{A}} p_\theta(a^\prime_2) R(a^\prime_1, a^\prime_2) \right] \\
+\xRightarrow{\mathrm{Monte\ Carlo}} J(\theta) &\approx \sum_{a^\prime_2 \in \mathcal{A}} p_\theta(a^\prime_2) R(a_1, a^\prime_2) \\
+\Rightarrow \nabla_\theta J(\theta) &\approx \sum_{a^\prime_2 \in \mathcal{A}} \nabla_\theta p_\theta(a^\prime_2) R(a_1, a^\prime_2) 
+\end{split}
+\end{equation}
+where $a_1$ is any sampled action.
+
+Similarly, we have: 
+\begin{equation}
+\nabla_\theta J(\theta) \approx \sum_{a^\prime_1 \in \mathcal{A}} \nabla_\theta p_\theta(a^\prime_1) R(a^\prime_1, a_2)
+\end{equation}
+
+So, in the end: 
+\begin{equation}
+\nabla_\theta J(\theta) \approx \frac{1}{2} \sum_{i=1}^2 \sum_{a^\prime_i \in \mathcal{A}} \nabla_\theta p_\theta(a^\prime_i) R(\dots, a^\prime_i, \dots)
+\end{equation}
+
+We can generalize:
+\begin{equation}
+\nabla_\theta J(\theta) \approx \frac{1}{T} \sum_{i=1}^T \sum_{a^\prime_i \in \mathcal{A}} \nabla_\theta p_\theta(a^\prime_i) R(\dots, a^\prime_i, \dots)
+\end{equation}
+
+In the paper, they omitted the $1/T$ factor. This will surely skews the objective in favor of longer documents.
+
+\bibliography{Mendeley}
+\bibliographystyle{plain}
+\end{document}

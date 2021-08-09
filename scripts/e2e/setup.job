@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -t 5:00:00
+#SBATCH -p gpu
+#SBATCH --export=NONE
+
+# refered to in README.md, section Setup 
+
+set -x
+
+. scripts/setup-cartesius.sh
+
+git reset --hard && git checkout 4bf245867a909a6725968bf190541f52d82dc991 && \
+        scripts/e2e/setup.sh output/e2e/venv
+
+git checkout master

@@ -1,0 +1,67 @@
+T1	Speaker 0 23	&lt;Unknown Speaker&gt;
+T2	Speaker 111 134	&lt;Unknown Speaker&gt;
+T3	Speaker 197 220	&lt;Unknown Speaker&gt;
+T4	Speaker 282 305	&lt;Unknown Speaker&gt;
+T5	Speaker 436 459	&lt;Unknown Speaker&gt;
+T6	Speaker 612 635	&lt;Unknown Speaker&gt;
+T7	Speaker 736 759	&lt;Unknown Speaker&gt;
+T8	Speaker 863 886	&lt;Unknown Speaker&gt;
+T9	Speaker 1010 1033	&lt;Unknown Speaker&gt;
+T10	Speaker 1151 1174	&lt;Unknown Speaker&gt;
+T11	Mention 40 41	_
+T12	Mention 44 49	_ _ _
+T13	Mention 66 71	_ _ _
+T14	Mention 136 139	_ _
+T15	Mention 159 168	_ _ _ _ _
+T16	Mention 172 175	_ _
+T17	Mention 190 191	_
+T18	Mention 240 243	_ _
+T19	Mention 244 245	_
+T20	Mention 246 247	_
+T21	Mention 276 279	_ _
+T22	Mention 381 384	_ _
+T23	Mention 381 386	_ _ _
+T24	Mention 409 412	_ _
+T25	Mention 470 473	_ _
+T26	Mention 508 509	_
+T27	Mention 512 513	_
+T28	Mention 550 551	_
+T29	Mention 602 603	_
+T30	Mention 602 609	_ _ _ _
+T31	Mention 637 638	_
+T32	Mention 730 733	_ _
+T33	Mention 761 762	_
+T34	Mention 768 769	_
+T35	Mention 791 792	_
+T36	Mention 818 819	_
+T37	Mention 827 834	_ _ _ _
+T38	Mention 833 834	_
+T39	Mention 849 850	_
+T40	Mention 888 889	_
+T41	Mention 944 945	_
+T42	Mention 1091 1092	_
+T43	Mention 1109 1114	_ _ _
+T44	Mention 1184 1185	_
+T45	Mention 1191 1192	_
+R1	Coreference Anaphor:T13 Antecedent:T12	
+R2	Coreference Anaphor:T15 Antecedent:T13	
+R3	Coreference Anaphor:T18 Antecedent:T15	
+R5	Coreference Anaphor:T24 Antecedent:T18	
+R4	Coreference Anaphor:T22 Antecedent:T21	
+R6	Coreference Anaphor:T28 Antecedent:T25	
+R7	Coreference Anaphor:T26 Antecedent:T21	
+R8	Coreference Anaphor:T27 Antecedent:T25	
+R9	Coreference Anaphor:T29 Antecedent:T28	
+R10	Coreference Anaphor:T32 Antecedent:T28	
+R11	Coreference Anaphor:T31 Antecedent:T21	
+R12	Coreference Anaphor:T33 Antecedent:T31	
+R13	Coreference Anaphor:T34 Antecedent:T33	
+R14	Coreference Anaphor:T35 Antecedent:T28	
+R15	Coreference Anaphor:T36 Antecedent:T35	
+R16	Coreference Anaphor:T37 Antecedent:T23	
+R17	Coreference Anaphor:T38 Antecedent:T34	
+R18	Coreference Anaphor:T39 Antecedent:T37	
+R19	Coreference Anaphor:T40 Antecedent:T33	
+R20	Coreference Anaphor:T41 Antecedent:T40	
+R21	Coreference Anaphor:T42 Antecedent:T40	
+R22	Coreference Anaphor:T43 Antecedent:T35	

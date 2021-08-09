@@ -1,0 +1,3 @@
+In addition to this coding, the following additions were made for this project:
+
+consolidate_and_sample.py added to main even/ folder. This file replaces consolidate_copora (and uses some of its functionality). It consolidates the conll-2012-transformed corpora, including only a portion (randomly sampled, balancing genre and subgenre) of the training corpus.

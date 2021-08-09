@@ -1,0 +1,30 @@
+#!/bin/bash
+#SBATCH -t 1-00:00:00
+#SBATCH -p gpu
+#SBATCH --export=NONE
+
+set -x
+
+. scripts/setup-cartesius.sh
+. scripts/deep-coref/init-cartesius-gpu.sh
+export THEANO_FLAGS="" # erase previous setting
+
+INPUT0=$1 
+INPUT1=$2 
+OUTPUT0=$3
+
+mkdir $OUTPUT0
+
+#for sample in $(ls $INPUT0)
+#do
+sample=sample_00
+    # link trained models to resampled datasets
+    for manipulation in $(ls $INPUT1)
+    do 
+        rm -f $INPUT0/$sample/$manipulation/* # remove existing links, doesn't affect folders
+        ln -s $INPUT1/$manipulation/models $INPUT0/$sample/$manipulation/
+    done;
+    # evaluate
+    mkdir $OUTPUT0/$sample
+    scripts/deep-coref/eval-multiple-python-models.job $INPUT0/$sample $OUTPUT0/$sample
+#done;

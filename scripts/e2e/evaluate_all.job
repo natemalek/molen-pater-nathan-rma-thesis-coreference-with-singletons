@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH -t 01:00:00
+#SBATCH -p short
+
+echo -n "Started: " && date
+
+. scripts/setup-cartesius.sh
+
+python3 -u scripts/e2e/evaluate_all.py $@
+
+echo -n "Finished: " && date

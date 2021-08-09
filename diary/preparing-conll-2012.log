@@ -1,0 +1,9 @@
+./skeleton2conll.sh -D /Users/cumeo/corpora/ontonotes-release-5.0/data/files/data /Users/cumeo/workspace/EvEn/conll-2012-downloaded-2017-01-11/conll-2012
+chmod a+x *.sh
+./conll2coreference.sh /Users/cumeo/workspace/EvEn/conll-2012-downloaded-2017-01-11/conll-2012
+export PATH=$PATH:`pwd`
+./conll2coreference.sh /Users/cumeo/workspace/EvEn/conll-2012-downloaded-2017-01-11/conll-2012
+chmod a+x *.py
+./conll2name.sh /Users/cumeo/workspace/EvEn/conll-2012-downloaded-2017-01-11/conll-2012
+chmod a+x /Users/cumeo/workspace/EvEn/reference-coreference-scorers/v8.01/scorer.pl
+nohup java -Xmx6g -cp stanford-corenlp-3.7.0.jar:stanford-english-corenlp-models-3.7.0.jar:* edu.stanford.nlp.coref.CorefSystem -props edu/stanford/nlp/coref/properties/neural-english-conll.properties -coref.data ../conll-2012-downloaded-2017-01-11/conll-2012/ -coref.inputPath ../conll-2012-downloaded-2017-01-11/conll-2012/v4/data/development/data/english/annotations/ -coref.conllOutputPath ../output/standford-neural-conll-dev -coref.scorer ../reference-coreference-scorers/v8.01/scorer.pl &

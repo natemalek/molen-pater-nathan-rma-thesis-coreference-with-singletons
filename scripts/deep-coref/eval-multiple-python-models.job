@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH -t 1:00:00
+#SBATCH -p gpu_short
+#SBATCH --export=NONE
+
+set -x
+
+. scripts/setup-cartesius.sh
+. scripts/deep-coref/init-cartesius-gpu.sh
+export THEANO_FLAGS="" # erase previous setting
+
+INP_DIR=$1
+LOG_DIR=$2
+
+eval() {
+    cd deep-coref
+    THEANO_FLAGS="device=$2,floatX=float32" \
+        python -u pairwise_learning.py \
+        $INP_DIR/$1 | tee $LOG_DIR/$1.log
+}
+
+(eval men_20 gpu0 ; eval men_40 gpu0 ; eval men_60 gpu0 ; eval men_80 gpu0) &
+(eval men_100 gpu0 ; eval no-external gpu0; eval no-internal gpu0 ; eval no-match gpu0) &
+(eval no-name gpu1 ; eval nonmen_20 gpu1 ; eval nonmen_40 gpu1 ; eval nonmen_60 gpu1) &
+(eval nonmen_80 gpu1 ; eval nonmen_100 gpu1 ; eval orig gpu1 ) &
+wait

@@ -1,0 +1,3238 @@
+Using gpu device 0: GRID K2 (CNMeM is disabled, cuDNN not available)
+/usr/local/lib/python2.7/dist-packages/theano/tensor/signal/downsample.py:6: UserWarning: downsample module has been moved to the theano.tensor.signal.pool module.
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+Adding sources from train
+set([u'wb', u'pt', u'bc', u'bn', u'nw', u'tc', u'mz'])
+Adding words from train
+Adding words from dev
+Adding words from test
+Pretrained embedding size: 264640
+Unknowns by mass: 46168/9399704 = 0.49%%
+Unknowns by count: 4575/38786 = 11.80%%
+Adding nsubj count = 131506
+Adding dobj count = 68078
+Adding nmod:of count = 28262
+Adding nmod:poss count = 26826
+Adding nmod:in count = 22700
+Adding no-parent count = 13858
+Adding nmod:to count = 12640
+Adding nsubjpass count = 9965
+Adding nmod:for count = 9215
+Adding nmod:with count = 8114
+Adding appos count = 7324
+Adding nmod:on count = 7076
+Adding nmod:from count = 5371
+Adding conj:and count = 4597
+Adding nmod:at count = 4580
+Adding nmod:by count = 3278
+Adding ccomp count = 3191
+Adding nmod:as count = 2633
+Adding nmod:about count = 2493
+Adding nmod:tmod count = 2481
+Adding xcomp count = 2458
+Adding iobj count = 2094
+Adding %um count = 1885
+Adding nmod:npmod count = 1688
+Adding nmod:between count = 1642
+Adding nmod:agent count = 1636
+Adding %uh count = 1554
+Adding nmod:into count = 1546
+Adding nsubj:xsubj count = 1516
+Adding nmod:like count = 1333
+Adding nmod:over count = 1058
+Adding acl:relcl count = 971
+Adding nmod:after count = 958
+Adding nmod:through count = 897
+Adding nmod:against count = 873
+Adding nmod:such_as count = 786
+Adding nmod:than count = 694
+Adding nmod:during count = 631
+Adding /- count = 622
+Adding nmod:according_to count = 561
+Adding nmod:under count = 533
+Adding nmod:before count = 523
+Adding nmod:including count = 516
+Adding nmod:among count = 494
+Adding parataxis count = 444
+Adding advmod count = 428
+Adding mhm count = 423
+Adding nmod:since count = 406
+Adding nmod:because_of count = 397
+Adding nmod:around count = 384
+Adding conj:or count = 358
+Adding abather count = 340
+Adding peipu count = 325
+Adding shihkang count = 310
+Adding conj:but count = 285
+Adding tcac count = 255
+Adding nmod:within count = 241
+Adding %eh count = 232
+Adding nmod:without count = 230
+Adding balqes count = 226
+Adding !! count = 207
+Building document vectors for train
+Building document vectors for dev
+Building document vectors for test
+Building dataset train/tune
+Writing mw, dtype=int32, size=14.2KiB
+Writing msp, dtype=float64, size=791.0KiB
+Writing mf, dtype=int32, size=9.5KiB
+Writing mnum, dtype=int32, size=1.6KiB
+Writing mid, dtype=int32, size=1.6KiB
+Writing mdid, dtype=int32, size=1.6KiB
+Writing pi, dtype=int32, size=334.2KiB
+Writing pf, dtype=bool, size=250.7KiB
+Writing y, dtype=bool, size=41.8KiB
+Writing pmid, dtype=int32, size=501.4KiB
+Writing dmi, dtype=int32, size=16.0B
+Writing dpi, dtype=int32, size=16.0B
+Writing df, dtype=int32, size=56.0B
+Writing mw, dtype=int32, size=3.3KiB
+Writing msp, dtype=float64, size=181.6KiB
+Writing mf, dtype=int32, size=2.2KiB
+Writing mnum, dtype=int32, size=372.0B
+Writing mid, dtype=int32, size=372.0B
+Writing mdid, dtype=int32, size=372.0B
+Writing pi, dtype=int32, size=33.4KiB
+Writing pf, dtype=bool, size=25.1KiB
+Writing y, dtype=bool, size=4.2KiB
+Writing pmid, dtype=int32, size=50.1KiB
+Writing dmi, dtype=int32, size=8.0B
+Writing dpi, dtype=int32, size=8.0B
+Writing df, dtype=int32, size=28.0B
+Building dataset train
+Writing mw, dtype=int32, size=17.5KiB
+Writing msp, dtype=float64, size=972.7KiB
+Writing mf, dtype=int32, size=11.7KiB
+Writing mnum, dtype=int32, size=1.9KiB
+Writing mid, dtype=int32, size=1.9KiB
+Writing mdid, dtype=int32, size=1.9KiB
+Writing pi, dtype=int32, size=367.7KiB
+Writing pf, dtype=bool, size=275.8KiB
+Writing y, dtype=bool, size=46.0KiB
+Writing pmid, dtype=int32, size=551.5KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset dev
+Writing mw, dtype=int32, size=9.0KiB
+Writing msp, dtype=float64, size=500.0KiB
+Writing mf, dtype=int32, size=6.0KiB
+Writing mnum, dtype=int32, size=1.0KiB
+Writing mid, dtype=int32, size=1.0KiB
+Writing mdid, dtype=int32, size=1.0KiB
+Writing pi, dtype=int32, size=92.3KiB
+Writing pf, dtype=bool, size=69.2KiB
+Writing y, dtype=bool, size=11.5KiB
+Writing pmid, dtype=int32, size=138.5KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset test
+Writing mw, dtype=int32, size=8.5KiB
+Writing msp, dtype=float64, size=472.7KiB
+Writing mf, dtype=int32, size=5.7KiB
+Writing mnum, dtype=int32, size=968.0B
+Writing mid, dtype=int32, size=968.0B
+Writing mdid, dtype=int32, size=968.0B
+Writing pi, dtype=int32, size=97.2KiB
+Writing pf, dtype=bool, size=72.9KiB
+Writing y, dtype=bool, size=12.1KiB
+Writing pmid, dtype=int32, size=145.8KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset train/tune
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+Adding sources from train
+set([u'wb', u'pt', u'bc', u'bn', u'nw', u'tc', u'mz'])
+Adding words from train
+Adding words from dev
+Adding words from test
+Pretrained embedding size: 264640
+Unknowns by mass: 46168/9399704 = 0.49%%
+Unknowns by count: 4575/38786 = 11.80%%
+Adding nsubj count = 131506
+Adding dobj count = 68078
+Adding nmod:of count = 28262
+Adding nmod:poss count = 26826
+Adding nmod:in count = 22700
+Adding no-parent count = 13858
+Adding nmod:to count = 12640
+Adding nsubjpass count = 9965
+Adding nmod:for count = 9215
+Adding nmod:with count = 8114
+Adding appos count = 7324
+Adding nmod:on count = 7076
+Adding nmod:from count = 5371
+Adding conj:and count = 4597
+Adding nmod:at count = 4580
+Adding nmod:by count = 3278
+Adding ccomp count = 3191
+Adding nmod:as count = 2633
+Adding nmod:about count = 2493
+Adding nmod:tmod count = 2481
+Adding xcomp count = 2458
+Adding iobj count = 2094
+Adding %um count = 1885
+Adding nmod:npmod count = 1688
+Adding nmod:between count = 1642
+Adding nmod:agent count = 1636
+Adding %uh count = 1554
+Adding nmod:into count = 1546
+Adding nsubj:xsubj count = 1516
+Adding nmod:like count = 1333
+Adding nmod:over count = 1058
+Adding acl:relcl count = 971
+Adding nmod:after count = 958
+Adding nmod:through count = 897
+Adding nmod:against count = 873
+Adding nmod:such_as count = 786
+Adding nmod:than count = 694
+Adding nmod:during count = 631
+Adding /- count = 622
+Adding nmod:according_to count = 561
+Adding nmod:under count = 533
+Adding nmod:before count = 523
+Adding nmod:including count = 516
+Adding nmod:among count = 494
+Adding parataxis count = 444
+Adding advmod count = 428
+Adding mhm count = 423
+Adding nmod:since count = 406
+Adding nmod:because_of count = 397
+Adding nmod:around count = 384
+Adding conj:or count = 358
+Adding abather count = 340
+Adding peipu count = 325
+Adding shihkang count = 310
+Adding conj:but count = 285
+Adding tcac count = 255
+Adding nmod:within count = 241
+Adding %eh count = 232
+Adding nmod:without count = 230
+Adding balqes count = 226
+Adding !! count = 207
+Building document vectors for train
+Building document vectors for dev
+Building document vectors for test
+Building dataset train/tune
+Writing mw, dtype=int32, size=14.2KiB
+Writing msp, dtype=float64, size=791.0KiB
+Writing mf, dtype=int32, size=9.5KiB
+Writing mnum, dtype=int32, size=1.6KiB
+Writing mid, dtype=int32, size=1.6KiB
+Writing mdid, dtype=int32, size=1.6KiB
+Writing pi, dtype=int32, size=334.2KiB
+Writing pf, dtype=bool, size=250.7KiB
+Writing y, dtype=bool, size=41.8KiB
+Writing pmid, dtype=int32, size=501.4KiB
+Writing dmi, dtype=int32, size=16.0B
+Writing dpi, dtype=int32, size=16.0B
+Writing df, dtype=int32, size=56.0B
+Writing mw, dtype=int32, size=3.3KiB
+Writing msp, dtype=float64, size=181.6KiB
+Writing mf, dtype=int32, size=2.2KiB
+Writing mnum, dtype=int32, size=372.0B
+Writing mid, dtype=int32, size=372.0B
+Writing mdid, dtype=int32, size=372.0B
+Writing pi, dtype=int32, size=33.4KiB
+Writing pf, dtype=bool, size=25.1KiB
+Writing y, dtype=bool, size=4.2KiB
+Writing pmid, dtype=int32, size=50.1KiB
+Writing dmi, dtype=int32, size=8.0B
+Writing dpi, dtype=int32, size=8.0B
+Writing df, dtype=int32, size=28.0B
+Building dataset train
+Writing mw, dtype=int32, size=17.5KiB
+Writing msp, dtype=float64, size=972.7KiB
+Writing mf, dtype=int32, size=11.7KiB
+Writing mnum, dtype=int32, size=1.9KiB
+Writing mid, dtype=int32, size=1.9KiB
+Writing mdid, dtype=int32, size=1.9KiB
+Writing pi, dtype=int32, size=367.7KiB
+Writing pf, dtype=bool, size=275.8KiB
+Writing y, dtype=bool, size=46.0KiB
+Writing pmid, dtype=int32, size=551.5KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset dev
+Writing mw, dtype=int32, size=9.0KiB
+Writing msp, dtype=float64, size=500.0KiB
+Writing mf, dtype=int32, size=6.0KiB
+Writing mnum, dtype=int32, size=1.0KiB
+Writing mid, dtype=int32, size=1.0KiB
+Writing mdid, dtype=int32, size=1.0KiB
+Writing pi, dtype=int32, size=92.3KiB
+Writing pf, dtype=bool, size=69.2KiB
+Writing y, dtype=bool, size=11.5KiB
+Writing pmid, dtype=int32, size=138.5KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset test
+Writing mw, dtype=int32, size=8.5KiB
+Writing msp, dtype=float64, size=472.7KiB
+Writing mf, dtype=int32, size=5.7KiB
+Writing mnum, dtype=int32, size=968.0B
+Writing mid, dtype=int32, size=968.0B
+Writing mdid, dtype=int32, size=968.0B
+Writing pi, dtype=int32, size=97.2KiB
+Writing pf, dtype=bool, size=72.9KiB
+Writing y, dtype=bool, size=12.1KiB
+Writing pmid, dtype=int32, size=145.8KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset train/tune
+  File "run_all.py", line 92, in <module>
+    setup()
+  File "run_all.py", line 19, in setup
+    build_datasets.build_datasets(reduced=False)
+  File "/data/even/deep-coref/build_datasets.py", line 87, in build_datasets
+    build_dataset(vectors, "train", reduced=reduced, columns=columns, tune_fraction=0.15)
+  File "/data/even/deep-coref/build_datasets.py", line 40, in build_dataset
+    for i, d in enumerate(utils.load_json_lines(directories.RAW + name)):
+  File "/data/even/deep-coref/utils.py", line 24, in load_json_lines
+    yield json.loads(line)
+  File "/usr/lib/python2.7/json/__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python2.7/json/decoder.py", line 380, in raw_decode
+    obj, end = self.scan_once(s, idx)
+KeyboardInterrupt
+Using gpu device 0: GRID K2 (CNMeM is disabled, cuDNN not available)
+/usr/local/lib/python2.7/dist-packages/theano/tensor/signal/downsample.py:6: UserWarning: downsample module has been moved to the theano.tensor.signal.pool module.
+  "downsample module has been moved to the theano.tensor.signal.pool module.")
+Adding sources from train
+set([u'wb', u'pt', u'bc', u'bn', u'nw', u'tc', u'mz'])
+Adding words from train
+Adding words from dev
+Adding words from test
+Pretrained embedding size: 264640
+Unknowns by mass: 46168/9399704 = 0.49%%
+Unknowns by count: 4575/38786 = 11.80%%
+Adding nsubj count = 131506
+Adding dobj count = 68078
+Adding nmod:of count = 28262
+Adding nmod:poss count = 26826
+Adding nmod:in count = 22700
+Adding no-parent count = 13858
+Adding nmod:to count = 12640
+Adding nsubjpass count = 9965
+Adding nmod:for count = 9215
+Adding nmod:with count = 8114
+Adding appos count = 7324
+Adding nmod:on count = 7076
+Adding nmod:from count = 5371
+Adding conj:and count = 4597
+Adding nmod:at count = 4580
+Adding nmod:by count = 3278
+Adding ccomp count = 3191
+Adding nmod:as count = 2633
+Adding nmod:about count = 2493
+Adding nmod:tmod count = 2481
+Adding xcomp count = 2458
+Adding iobj count = 2094
+Adding %um count = 1885
+Adding nmod:npmod count = 1688
+Adding nmod:between count = 1642
+Adding nmod:agent count = 1636
+Adding %uh count = 1554
+Adding nmod:into count = 1546
+Adding nsubj:xsubj count = 1516
+Adding nmod:like count = 1333
+Adding nmod:over count = 1058
+Adding acl:relcl count = 971
+Adding nmod:after count = 958
+Adding nmod:through count = 897
+Adding nmod:against count = 873
+Adding nmod:such_as count = 786
+Adding nmod:than count = 694
+Adding nmod:during count = 631
+Adding /- count = 622
+Adding nmod:according_to count = 561
+Adding nmod:under count = 533
+Adding nmod:before count = 523
+Adding nmod:including count = 516
+Adding nmod:among count = 494
+Adding parataxis count = 444
+Adding advmod count = 428
+Adding mhm count = 423
+Adding nmod:since count = 406
+Adding nmod:because_of count = 397
+Adding nmod:around count = 384
+Adding conj:or count = 358
+Adding abather count = 340
+Adding peipu count = 325
+Adding shihkang count = 310
+Adding conj:but count = 285
+Adding tcac count = 255
+Adding nmod:within count = 241
+Adding %eh count = 232
+Adding nmod:without count = 230
+Adding balqes count = 226
+Adding !! count = 207
+Building document vectors for train
+Building document vectors for dev
+Building document vectors for test
+Building dataset train/tune
+Writing mw, dtype=int32, size=14.2KiB
+Writing msp, dtype=float64, size=791.0KiB
+Writing mf, dtype=int32, size=9.5KiB
+Writing mnum, dtype=int32, size=1.6KiB
+Writing mid, dtype=int32, size=1.6KiB
+Writing mdid, dtype=int32, size=1.6KiB
+Writing pi, dtype=int32, size=334.2KiB
+Writing pf, dtype=bool, size=250.7KiB
+Writing y, dtype=bool, size=41.8KiB
+Writing pmid, dtype=int32, size=501.4KiB
+Writing dmi, dtype=int32, size=16.0B
+Writing dpi, dtype=int32, size=16.0B
+Writing df, dtype=int32, size=56.0B
+Writing mw, dtype=int32, size=3.3KiB
+Writing msp, dtype=float64, size=181.6KiB
+Writing mf, dtype=int32, size=2.2KiB
+Writing mnum, dtype=int32, size=372.0B
+Writing mid, dtype=int32, size=372.0B
+Writing mdid, dtype=int32, size=372.0B
+Writing pi, dtype=int32, size=33.4KiB
+Writing pf, dtype=bool, size=25.1KiB
+Writing y, dtype=bool, size=4.2KiB
+Writing pmid, dtype=int32, size=50.1KiB
+Writing dmi, dtype=int32, size=8.0B
+Writing dpi, dtype=int32, size=8.0B
+Writing df, dtype=int32, size=28.0B
+Building dataset train
+Writing mw, dtype=int32, size=17.5KiB
+Writing msp, dtype=float64, size=972.7KiB
+Writing mf, dtype=int32, size=11.7KiB
+Writing mnum, dtype=int32, size=1.9KiB
+Writing mid, dtype=int32, size=1.9KiB
+Writing mdid, dtype=int32, size=1.9KiB
+Writing pi, dtype=int32, size=367.7KiB
+Writing pf, dtype=bool, size=275.8KiB
+Writing y, dtype=bool, size=46.0KiB
+Writing pmid, dtype=int32, size=551.5KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset dev
+Writing mw, dtype=int32, size=9.0KiB
+Writing msp, dtype=float64, size=500.0KiB
+Writing mf, dtype=int32, size=6.0KiB
+Writing mnum, dtype=int32, size=1.0KiB
+Writing mid, dtype=int32, size=1.0KiB
+Writing mdid, dtype=int32, size=1.0KiB
+Writing pi, dtype=int32, size=92.3KiB
+Writing pf, dtype=bool, size=69.2KiB
+Writing y, dtype=bool, size=11.5KiB
+Writing pmid, dtype=int32, size=138.5KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset test
+Writing mw, dtype=int32, size=8.5KiB
+Writing msp, dtype=float64, size=472.7KiB
+Writing mf, dtype=int32, size=5.7KiB
+Writing mnum, dtype=int32, size=968.0B
+Writing mid, dtype=int32, size=968.0B
+Writing mdid, dtype=int32, size=968.0B
+Writing pi, dtype=int32, size=97.2KiB
+Writing pf, dtype=bool, size=72.9KiB
+Writing y, dtype=bool, size=12.1KiB
+Writing pmid, dtype=int32, size=145.8KiB
+Writing dmi, dtype=int32, size=24.0B
+Writing dpi, dtype=int32, size=24.0B
+Writing df, dtype=int32, size=84.0B
+Building dataset train/tune
+Writing mw, dtype=int32, size=1.7MiB
+Writing msp, dtype=float64, size=96.8MiB
+Writing mf, dtype=int32, size=1.2MiB
+Writing mnum, dtype=int32, size=198.2KiB
+Writing mid, dtype=int32, size=198.2KiB
+Writing mdid, dtype=int32, size=198.2KiB
+Writing pi, dtype=int32, size=36.3MiB
+Writing pf, dtype=bool, size=27.2MiB
+Writing y, dtype=bool, size=4.5MiB
+Writing pmid, dtype=int32, size=54.4MiB
+Writing dmi, dtype=int32, size=3.4KiB
+Writing dpi, dtype=int32, size=3.4KiB
+Writing df, dtype=int32, size=12.0KiB
+Writing mw, dtype=int32, size=9.9MiB
+Writing msp, dtype=float64, size=552.5MiB
+Writing mf, dtype=int32, size=6.6MiB
+Writing mnum, dtype=int32, size=1.1MiB
+Writing mid, dtype=int32, size=1.1MiB
+Writing mdid, dtype=int32, size=1.1MiB
+Writing pi, dtype=int32, size=217.7MiB
+Writing pf, dtype=bool, size=163.3MiB
+Writing y, dtype=bool, size=27.2MiB
+Writing pmid, dtype=int32, size=326.6MiB
+Writing dmi, dtype=int32, size=18.5KiB
+Writing dpi, dtype=int32, size=18.5KiB
+Writing df, dtype=int32, size=64.6KiB
+Building dataset train
+Writing mw, dtype=int32, size=11.7MiB
+Writing msp, dtype=float64, size=649.2MiB
+Writing mf, dtype=int32, size=7.8MiB
+Writing mnum, dtype=int32, size=1.3MiB
+Writing mid, dtype=int32, size=1.3MiB
+Writing mdid, dtype=int32, size=1.3MiB
+Writing pi, dtype=int32, size=254.0MiB
+Writing pf, dtype=bool, size=190.5MiB
+Writing y, dtype=bool, size=31.8MiB
+Writing pmid, dtype=int32, size=381.0MiB
+Writing dmi, dtype=int32, size=21.9KiB
+Writing dpi, dtype=int32, size=21.9KiB
+Writing df, dtype=int32, size=76.6KiB
+Building dataset dev
+Writing mw, dtype=int32, size=1.5MiB
+Writing msp, dtype=float64, size=81.3MiB
+Writing mf, dtype=int32, size=999.4KiB
+Writing mnum, dtype=int32, size=166.6KiB
+Writing mid, dtype=int32, size=166.6KiB
+Writing mdid, dtype=int32, size=166.6KiB
+Writing pi, dtype=int32, size=32.1MiB
+Writing pf, dtype=bool, size=24.1MiB
+Writing y, dtype=bool, size=4.0MiB
+Writing pmid, dtype=int32, size=48.2MiB
+Writing dmi, dtype=int32, size=2.7KiB
+Writing dpi, dtype=int32, size=2.7KiB
+Writing df, dtype=int32, size=9.4KiB
+Building dataset test
+Writing mw, dtype=int32, size=1.5MiB
+Writing msp, dtype=float64, size=83.5MiB
+Writing mf, dtype=int32, size=1.0MiB
+Writing mnum, dtype=int32, size=171.0KiB
+Writing mid, dtype=int32, size=171.0KiB
+Writing mdid, dtype=int32, size=171.0KiB
+Writing pi, dtype=int32, size=31.3MiB
+Writing pf, dtype=bool, size=23.5MiB
+Writing y, dtype=bool, size=3.9MiB
+Writing pmid, dtype=int32, size=47.0MiB
+Writing dmi, dtype=int32, size=2.7KiB
+Writing dpi, dtype=int32, size=2.7KiB
+Writing df, dtype=int32, size=9.5KiB
+Training ./data/models/all_pairs/
+{'FL': 0.4,
+ 'FN': 0.8,
+ 'WL': 1.0,
+ 'activation': 'relu',
+ 'active_pair_features': [0, 1, 2, 3, 4, 5],
+ 'all_pairs_lr': 0.002,
+ 'anaphoricity': True,
+ 'anaphoricity_only': False,
+ 'dropout': 0.5,
+ 'freeze_embeddings': False,
+ 'layer_sizes': [1000, 500, 500],
+ 'load_weights_from': None,
+ 'lr': 0.002,
+ 'mode': 'all_pairs',
+ 'name': 'all_pairs',
+ 'path': './data/models/all_pairs/',
+ 'ranking': False,
+ 'ranking_lr': 2e-06,
+ 'regularization': 1e-06,
+ 'reinforce': False,
+ 'reinforce_lr': 2e-06,
+ 'reward_rescaling_lr': 2e-05,
+ 'top_pairs': False,
+ 'top_pairs_lr': 0.0002,
+ 'use_dep_reln': False,
+ 'use_distance': True,
+ 'use_doc_embedding': True,
+ 'use_genre': True,
+ 'use_length': True,
+ 'use_mention_type': True,
+ 'use_position': True,
+ 'use_rewards': False,
+ 'use_spans': True,
+ 'weights_file': None}
+Loading data
+Building model
+EPOCH 1, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3756 - auc: 0.8009 - f1: 0.7191 (thresh=0.40)
+dev - loss: 0.0500 - auc: 0.5780 - f1: 0.5589 (thresh=0.40)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 671.7, metrics: 12.1, minibatch_prep: 26.1
+
+EPOCH 2, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3639 - auc: 0.8172 - f1: 0.7323 (thresh=0.40)
+dev - loss: 0.0544 - auc: 0.6431 - f1: 0.5955 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 1345.8, metrics: 23.6, minibatch_prep: 54.7
+
+EPOCH 3, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3495 - auc: 0.8245 - f1: 0.7425 (thresh=0.40)
+dev - loss: 0.0481 - auc: 0.6588 - f1: 0.6121 (thresh=0.40)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 2020.4, metrics: 35.4, minibatch_prep: 83.3
+
+EPOCH 4, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3490 - auc: 0.8292 - f1: 0.7466 (thresh=0.40)
+dev - loss: 0.0487 - auc: 0.6732 - f1: 0.6250 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 2693.6, metrics: 47.5, minibatch_prep: 111.1
+
+EPOCH 5, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3399 - auc: 0.8327 - f1: 0.7498 (thresh=0.40)
+dev - loss: 0.0490 - auc: 0.6859 - f1: 0.6413 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 3374.9, metrics: 59.4, minibatch_prep: 140.4
+
+EPOCH 6, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3360 - auc: 0.8358 - f1: 0.7517 (thresh=0.35)
+dev - loss: 0.0484 - auc: 0.6943 - f1: 0.6435 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 4052.7, metrics: 71.1, minibatch_prep: 168.8
+
+EPOCH 7, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3312 - auc: 0.8384 - f1: 0.7551 (thresh=0.40)
+dev - loss: 0.0481 - auc: 0.7003 - f1: 0.6443 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 4731.7, metrics: 83.0, minibatch_prep: 198.4
+
+EPOCH 8, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3290 - auc: 0.8407 - f1: 0.7583 (thresh=0.40)
+dev - loss: 0.0504 - auc: 0.6972 - f1: 0.6499 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 5415.5, metrics: 95.5, minibatch_prep: 227.7
+
+EPOCH 9, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3304 - auc: 0.8423 - f1: 0.7594 (thresh=0.40)
+dev - loss: 0.0440 - auc: 0.7105 - f1: 0.6548 (thresh=0.50)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 6102.3, metrics: 108.2, minibatch_prep: 257.5
+
+EPOCH 10, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3284 - auc: 0.8441 - f1: 0.7607 (thresh=0.40)
+dev - loss: 0.0442 - auc: 0.7097 - f1: 0.6589 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 6784.0, metrics: 120.4, minibatch_prep: 286.9
+
+EPOCH 11, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3286 - auc: 0.8452 - f1: 0.7623 (thresh=0.40)
+dev - loss: 0.0504 - auc: 0.7033 - f1: 0.6511 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 7464.2, metrics: 132.5, minibatch_prep: 316.9
+
+EPOCH 12, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3231 - auc: 0.8470 - f1: 0.7638 (thresh=0.40)
+dev - loss: 0.0408 - auc: 0.7191 - f1: 0.6610 (thresh=0.40)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 8143.9, metrics: 144.9, minibatch_prep: 346.4
+
+EPOCH 13, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3230 - auc: 0.8481 - f1: 0.7648 (thresh=0.40)
+dev - loss: 0.0429 - auc: 0.7182 - f1: 0.6625 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 8824.0, metrics: 157.3, minibatch_prep: 376.1
+
+EPOCH 14, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3218 - auc: 0.8491 - f1: 0.7669 (thresh=0.40)
+dev - loss: 0.0522 - auc: 0.7092 - f1: 0.6559 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 9504.1, metrics: 169.7, minibatch_prep: 406.0
+
+EPOCH 15, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3185 - auc: 0.8503 - f1: 0.7681 (thresh=0.40)
+dev - loss: 0.0442 - auc: 0.7171 - f1: 0.6639 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 10180.3, metrics: 181.2, minibatch_prep: 435.0
+
+EPOCH 16, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3194 - auc: 0.8505 - f1: 0.7680 (thresh=0.45)
+dev - loss: 0.0432 - auc: 0.7180 - f1: 0.6660 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 10857.6, metrics: 192.4, minibatch_prep: 463.7
+
+EPOCH 17, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3197 - auc: 0.8512 - f1: 0.7691 (thresh=0.40)
+dev - loss: 0.0452 - auc: 0.7222 - f1: 0.6698 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 11535.4, metrics: 203.4, minibatch_prep: 492.3
+
+EPOCH 18, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3227 - auc: 0.8515 - f1: 0.7693 (thresh=0.45)
+dev - loss: 0.0448 - auc: 0.7244 - f1: 0.6685 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 12213.0, metrics: 214.5, minibatch_prep: 521.0
+
+EPOCH 19, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3169 - auc: 0.8525 - f1: 0.7704 (thresh=0.40)
+dev - loss: 0.0409 - auc: 0.7284 - f1: 0.6720 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 12892.0, metrics: 226.6, minibatch_prep: 549.5
+
+EPOCH 20, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3153 - auc: 0.8534 - f1: 0.7722 (thresh=0.40)
+dev - loss: 0.0383 - auc: 0.7316 - f1: 0.6745 (thresh=0.35)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 13572.9, metrics: 237.8, minibatch_prep: 578.5
+
+EPOCH 21, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3168 - auc: 0.8538 - f1: 0.7719 (thresh=0.45)
+dev - loss: 0.0462 - auc: 0.7280 - f1: 0.6653 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 14253.4, metrics: 249.3, minibatch_prep: 606.4
+
+EPOCH 22, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3128 - auc: 0.8547 - f1: 0.7721 (thresh=0.40)
+dev - loss: 0.0391 - auc: 0.7281 - f1: 0.6718 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 14929.1, metrics: 261.4, minibatch_prep: 635.0
+
+EPOCH 23, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3147 - auc: 0.8546 - f1: 0.7731 (thresh=0.45)
+dev - loss: 0.0380 - auc: 0.7310 - f1: 0.6750 (thresh=0.40)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 15604.1, metrics: 273.2, minibatch_prep: 663.1
+
+EPOCH 24, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3127 - auc: 0.8557 - f1: 0.7740 (thresh=0.40)
+dev - loss: 0.0404 - auc: 0.7246 - f1: 0.6675 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 16279.6, metrics: 284.8, minibatch_prep: 691.8
+
+EPOCH 25, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3105 - auc: 0.8561 - f1: 0.7741 (thresh=0.40)
+dev - loss: 0.0386 - auc: 0.7338 - f1: 0.6774 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 16954.8, metrics: 296.6, minibatch_prep: 720.5
+
+EPOCH 26, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3134 - auc: 0.8561 - f1: 0.7754 (thresh=0.50)
+dev - loss: 0.0389 - auc: 0.7313 - f1: 0.6739 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 17633.6, metrics: 308.4, minibatch_prep: 749.3
+
+EPOCH 27, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3144 - auc: 0.8568 - f1: 0.7760 (thresh=0.45)
+dev - loss: 0.0410 - auc: 0.7309 - f1: 0.6746 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 18313.4, metrics: 319.5, minibatch_prep: 778.2
+
+EPOCH 28, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3110 - auc: 0.8567 - f1: 0.7756 (thresh=0.45)
+dev - loss: 0.0401 - auc: 0.7340 - f1: 0.6759 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 18991.5, metrics: 330.9, minibatch_prep: 807.1
+
+EPOCH 29, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3101 - auc: 0.8582 - f1: 0.7777 (thresh=0.45)
+dev - loss: 0.0385 - auc: 0.7339 - f1: 0.6782 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 19672.8, metrics: 342.6, minibatch_prep: 836.5
+
+EPOCH 30, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3096 - auc: 0.8586 - f1: 0.7771 (thresh=0.45)
+dev - loss: 0.0411 - auc: 0.7337 - f1: 0.6782 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 20353.9, metrics: 353.7, minibatch_prep: 865.4
+
+EPOCH 31, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3088 - auc: 0.8588 - f1: 0.7772 (thresh=0.40)
+dev - loss: 0.0387 - auc: 0.7351 - f1: 0.6771 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 21035.8, metrics: 365.1, minibatch_prep: 894.6
+
+EPOCH 32, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3106 - auc: 0.8589 - f1: 0.7774 (thresh=0.50)
+dev - loss: 0.0387 - auc: 0.7310 - f1: 0.6781 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 21713.0, metrics: 376.2, minibatch_prep: 923.3
+
+EPOCH 33, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3111 - auc: 0.8594 - f1: 0.7782 (thresh=0.50)
+dev - loss: 0.0390 - auc: 0.7355 - f1: 0.6787 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 22389.3, metrics: 387.7, minibatch_prep: 951.8
+
+EPOCH 34, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3107 - auc: 0.8595 - f1: 0.7783 (thresh=0.45)
+dev - loss: 0.0379 - auc: 0.7382 - f1: 0.6788 (thresh=0.45)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 23066.0, metrics: 399.5, minibatch_prep: 980.7
+
+EPOCH 35, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3084 - auc: 0.8597 - f1: 0.7785 (thresh=0.45)
+dev - loss: 0.0365 - auc: 0.7348 - f1: 0.6799 (thresh=0.35)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 23747.4, metrics: 411.4, minibatch_prep: 1009.6
+
+EPOCH 36, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3093 - auc: 0.8598 - f1: 0.7792 (thresh=0.50)
+dev - loss: 0.0400 - auc: 0.7392 - f1: 0.6789 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 24425.0, metrics: 422.9, minibatch_prep: 1038.3
+
+EPOCH 37, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3054 - auc: 0.8610 - f1: 0.7807 (thresh=0.40)
+dev - loss: 0.0375 - auc: 0.7354 - f1: 0.6774 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 25101.2, metrics: 434.1, minibatch_prep: 1067.2
+
+EPOCH 38, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3048 - auc: 0.8607 - f1: 0.7800 (thresh=0.45)
+dev - loss: 0.0366 - auc: 0.7358 - f1: 0.6785 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 25784.4, metrics: 445.4, minibatch_prep: 1096.1
+
+EPOCH 39, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3083 - auc: 0.8603 - f1: 0.7794 (thresh=0.50)
+dev - loss: 0.0374 - auc: 0.7374 - f1: 0.6798 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 26466.4, metrics: 456.8, minibatch_prep: 1124.7
+
+EPOCH 40, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3067 - auc: 0.8615 - f1: 0.7816 (thresh=0.45)
+dev - loss: 0.0391 - auc: 0.7298 - f1: 0.6709 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 27146.1, metrics: 469.3, minibatch_prep: 1153.4
+
+EPOCH 41, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3067 - auc: 0.8615 - f1: 0.7801 (thresh=0.45)
+dev - loss: 0.0386 - auc: 0.7383 - f1: 0.6804 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 27823.6, metrics: 480.4, minibatch_prep: 1182.0
+
+EPOCH 42, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3057 - auc: 0.8616 - f1: 0.7819 (thresh=0.45)
+dev - loss: 0.0371 - auc: 0.7298 - f1: 0.6721 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 28499.1, metrics: 491.6, minibatch_prep: 1211.0
+
+EPOCH 43, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3073 - auc: 0.8621 - f1: 0.7815 (thresh=0.50)
+dev - loss: 0.0395 - auc: 0.7381 - f1: 0.6772 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 29173.8, metrics: 503.1, minibatch_prep: 1239.4
+
+EPOCH 44, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3064 - auc: 0.8628 - f1: 0.7826 (thresh=0.50)
+dev - loss: 0.0373 - auc: 0.7378 - f1: 0.6791 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 29849.9, metrics: 514.7, minibatch_prep: 1268.6
+
+EPOCH 45, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3081 - auc: 0.8626 - f1: 0.7808 (thresh=0.50)
+dev - loss: 0.0394 - auc: 0.7359 - f1: 0.6796 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 30526.4, metrics: 526.6, minibatch_prep: 1297.6
+
+EPOCH 46, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3020 - auc: 0.8628 - f1: 0.7824 (thresh=0.40)
+dev - loss: 0.0360 - auc: 0.7403 - f1: 0.6775 (thresh=0.40)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 31203.7, metrics: 538.5, minibatch_prep: 1326.5
+
+EPOCH 47, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3029 - auc: 0.8627 - f1: 0.7811 (thresh=0.45)
+dev - loss: 0.0382 - auc: 0.7420 - f1: 0.6828 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 31885.2, metrics: 550.2, minibatch_prep: 1355.8
+
+EPOCH 48, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3073 - auc: 0.8630 - f1: 0.7807 (thresh=0.45)
+dev - loss: 0.0375 - auc: 0.7407 - f1: 0.6798 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 32561.5, metrics: 561.4, minibatch_prep: 1384.8
+
+EPOCH 49, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3060 - auc: 0.8636 - f1: 0.7828 (thresh=0.50)
+dev - loss: 0.0399 - auc: 0.7401 - f1: 0.6790 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 33242.2, metrics: 573.0, minibatch_prep: 1414.0
+
+EPOCH 50, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3047 - auc: 0.8642 - f1: 0.7836 (thresh=0.45)
+dev - loss: 0.0368 - auc: 0.7364 - f1: 0.6821 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 33921.5, metrics: 584.3, minibatch_prep: 1443.1
+
+EPOCH 51, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3047 - auc: 0.8638 - f1: 0.7816 (thresh=0.50)
+dev - loss: 0.0375 - auc: 0.7371 - f1: 0.6780 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 34598.1, metrics: 595.4, minibatch_prep: 1472.1
+
+EPOCH 52, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3001 - auc: 0.8643 - f1: 0.7819 (thresh=0.45)
+dev - loss: 0.0372 - auc: 0.7409 - f1: 0.6830 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 35273.7, metrics: 606.7, minibatch_prep: 1501.0
+
+EPOCH 53, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3082 - auc: 0.8636 - f1: 0.7825 (thresh=0.50)
+dev - loss: 0.0366 - auc: 0.7442 - f1: 0.6823 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 35948.4, metrics: 617.7, minibatch_prep: 1529.9
+
+EPOCH 54, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3027 - auc: 0.8636 - f1: 0.7832 (thresh=0.45)
+dev - loss: 0.0363 - auc: 0.7380 - f1: 0.6817 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 36622.9, metrics: 628.6, minibatch_prep: 1558.8
+
+EPOCH 55, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3022 - auc: 0.8646 - f1: 0.7820 (thresh=0.45)
+dev - loss: 0.0363 - auc: 0.7405 - f1: 0.6841 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 37296.7, metrics: 639.9, minibatch_prep: 1586.8
+
+EPOCH 56, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3001 - auc: 0.8646 - f1: 0.7827 (thresh=0.45)
+dev - loss: 0.0379 - auc: 0.7395 - f1: 0.6820 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 37972.4, metrics: 651.2, minibatch_prep: 1615.9
+
+EPOCH 57, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3061 - auc: 0.8646 - f1: 0.7822 (thresh=0.50)
+dev - loss: 0.0372 - auc: 0.7391 - f1: 0.6830 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 38656.1, metrics: 662.7, minibatch_prep: 1644.3
+
+EPOCH 58, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3078 - auc: 0.8646 - f1: 0.7841 (thresh=0.50)
+dev - loss: 0.0412 - auc: 0.7401 - f1: 0.6826 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 39341.5, metrics: 674.0, minibatch_prep: 1673.5
+
+EPOCH 59, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2991 - auc: 0.8653 - f1: 0.7844 (thresh=0.40)
+dev - loss: 0.0350 - auc: 0.7436 - f1: 0.6857 (thresh=0.35)
+New best validation loss, saving model
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 40018.2, metrics: 686.3, minibatch_prep: 1701.5
+
+EPOCH 60, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3006 - auc: 0.8660 - f1: 0.7836 (thresh=0.45)
+dev - loss: 0.0373 - auc: 0.7403 - f1: 0.6811 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 40692.7, metrics: 697.6, minibatch_prep: 1730.1
+
+EPOCH 61, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2995 - auc: 0.8659 - f1: 0.7843 (thresh=0.45)
+dev - loss: 0.0376 - auc: 0.7362 - f1: 0.6817 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 41370.1, metrics: 709.0, minibatch_prep: 1757.9
+
+EPOCH 62, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3036 - auc: 0.8656 - f1: 0.7842 (thresh=0.45)
+dev - loss: 0.0359 - auc: 0.7409 - f1: 0.6863 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 42052.9, metrics: 720.7, minibatch_prep: 1786.5
+
+EPOCH 63, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3011 - auc: 0.8653 - f1: 0.7846 (thresh=0.45)
+dev - loss: 0.0365 - auc: 0.7436 - f1: 0.6811 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 42732.0, metrics: 732.5, minibatch_prep: 1814.3
+
+EPOCH 64, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3005 - auc: 0.8660 - f1: 0.7842 (thresh=0.40)
+dev - loss: 0.0365 - auc: 0.7485 - f1: 0.6880 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 43406.2, metrics: 743.8, minibatch_prep: 1842.8
+
+EPOCH 65, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3012 - auc: 0.8660 - f1: 0.7852 (thresh=0.45)
+dev - loss: 0.0386 - auc: 0.7423 - f1: 0.6822 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 44081.9, metrics: 756.2, minibatch_prep: 1871.0
+
+EPOCH 66, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2992 - auc: 0.8662 - f1: 0.7853 (thresh=0.40)
+dev - loss: 0.0383 - auc: 0.7406 - f1: 0.6814 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 44756.5, metrics: 767.6, minibatch_prep: 1899.5
+
+EPOCH 67, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2991 - auc: 0.8666 - f1: 0.7853 (thresh=0.45)
+dev - loss: 0.0352 - auc: 0.7399 - f1: 0.6818 (thresh=0.30)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 45436.2, metrics: 779.8, minibatch_prep: 1928.1
+
+EPOCH 68, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2988 - auc: 0.8668 - f1: 0.7862 (thresh=0.45)
+dev - loss: 0.0385 - auc: 0.7425 - f1: 0.6810 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 46118.3, metrics: 791.4, minibatch_prep: 1956.9
+
+EPOCH 69, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2983 - auc: 0.8670 - f1: 0.7869 (thresh=0.45)
+dev - loss: 0.0359 - auc: 0.7293 - f1: 0.6734 (thresh=0.35)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 46799.1, metrics: 803.5, minibatch_prep: 1985.8
+
+EPOCH 70, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3039 - auc: 0.8670 - f1: 0.7854 (thresh=0.50)
+dev - loss: 0.0352 - auc: 0.7444 - f1: 0.6856 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 47483.8, metrics: 814.6, minibatch_prep: 2014.1
+
+EPOCH 71, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2996 - auc: 0.8663 - f1: 0.7847 (thresh=0.40)
+dev - loss: 0.0372 - auc: 0.7421 - f1: 0.6845 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 48162.3, metrics: 826.4, minibatch_prep: 2042.2
+
+EPOCH 72, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3003 - auc: 0.8669 - f1: 0.7855 (thresh=0.45)
+dev - loss: 0.0367 - auc: 0.7376 - f1: 0.6802 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 48841.3, metrics: 837.4, minibatch_prep: 2070.9
+
+EPOCH 73, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3022 - auc: 0.8660 - f1: 0.7867 (thresh=0.45)
+dev - loss: 0.0379 - auc: 0.7445 - f1: 0.6853 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 49518.6, metrics: 848.5, minibatch_prep: 2098.7
+
+EPOCH 74, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2971 - auc: 0.8674 - f1: 0.7875 (thresh=0.40)
+dev - loss: 0.0356 - auc: 0.7413 - f1: 0.6830 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 50201.1, metrics: 860.2, minibatch_prep: 2127.1
+
+EPOCH 75, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3000 - auc: 0.8669 - f1: 0.7845 (thresh=0.45)
+dev - loss: 0.0363 - auc: 0.7440 - f1: 0.6864 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 50879.1, metrics: 872.8, minibatch_prep: 2155.9
+
+EPOCH 76, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3004 - auc: 0.8662 - f1: 0.7834 (thresh=0.40)
+dev - loss: 0.0363 - auc: 0.7442 - f1: 0.6823 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 51557.0, metrics: 884.4, minibatch_prep: 2184.6
+
+EPOCH 77, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2974 - auc: 0.8675 - f1: 0.7861 (thresh=0.40)
+dev - loss: 0.0366 - auc: 0.7449 - f1: 0.6841 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 52240.5, metrics: 896.2, minibatch_prep: 2213.4
+
+EPOCH 78, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3011 - auc: 0.8668 - f1: 0.7839 (thresh=0.45)
+dev - loss: 0.0365 - auc: 0.7434 - f1: 0.6870 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 52914.9, metrics: 908.4, minibatch_prep: 2241.2
+
+EPOCH 79, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3023 - auc: 0.8673 - f1: 0.7860 (thresh=0.45)
+dev - loss: 0.0358 - auc: 0.7427 - f1: 0.6825 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 53600.3, metrics: 919.6, minibatch_prep: 2270.3
+
+EPOCH 80, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3020 - auc: 0.8671 - f1: 0.7873 (thresh=0.45)
+dev - loss: 0.0358 - auc: 0.7417 - f1: 0.6824 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 54278.2, metrics: 930.9, minibatch_prep: 2298.4
+
+EPOCH 81, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2989 - auc: 0.8670 - f1: 0.7839 (thresh=0.45)
+dev - loss: 0.0357 - auc: 0.7457 - f1: 0.6847 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 54959.9, metrics: 942.2, minibatch_prep: 2326.9
+
+EPOCH 82, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3003 - auc: 0.8674 - f1: 0.7855 (thresh=0.45)
+dev - loss: 0.0360 - auc: 0.7464 - f1: 0.6868 (thresh=0.45)
+Best in last 20, saved to weights_80
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 55639.3, metrics: 953.3, minibatch_prep: 2355.0
+
+EPOCH 83, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2993 - auc: 0.8675 - f1: 0.7852 (thresh=0.35)
+dev - loss: 0.0350 - auc: 0.7428 - f1: 0.6852 (thresh=0.40)
+Best in last 20, saved to weights_80
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 56314.4, metrics: 964.8, minibatch_prep: 2383.6
+
+EPOCH 84, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2970 - auc: 0.8669 - f1: 0.7853 (thresh=0.40)
+dev - loss: 0.0352 - auc: 0.7419 - f1: 0.6825 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 56988.5, metrics: 976.6, minibatch_prep: 2411.5
+
+EPOCH 85, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3031 - auc: 0.8666 - f1: 0.7858 (thresh=0.50)
+dev - loss: 0.0371 - auc: 0.7412 - f1: 0.6851 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 57661.7, metrics: 987.9, minibatch_prep: 2439.5
+
+EPOCH 86, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3015 - auc: 0.8674 - f1: 0.7844 (thresh=0.45)
+dev - loss: 0.0362 - auc: 0.7361 - f1: 0.6803 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 58334.9, metrics: 999.7, minibatch_prep: 2467.0
+
+EPOCH 87, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2992 - auc: 0.8662 - f1: 0.7847 (thresh=0.40)
+dev - loss: 0.0346 - auc: 0.7448 - f1: 0.6847 (thresh=0.35)
+New best validation loss, saving model
+Best in last 20, saved to weights_80
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 59007.9, metrics: 1010.9, minibatch_prep: 2494.9
+
+EPOCH 88, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3076 - auc: 0.8670 - f1: 0.7861 (thresh=0.55)
+dev - loss: 0.0362 - auc: 0.7423 - f1: 0.6828 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 59684.9, metrics: 1022.3, minibatch_prep: 2523.0
+
+EPOCH 89, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3033 - auc: 0.8664 - f1: 0.7851 (thresh=0.45)
+dev - loss: 0.0395 - auc: 0.7422 - f1: 0.6845 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 60363.4, metrics: 1034.1, minibatch_prep: 2551.3
+
+EPOCH 90, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2978 - auc: 0.8681 - f1: 0.7877 (thresh=0.40)
+dev - loss: 0.0359 - auc: 0.7443 - f1: 0.6877 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 61041.4, metrics: 1045.1, minibatch_prep: 2580.1
+
+EPOCH 91, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3000 - auc: 0.8674 - f1: 0.7857 (thresh=0.45)
+dev - loss: 0.0365 - auc: 0.7354 - f1: 0.6804 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 61719.2, metrics: 1056.2, minibatch_prep: 2608.9
+
+EPOCH 92, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2965 - auc: 0.8682 - f1: 0.7885 (thresh=0.40)
+dev - loss: 0.0353 - auc: 0.7421 - f1: 0.6851 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 62399.2, metrics: 1068.0, minibatch_prep: 2637.1
+
+EPOCH 93, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2979 - auc: 0.8675 - f1: 0.7864 (thresh=0.45)
+dev - loss: 0.0366 - auc: 0.7430 - f1: 0.6847 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 63076.7, metrics: 1079.6, minibatch_prep: 2666.0
+
+EPOCH 94, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3011 - auc: 0.8666 - f1: 0.7866 (thresh=0.45)
+dev - loss: 0.0361 - auc: 0.7419 - f1: 0.6812 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 63751.0, metrics: 1090.5, minibatch_prep: 2694.7
+
+EPOCH 95, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2998 - auc: 0.8675 - f1: 0.7882 (thresh=0.45)
+dev - loss: 0.0368 - auc: 0.7415 - f1: 0.6835 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 64425.5, metrics: 1101.6, minibatch_prep: 2723.3
+
+EPOCH 96, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3010 - auc: 0.8677 - f1: 0.7871 (thresh=0.45)
+dev - loss: 0.0397 - auc: 0.7366 - f1: 0.6763 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 65097.9, metrics: 1113.3, minibatch_prep: 2750.8
+
+EPOCH 97, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2963 - auc: 0.8671 - f1: 0.7871 (thresh=0.40)
+dev - loss: 0.0349 - auc: 0.7423 - f1: 0.6841 (thresh=0.35)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 65772.0, metrics: 1124.8, minibatch_prep: 2779.3
+
+EPOCH 98, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2984 - auc: 0.8677 - f1: 0.7858 (thresh=0.40)
+dev - loss: 0.0359 - auc: 0.7422 - f1: 0.6820 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 66448.4, metrics: 1136.7, minibatch_prep: 2807.5
+
+EPOCH 99, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2980 - auc: 0.8686 - f1: 0.7887 (thresh=0.40)
+dev - loss: 0.0359 - auc: 0.7449 - f1: 0.6853 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 67123.9, metrics: 1148.1, minibatch_prep: 2836.2
+
+EPOCH 100, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2994 - auc: 0.8675 - f1: 0.7874 (thresh=0.45)
+dev - loss: 0.0356 - auc: 0.7469 - f1: 0.6871 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 67806.2, metrics: 1160.1, minibatch_prep: 2864.8
+
+EPOCH 101, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3010 - auc: 0.8680 - f1: 0.7872 (thresh=0.50)
+dev - loss: 0.0365 - auc: 0.7423 - f1: 0.6820 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 68482.1, metrics: 1171.8, minibatch_prep: 2893.3
+
+EPOCH 102, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3006 - auc: 0.8683 - f1: 0.7864 (thresh=0.45)
+dev - loss: 0.0349 - auc: 0.7447 - f1: 0.6838 (thresh=0.40)
+Best in last 20, saved to weights_100
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 69158.0, metrics: 1183.3, minibatch_prep: 2921.8
+
+EPOCH 103, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3006 - auc: 0.8671 - f1: 0.7849 (thresh=0.40)
+dev - loss: 0.0359 - auc: 0.7493 - f1: 0.6874 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 69839.5, metrics: 1195.1, minibatch_prep: 2950.2
+
+EPOCH 104, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2996 - auc: 0.8682 - f1: 0.7882 (thresh=0.45)
+dev - loss: 0.0381 - auc: 0.7384 - f1: 0.6820 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 70521.5, metrics: 1206.6, minibatch_prep: 2978.8
+
+EPOCH 105, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3064 - auc: 0.8675 - f1: 0.7859 (thresh=0.50)
+dev - loss: 0.0397 - auc: 0.7373 - f1: 0.6812 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 71196.7, metrics: 1218.6, minibatch_prep: 3007.1
+
+EPOCH 106, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3007 - auc: 0.8665 - f1: 0.7852 (thresh=0.45)
+dev - loss: 0.0354 - auc: 0.7386 - f1: 0.6847 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 71872.7, metrics: 1230.2, minibatch_prep: 3036.1
+
+EPOCH 107, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2975 - auc: 0.8682 - f1: 0.7870 (thresh=0.35)
+dev - loss: 0.0366 - auc: 0.7437 - f1: 0.6873 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 72547.7, metrics: 1241.4, minibatch_prep: 3064.8
+
+EPOCH 108, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2969 - auc: 0.8679 - f1: 0.7869 (thresh=0.35)
+dev - loss: 0.0369 - auc: 0.7434 - f1: 0.6865 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 73221.8, metrics: 1253.1, minibatch_prep: 3093.4
+
+EPOCH 109, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2993 - auc: 0.8676 - f1: 0.7870 (thresh=0.45)
+dev - loss: 0.0357 - auc: 0.7401 - f1: 0.6860 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 73902.1, metrics: 1264.3, minibatch_prep: 3121.5
+
+EPOCH 110, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3002 - auc: 0.8678 - f1: 0.7864 (thresh=0.40)
+dev - loss: 0.0369 - auc: 0.7457 - f1: 0.6869 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 74581.1, metrics: 1275.9, minibatch_prep: 3149.3
+
+EPOCH 111, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2997 - auc: 0.8680 - f1: 0.7863 (thresh=0.40)
+dev - loss: 0.0360 - auc: 0.7428 - f1: 0.6849 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 75259.2, metrics: 1287.4, minibatch_prep: 3177.5
+
+EPOCH 112, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2969 - auc: 0.8682 - f1: 0.7870 (thresh=0.40)
+dev - loss: 0.0353 - auc: 0.7354 - f1: 0.6829 (thresh=0.35)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 75941.5, metrics: 1298.7, minibatch_prep: 3206.1
+
+EPOCH 113, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3067 - auc: 0.8678 - f1: 0.7882 (thresh=0.55)
+dev - loss: 0.0363 - auc: 0.7383 - f1: 0.6813 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 76621.5, metrics: 1310.5, minibatch_prep: 3234.2
+
+EPOCH 114, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2990 - auc: 0.8682 - f1: 0.7875 (thresh=0.40)
+dev - loss: 0.0349 - auc: 0.7447 - f1: 0.6858 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 77299.7, metrics: 1322.4, minibatch_prep: 3262.0
+
+EPOCH 115, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3000 - auc: 0.8667 - f1: 0.7872 (thresh=0.40)
+dev - loss: 0.0354 - auc: 0.7438 - f1: 0.6879 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 77976.3, metrics: 1333.9, minibatch_prep: 3290.7
+
+EPOCH 116, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2999 - auc: 0.8665 - f1: 0.7864 (thresh=0.45)
+dev - loss: 0.0371 - auc: 0.7400 - f1: 0.6845 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 78653.5, metrics: 1345.8, minibatch_prep: 3318.9
+
+EPOCH 117, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3000 - auc: 0.8666 - f1: 0.7872 (thresh=0.45)
+dev - loss: 0.0380 - auc: 0.7427 - f1: 0.6862 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 79334.3, metrics: 1358.0, minibatch_prep: 3348.2
+
+EPOCH 118, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3006 - auc: 0.8673 - f1: 0.7868 (thresh=0.45)
+dev - loss: 0.0351 - auc: 0.7454 - f1: 0.6880 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 80009.9, metrics: 1369.7, minibatch_prep: 3376.4
+
+EPOCH 119, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3006 - auc: 0.8673 - f1: 0.7870 (thresh=0.45)
+dev - loss: 0.0349 - auc: 0.7438 - f1: 0.6849 (thresh=0.40)
+Best in last 20, saved to weights_100
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 80686.5, metrics: 1381.0, minibatch_prep: 3405.2
+
+EPOCH 120, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2984 - auc: 0.8670 - f1: 0.7867 (thresh=0.40)
+dev - loss: 0.0346 - auc: 0.7467 - f1: 0.6870 (thresh=0.35)
+New best validation loss, saving model
+Best in last 20, saved to weights_100
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 81365.2, metrics: 1391.9, minibatch_prep: 3433.2
+
+EPOCH 121, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3000 - auc: 0.8674 - f1: 0.7882 (thresh=0.45)
+dev - loss: 0.0369 - auc: 0.7432 - f1: 0.6838 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 82045.1, metrics: 1402.9, minibatch_prep: 3461.9
+
+EPOCH 122, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3024 - auc: 0.8669 - f1: 0.7873 (thresh=0.45)
+dev - loss: 0.0361 - auc: 0.7410 - f1: 0.6857 (thresh=0.45)
+Best in last 20, saved to weights_120
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 82724.4, metrics: 1414.2, minibatch_prep: 3490.2
+
+EPOCH 123, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2976 - auc: 0.8678 - f1: 0.7863 (thresh=0.40)
+dev - loss: 0.0362 - auc: 0.7430 - f1: 0.6850 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 83405.0, metrics: 1426.0, minibatch_prep: 3519.1
+
+EPOCH 124, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2978 - auc: 0.8677 - f1: 0.7861 (thresh=0.40)
+dev - loss: 0.0372 - auc: 0.7394 - f1: 0.6838 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 84080.9, metrics: 1437.2, minibatch_prep: 3547.5
+
+EPOCH 125, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3090 - auc: 0.8673 - f1: 0.7872 (thresh=0.50)
+dev - loss: 0.0384 - auc: 0.7359 - f1: 0.6786 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 84756.3, metrics: 1448.2, minibatch_prep: 3576.4
+
+EPOCH 126, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3026 - auc: 0.8669 - f1: 0.7871 (thresh=0.45)
+dev - loss: 0.0359 - auc: 0.7443 - f1: 0.6864 (thresh=0.45)
+Best in last 20, saved to weights_120
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 85430.7, metrics: 1459.1, minibatch_prep: 3605.0
+
+EPOCH 127, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2986 - auc: 0.8670 - f1: 0.7866 (thresh=0.40)
+dev - loss: 0.0386 - auc: 0.7414 - f1: 0.6839 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 86105.2, metrics: 1470.4, minibatch_prep: 3633.8
+
+EPOCH 128, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3024 - auc: 0.8674 - f1: 0.7868 (thresh=0.50)
+dev - loss: 0.0390 - auc: 0.7422 - f1: 0.6811 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 86778.9, metrics: 1482.2, minibatch_prep: 3662.0
+
+EPOCH 129, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3010 - auc: 0.8675 - f1: 0.7878 (thresh=0.45)
+dev - loss: 0.0371 - auc: 0.7405 - f1: 0.6854 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 87453.4, metrics: 1494.5, minibatch_prep: 3689.8
+
+EPOCH 130, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3026 - auc: 0.8669 - f1: 0.7874 (thresh=0.45)
+dev - loss: 0.0414 - auc: 0.7412 - f1: 0.6832 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 88137.3, metrics: 1505.6, minibatch_prep: 3718.0
+
+EPOCH 131, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3018 - auc: 0.8667 - f1: 0.7853 (thresh=0.40)
+dev - loss: 0.0392 - auc: 0.7413 - f1: 0.6820 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 88813.6, metrics: 1517.4, minibatch_prep: 3746.8
+
+EPOCH 132, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2984 - auc: 0.8671 - f1: 0.7866 (thresh=0.40)
+dev - loss: 0.0366 - auc: 0.7431 - f1: 0.6852 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 89490.9, metrics: 1529.5, minibatch_prep: 3775.2
+
+EPOCH 133, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2994 - auc: 0.8676 - f1: 0.7867 (thresh=0.40)
+dev - loss: 0.0370 - auc: 0.7431 - f1: 0.6855 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 90173.2, metrics: 1541.4, minibatch_prep: 3803.9
+
+EPOCH 134, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3015 - auc: 0.8673 - f1: 0.7865 (thresh=0.50)
+dev - loss: 0.0358 - auc: 0.7414 - f1: 0.6810 (thresh=0.40)
+Best in last 20, saved to weights_120
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 90851.6, metrics: 1553.9, minibatch_prep: 3832.3
+
+EPOCH 135, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2997 - auc: 0.8677 - f1: 0.7880 (thresh=0.40)
+dev - loss: 0.0371 - auc: 0.7388 - f1: 0.6820 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 91527.9, metrics: 1565.4, minibatch_prep: 3861.4
+
+EPOCH 136, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3010 - auc: 0.8657 - f1: 0.7859 (thresh=0.40)
+dev - loss: 0.0365 - auc: 0.7338 - f1: 0.6768 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 92205.4, metrics: 1576.6, minibatch_prep: 3889.8
+
+EPOCH 137, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3009 - auc: 0.8659 - f1: 0.7877 (thresh=0.40)
+dev - loss: 0.0364 - auc: 0.7420 - f1: 0.6861 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 92880.8, metrics: 1588.5, minibatch_prep: 3918.5
+
+EPOCH 138, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3016 - auc: 0.8659 - f1: 0.7868 (thresh=0.40)
+dev - loss: 0.0365 - auc: 0.7435 - f1: 0.6844 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 93555.6, metrics: 1600.4, minibatch_prep: 3947.1
+
+EPOCH 139, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3025 - auc: 0.8675 - f1: 0.7875 (thresh=0.45)
+dev - loss: 0.0369 - auc: 0.7452 - f1: 0.6852 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 94229.4, metrics: 1611.5, minibatch_prep: 3975.4
+
+EPOCH 140, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3024 - auc: 0.8666 - f1: 0.7864 (thresh=0.40)
+dev - loss: 0.0375 - auc: 0.7429 - f1: 0.6871 (thresh=0.50)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 94907.2, metrics: 1623.4, minibatch_prep: 4003.6
+
+EPOCH 141, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.2997 - auc: 0.8663 - f1: 0.7869 (thresh=0.40)
+dev - loss: 0.0353 - auc: 0.7323 - f1: 0.6798 (thresh=0.30)
+Best in last 20, saved to weights_140
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 95584.5, metrics: 1634.5, minibatch_prep: 4032.0
+
+EPOCH 142, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3033 - auc: 0.8664 - f1: 0.7884 (thresh=0.40)
+dev - loss: 0.0368 - auc: 0.7427 - f1: 0.6866 (thresh=0.50)
+Best in last 20, saved to weights_140
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 96261.6, metrics: 1645.6, minibatch_prep: 4060.7
+
+EPOCH 143, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3042 - auc: 0.8657 - f1: 0.7865 (thresh=0.50)
+dev - loss: 0.0362 - auc: 0.7420 - f1: 0.6817 (thresh=0.40)
+Best in last 20, saved to weights_140
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 96936.3, metrics: 1657.0, minibatch_prep: 4089.4
+
+EPOCH 144, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3030 - auc: 0.8664 - f1: 0.7875 (thresh=0.40)
+dev - loss: 0.0361 - auc: 0.7393 - f1: 0.6818 (thresh=0.45)
+Best in last 20, saved to weights_140
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 97617.4, metrics: 1668.5, minibatch_prep: 4118.2
+
+EPOCH 145, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3014 - auc: 0.8671 - f1: 0.7870 (thresh=0.35)
+dev - loss: 0.0358 - auc: 0.7445 - f1: 0.6865 (thresh=0.45)
+Best in last 20, saved to weights_140
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 98298.2, metrics: 1680.2, minibatch_prep: 4146.8
+
+EPOCH 146, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3047 - auc: 0.8663 - f1: 0.7855 (thresh=0.45)
+dev - loss: 0.0351 - auc: 0.7449 - f1: 0.6875 (thresh=0.40)
+Best in last 20, saved to weights_140
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 98974.7, metrics: 1691.8, minibatch_prep: 4175.1
+
+EPOCH 147, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3043 - auc: 0.8666 - f1: 0.7864 (thresh=0.45)
+dev - loss: 0.0405 - auc: 0.7392 - f1: 0.6829 (thresh=0.55)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 99649.7, metrics: 1703.5, minibatch_prep: 4203.8
+
+EPOCH 148, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3052 - auc: 0.8664 - f1: 0.7885 (thresh=0.45)
+dev - loss: 0.0358 - auc: 0.7405 - f1: 0.6838 (thresh=0.40)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 100323.4, metrics: 1714.7, minibatch_prep: 4232.2
+
+EPOCH 149, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3050 - auc: 0.8651 - f1: 0.7871 (thresh=0.45)
+dev - loss: 0.0358 - auc: 0.7416 - f1: 0.6861 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 100997.7, metrics: 1725.9, minibatch_prep: 4260.8
+
+EPOCH 150, model = ./data/models/all_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3037 - auc: 0.8663 - f1: 0.7866 (thresh=0.45)
+dev - loss: 0.0364 - auc: 0.7431 - f1: 0.6856 (thresh=0.45)
+Times: compile: 90.4, preprocess_dataset: 119.1, train: 101673.3, metrics: 1736.8, minibatch_prep: 4289.3
+
+Training ./data/models/top_pairs/
+{'FL': 0.4,
+ 'FN': 0.8,
+ 'WL': 1.0,
+ 'activation': 'relu',
+ 'active_pair_features': [0, 1, 2, 3, 4, 5],
+ 'all_pairs_lr': 0.002,
+ 'anaphoricity': True,
+ 'anaphoricity_only': False,
+ 'dropout': 0.5,
+ 'freeze_embeddings': False,
+ 'layer_sizes': [1000, 500, 500],
+ 'load_weights_from': 'all_pairs',
+ 'lr': 0.0002,
+ 'mode': 'top_pairs',
+ 'name': 'top_pairs',
+ 'path': './data/models/top_pairs/',
+ 'ranking': False,
+ 'ranking_lr': 2e-06,
+ 'regularization': 1e-05,
+ 'reinforce': False,
+ 'reinforce_lr': 2e-06,
+ 'reward_rescaling_lr': 2e-05,
+ 'top_pairs': True,
+ 'top_pairs_lr': 0.0002,
+ 'use_dep_reln': False,
+ 'use_distance': True,
+ 'use_doc_embedding': True,
+ 'use_genre': True,
+ 'use_length': True,
+ 'use_mention_type': True,
+ 'use_position': True,
+ 'use_rewards': False,
+ 'use_spans': True,
+ 'weights_file': 'weights_140'}
+Loading data
+Building model
+Setting weights from all_pairs
+EPOCH 1, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3035 - auc: 0.8667 - f1: 0.7880 (thresh=0.45)
+dev - loss: 0.3008 - auc: 0.7982 - f1: 0.7332 (thresh=0.40)
+New best validation loss, saving model
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 769.7, metrics: 0.3, minibatch_prep: 26.9
+
+EPOCH 2, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3046 - auc: 0.8663 - f1: 0.7877 (thresh=0.40)
+dev - loss: 0.3013 - auc: 0.7992 - f1: 0.7347 (thresh=0.40)
+Best in last 10, saved to weights_0
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 1545.5, metrics: 0.5, minibatch_prep: 55.2
+
+EPOCH 3, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3066 - auc: 0.8666 - f1: 0.7878 (thresh=0.45)
+dev - loss: 0.3003 - auc: 0.8006 - f1: 0.7349 (thresh=0.45)
+New best validation loss, saving model
+Best in last 10, saved to weights_0
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 2326.5, metrics: 0.8, minibatch_prep: 84.5
+
+EPOCH 4, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3053 - auc: 0.8662 - f1: 0.7878 (thresh=0.40)
+dev - loss: 0.2967 - auc: 0.8029 - f1: 0.7377 (thresh=0.40)
+New best validation loss, saving model
+Best in last 10, saved to weights_0
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 3099.7, metrics: 1.1, minibatch_prep: 112.8
+
+EPOCH 5, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3035 - auc: 0.8665 - f1: 0.7879 (thresh=0.40)
+dev - loss: 0.2972 - auc: 0.8040 - f1: 0.7398 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 3876.8, metrics: 1.3, minibatch_prep: 142.0
+
+EPOCH 6, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3062 - auc: 0.8664 - f1: 0.7877 (thresh=0.45)
+dev - loss: 0.2975 - auc: 0.8043 - f1: 0.7401 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 4652.0, metrics: 1.6, minibatch_prep: 170.3
+
+EPOCH 7, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3066 - auc: 0.8662 - f1: 0.7870 (thresh=0.45)
+dev - loss: 0.2965 - auc: 0.8052 - f1: 0.7403 (thresh=0.45)
+New best validation loss, saving model
+Best in last 10, saved to weights_0
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 5428.2, metrics: 1.9, minibatch_prep: 198.8
+
+EPOCH 8, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3038 - auc: 0.8664 - f1: 0.7872 (thresh=0.45)
+dev - loss: 0.2952 - auc: 0.8039 - f1: 0.7406 (thresh=0.45)
+New best validation loss, saving model
+Best in last 10, saved to weights_0
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 6201.1, metrics: 2.1, minibatch_prep: 227.5
+
+EPOCH 9, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3048 - auc: 0.8664 - f1: 0.7872 (thresh=0.45)
+dev - loss: 0.2936 - auc: 0.8055 - f1: 0.7412 (thresh=0.45)
+New best validation loss, saving model
+Best in last 10, saved to weights_0
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 6979.0, metrics: 2.4, minibatch_prep: 256.2
+
+EPOCH 10, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3035 - auc: 0.8668 - f1: 0.7876 (thresh=0.40)
+dev - loss: 0.2970 - auc: 0.8014 - f1: 0.7405 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 7749.3, metrics: 2.7, minibatch_prep: 284.6
+
+EPOCH 11, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3059 - auc: 0.8659 - f1: 0.7863 (thresh=0.40)
+dev - loss: 0.2955 - auc: 0.8056 - f1: 0.7432 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 8524.0, metrics: 3.0, minibatch_prep: 312.9
+
+EPOCH 12, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3064 - auc: 0.8660 - f1: 0.7872 (thresh=0.40)
+dev - loss: 0.2936 - auc: 0.8063 - f1: 0.7412 (thresh=0.45)
+Best in last 10, saved to weights_10
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 9296.6, metrics: 3.3, minibatch_prep: 341.6
+
+EPOCH 13, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3050 - auc: 0.8657 - f1: 0.7872 (thresh=0.45)
+dev - loss: 0.2944 - auc: 0.8087 - f1: 0.7434 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 10073.7, metrics: 3.6, minibatch_prep: 370.1
+
+EPOCH 14, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3046 - auc: 0.8668 - f1: 0.7879 (thresh=0.40)
+dev - loss: 0.2950 - auc: 0.8090 - f1: 0.7424 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 10844.9, metrics: 3.9, minibatch_prep: 399.1
+
+EPOCH 15, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3045 - auc: 0.8665 - f1: 0.7874 (thresh=0.40)
+dev - loss: 0.2939 - auc: 0.8090 - f1: 0.7434 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 11614.2, metrics: 4.1, minibatch_prep: 428.0
+
+EPOCH 16, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3059 - auc: 0.8669 - f1: 0.7881 (thresh=0.40)
+dev - loss: 0.2947 - auc: 0.8091 - f1: 0.7436 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 12384.3, metrics: 4.4, minibatch_prep: 457.4
+
+EPOCH 17, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3075 - auc: 0.8660 - f1: 0.7880 (thresh=0.45)
+dev - loss: 0.2956 - auc: 0.8094 - f1: 0.7441 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 13154.5, metrics: 4.7, minibatch_prep: 486.6
+
+EPOCH 18, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3050 - auc: 0.8667 - f1: 0.7871 (thresh=0.45)
+dev - loss: 0.2910 - auc: 0.8096 - f1: 0.7439 (thresh=0.40)
+New best validation loss, saving model
+Best in last 10, saved to weights_10
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 13928.9, metrics: 4.9, minibatch_prep: 515.8
+
+EPOCH 19, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3071 - auc: 0.8667 - f1: 0.7881 (thresh=0.45)
+dev - loss: 0.2918 - auc: 0.8119 - f1: 0.7430 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 14709.1, metrics: 5.2, minibatch_prep: 544.8
+
+EPOCH 20, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3046 - auc: 0.8664 - f1: 0.7875 (thresh=0.40)
+dev - loss: 0.2917 - auc: 0.8124 - f1: 0.7458 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 15479.9, metrics: 5.5, minibatch_prep: 573.7
+
+EPOCH 21, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3058 - auc: 0.8666 - f1: 0.7889 (thresh=0.40)
+dev - loss: 0.2915 - auc: 0.8116 - f1: 0.7469 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 16256.8, metrics: 5.7, minibatch_prep: 602.8
+
+EPOCH 22, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3051 - auc: 0.8668 - f1: 0.7887 (thresh=0.40)
+dev - loss: 0.2907 - auc: 0.8119 - f1: 0.7466 (thresh=0.40)
+New best validation loss, saving model
+Best in last 10, saved to weights_20
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 17032.0, metrics: 6.0, minibatch_prep: 632.0
+
+EPOCH 23, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3068 - auc: 0.8664 - f1: 0.7886 (thresh=0.45)
+dev - loss: 0.2980 - auc: 0.8081 - f1: 0.7458 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 17804.4, metrics: 6.3, minibatch_prep: 661.5
+
+EPOCH 24, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3093 - auc: 0.8654 - f1: 0.7869 (thresh=0.50)
+dev - loss: 0.2954 - auc: 0.8119 - f1: 0.7441 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 18573.7, metrics: 6.5, minibatch_prep: 690.4
+
+EPOCH 25, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3051 - auc: 0.8663 - f1: 0.7871 (thresh=0.35)
+dev - loss: 0.2908 - auc: 0.8117 - f1: 0.7462 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 19344.3, metrics: 6.8, minibatch_prep: 718.9
+
+EPOCH 26, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3063 - auc: 0.8660 - f1: 0.7863 (thresh=0.45)
+dev - loss: 0.2914 - auc: 0.8119 - f1: 0.7458 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 20114.6, metrics: 7.1, minibatch_prep: 747.7
+
+EPOCH 27, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3056 - auc: 0.8653 - f1: 0.7872 (thresh=0.40)
+dev - loss: 0.2946 - auc: 0.8111 - f1: 0.7448 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 20885.8, metrics: 7.3, minibatch_prep: 776.2
+
+EPOCH 28, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3087 - auc: 0.8659 - f1: 0.7865 (thresh=0.45)
+dev - loss: 0.2918 - auc: 0.8115 - f1: 0.7464 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 21660.9, metrics: 7.6, minibatch_prep: 805.5
+
+EPOCH 29, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3057 - auc: 0.8659 - f1: 0.7858 (thresh=0.40)
+dev - loss: 0.2971 - auc: 0.8113 - f1: 0.7456 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 22440.3, metrics: 7.9, minibatch_prep: 834.2
+
+EPOCH 30, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3071 - auc: 0.8668 - f1: 0.7876 (thresh=0.45)
+dev - loss: 0.2952 - auc: 0.8127 - f1: 0.7477 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 23210.1, metrics: 8.2, minibatch_prep: 863.0
+
+EPOCH 31, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3061 - auc: 0.8655 - f1: 0.7872 (thresh=0.40)
+dev - loss: 0.2969 - auc: 0.8109 - f1: 0.7455 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 23985.9, metrics: 8.4, minibatch_prep: 891.5
+
+EPOCH 32, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3106 - auc: 0.8655 - f1: 0.7879 (thresh=0.45)
+dev - loss: 0.2938 - auc: 0.8114 - f1: 0.7452 (thresh=0.45)
+Best in last 10, saved to weights_30
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 24764.0, metrics: 8.7, minibatch_prep: 920.5
+
+EPOCH 33, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3081 - auc: 0.8652 - f1: 0.7861 (thresh=0.40)
+dev - loss: 0.2917 - auc: 0.8136 - f1: 0.7481 (thresh=0.40)
+Best in last 10, saved to weights_30
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 25534.5, metrics: 9.0, minibatch_prep: 948.9
+
+EPOCH 34, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3077 - auc: 0.8662 - f1: 0.7868 (thresh=0.40)
+dev - loss: 0.2991 - auc: 0.8128 - f1: 0.7472 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 26304.2, metrics: 9.2, minibatch_prep: 977.7
+
+EPOCH 35, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3069 - auc: 0.8659 - f1: 0.7853 (thresh=0.40)
+dev - loss: 0.2953 - auc: 0.8144 - f1: 0.7469 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 27075.4, metrics: 9.5, minibatch_prep: 1006.5
+
+EPOCH 36, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3073 - auc: 0.8664 - f1: 0.7862 (thresh=0.40)
+dev - loss: 0.2957 - auc: 0.8121 - f1: 0.7478 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 27849.8, metrics: 9.8, minibatch_prep: 1035.6
+
+EPOCH 37, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3080 - auc: 0.8661 - f1: 0.7856 (thresh=0.45)
+dev - loss: 0.2949 - auc: 0.8122 - f1: 0.7457 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 28626.9, metrics: 10.1, minibatch_prep: 1063.9
+
+EPOCH 38, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3087 - auc: 0.8657 - f1: 0.7848 (thresh=0.45)
+dev - loss: 0.2933 - auc: 0.8140 - f1: 0.7468 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 29402.8, metrics: 10.3, minibatch_prep: 1093.1
+
+EPOCH 39, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3084 - auc: 0.8661 - f1: 0.7868 (thresh=0.45)
+dev - loss: 0.2968 - auc: 0.8135 - f1: 0.7481 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 30180.8, metrics: 10.6, minibatch_prep: 1121.8
+
+EPOCH 40, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3041 - auc: 0.8663 - f1: 0.7875 (thresh=0.45)
+dev - loss: 0.2966 - auc: 0.8124 - f1: 0.7459 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 30961.1, metrics: 10.9, minibatch_prep: 1150.9
+
+EPOCH 41, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3055 - auc: 0.8667 - f1: 0.7874 (thresh=0.40)
+dev - loss: 0.2946 - auc: 0.8137 - f1: 0.7471 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 31738.4, metrics: 11.2, minibatch_prep: 1179.3
+
+EPOCH 42, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3062 - auc: 0.8662 - f1: 0.7873 (thresh=0.40)
+dev - loss: 0.2956 - auc: 0.8159 - f1: 0.7477 (thresh=0.40)
+Best in last 10, saved to weights_40
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 32517.0, metrics: 11.4, minibatch_prep: 1208.4
+
+EPOCH 43, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3070 - auc: 0.8663 - f1: 0.7867 (thresh=0.40)
+dev - loss: 0.2961 - auc: 0.8140 - f1: 0.7481 (thresh=0.50)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 33295.5, metrics: 11.7, minibatch_prep: 1236.8
+
+EPOCH 44, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3031 - auc: 0.8667 - f1: 0.7885 (thresh=0.40)
+dev - loss: 0.2932 - auc: 0.8137 - f1: 0.7489 (thresh=0.40)
+Best in last 10, saved to weights_40
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 34069.5, metrics: 12.0, minibatch_prep: 1265.8
+
+EPOCH 45, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3055 - auc: 0.8665 - f1: 0.7873 (thresh=0.45)
+dev - loss: 0.2948 - auc: 0.8175 - f1: 0.7487 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 34842.9, metrics: 12.3, minibatch_prep: 1294.3
+
+EPOCH 46, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3085 - auc: 0.8663 - f1: 0.7868 (thresh=0.50)
+dev - loss: 0.2941 - auc: 0.8178 - f1: 0.7500 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 35615.7, metrics: 12.5, minibatch_prep: 1323.4
+
+EPOCH 47, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3088 - auc: 0.8661 - f1: 0.7861 (thresh=0.50)
+dev - loss: 0.2964 - auc: 0.8162 - f1: 0.7495 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 36394.8, metrics: 12.8, minibatch_prep: 1352.5
+
+EPOCH 48, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3046 - auc: 0.8665 - f1: 0.7893 (thresh=0.40)
+dev - loss: 0.2947 - auc: 0.8141 - f1: 0.7496 (thresh=0.40)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 37170.7, metrics: 13.1, minibatch_prep: 1381.5
+
+EPOCH 49, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3057 - auc: 0.8668 - f1: 0.7881 (thresh=0.45)
+dev - loss: 0.3014 - auc: 0.8140 - f1: 0.7472 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 37948.5, metrics: 13.4, minibatch_prep: 1410.5
+
+EPOCH 50, model = ./data/models/top_pairs/
+Training
+Testing on dev set
+dev anaphoricity - loss: 0.3050 - auc: 0.8662 - f1: 0.7880 (thresh=0.40)
+dev - loss: 0.2975 - auc: 0.8136 - f1: 0.7484 (thresh=0.45)
+Times: compile: 79.2, preprocess_dataset: 122.9, train: 38721.9, metrics: 13.6, minibatch_prep: 1439.5
+
+Training ./data/models/reward_rescaling/
+{'FL': 0.4,
+ 'FN': 0.8,
+ 'WL': 1.0,
+ 'activation': 'relu',
+ 'active_pair_features': [0, 1, 2, 3, 4, 5],
+ 'all_pairs_lr': 0.002,
+ 'anaphoricity': True,
+ 'anaphoricity_only': False,
+ 'dropout': 0.5,
+ 'freeze_embeddings': False,
+ 'layer_sizes': [1000, 500, 500],
+ 'load_weights_from': 'top_pairs',
+ 'lr': 2e-05,
+ 'mode': 'reward_rescaling',
+ 'name': 'reward_rescaling',
+ 'path': './data/models/reward_rescaling/',
+ 'ranking': True,
+ 'ranking_lr': 2e-06,
+ 'regularization': 1e-05,
+ 'reinforce': False,
+ 'reinforce_lr': 2e-06,
+ 'reward_rescaling_lr': 2e-05,
+ 'top_pairs': False,
+ 'top_pairs_lr': 0.0002,
+ 'use_dep_reln': False,
+ 'use_distance': True,
+ 'use_doc_embedding': True,
+ 'use_genre': True,
+ 'use_length': True,
+ 'use_mention_type': True,
+ 'use_position': True,
+ 'use_rewards': True,
+ 'use_spans': True,
+ 'weights_file': 'weights_40'}
+Loading data
+Building model
+Setting weights from top_pairs
+EPOCH 1, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 84.95 - B3: 78.57 - CEAFE: 71.85 - LEA 76.29 - CoNLL 78.46
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 63.51 - CEAFE: 59.16 - LEA 59.84 - CoNLL 65.59
+dev - loss: 0.5355 - CN: 9652 - CL: 28044 - FN: 2022 - FL: 1569 - WL: 1010
+      ranking: 0.9652 - anaphoricity: 0.8432
+New best CoNLL F1, saving model
+Times: metrics: 2.8, minibatch_prep: 76.4, compile: 42.7, train: 3667.9, link: 2439.5, update b3: 2286.3, preprocess_dataset: 122.2, unlink: 17.4
+
+EPOCH 2, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 84.81 - B3: 78.34 - CEAFE: 71.39 - LEA 76.18 - CoNLL 78.18
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.09 - B3: 63.70 - CEAFE: 59.30 - LEA 60.02 - CoNLL 65.70
+dev - loss: 0.5348 - CN: 9681 - CL: 27975 - FN: 1980 - FL: 1638 - WL: 1023
+      ranking: 0.9647 - anaphoricity: 0.8426
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_0
+Times: metrics: 5.5, minibatch_prep: 158.5, compile: 42.7, train: 7247.6, link: 4775.4, update b3: 4473.1, preprocess_dataset: 122.2, unlink: 33.9
+
+EPOCH 3, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 84.87 - B3: 78.52 - CEAFE: 71.67 - LEA 76.35 - CoNLL 78.35
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 64.04 - CEAFE: 59.39 - LEA 60.35 - CoNLL 65.84
+dev - loss: 0.5333 - CN: 9674 - CL: 27983 - FN: 1988 - FL: 1630 - WL: 1022
+      ranking: 0.9648 - anaphoricity: 0.8425
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_0
+Times: metrics: 8.3, minibatch_prep: 242.9, compile: 42.7, train: 10890.3, link: 7172.0, update b3: 6717.8, preprocess_dataset: 122.2, unlink: 51.0
+
+EPOCH 4, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 84.91 - B3: 78.60 - CEAFE: 71.78 - LEA 76.43 - CoNLL 78.43
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.17 - B3: 63.91 - CEAFE: 59.42 - LEA 60.26 - CoNLL 65.83
+dev - loss: 0.5333 - CN: 9670 - CL: 28015 - FN: 2017 - FL: 1598 - WL: 997
+      ranking: 0.9656 - anaphoricity: 0.8425
+Times: metrics: 10.9, minibatch_prep: 324.9, compile: 42.7, train: 14517.9, link: 9561.0, update b3: 8954.9, preprocess_dataset: 122.2, unlink: 67.9
+
+EPOCH 5, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.01 - B3: 78.69 - CEAFE: 71.89 - LEA 76.57 - CoNLL 78.53
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.05 - B3: 63.89 - CEAFE: 59.26 - LEA 60.22 - CoNLL 65.73
+dev - loss: 0.5317 - CN: 9656 - CL: 28019 - FN: 2005 - FL: 1594 - WL: 1023
+      ranking: 0.9648 - anaphoricity: 0.8429
+Times: metrics: 13.5, minibatch_prep: 405.5, compile: 42.7, train: 18142.6, link: 11943.6, update b3: 11186.0, preprocess_dataset: 122.2, unlink: 84.7
+
+EPOCH 6, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.12 - B3: 78.86 - CEAFE: 72.01 - LEA 76.74 - CoNLL 78.66
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.96 - B3: 63.63 - CEAFE: 59.13 - LEA 59.93 - CoNLL 65.57
+dev - loss: 0.5328 - CN: 9643 - CL: 28007 - FN: 2027 - FL: 1606 - WL: 1014
+      ranking: 0.9651 - anaphoricity: 0.8415
+Times: metrics: 16.2, minibatch_prep: 486.0, compile: 42.7, train: 21793.2, link: 14348.1, update b3: 13438.4, preprocess_dataset: 122.2, unlink: 101.7
+
+EPOCH 7, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.10 - B3: 78.87 - CEAFE: 72.07 - LEA 76.77 - CoNLL 78.68
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.00 - B3: 63.86 - CEAFE: 59.48 - LEA 60.11 - CoNLL 65.78
+dev - loss: 0.5336 - CN: 9688 - CL: 27965 - FN: 1957 - FL: 1648 - WL: 1039
+      ranking: 0.9642 - anaphoricity: 0.8431
+Times: metrics: 18.9, minibatch_prep: 567.9, compile: 42.7, train: 25436.7, link: 16740.3, update b3: 15677.7, preprocess_dataset: 122.2, unlink: 118.7
+
+EPOCH 8, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.07 - B3: 78.86 - CEAFE: 72.15 - LEA 76.70 - CoNLL 78.69
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.06 - B3: 64.03 - CEAFE: 59.42 - LEA 60.28 - CoNLL 65.84
+dev - loss: 0.5360 - CN: 9748 - CL: 27865 - FN: 1880 - FL: 1748 - WL: 1056
+      ranking: 0.9635 - anaphoricity: 0.8431
+Times: metrics: 21.6, minibatch_prep: 649.9, compile: 42.7, train: 29089.8, link: 19145.2, update b3: 17929.6, preprocess_dataset: 122.2, unlink: 136.0
+
+EPOCH 9, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.06 - B3: 78.87 - CEAFE: 72.17 - LEA 76.70 - CoNLL 78.70
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.97 - B3: 63.74 - CEAFE: 59.35 - LEA 60.02 - CoNLL 65.69
+dev - loss: 0.5335 - CN: 9666 - CL: 27963 - FN: 1995 - FL: 1650 - WL: 1023
+      ranking: 0.9647 - anaphoricity: 0.8414
+Times: metrics: 24.2, minibatch_prep: 730.9, compile: 42.7, train: 32754.4, link: 21564.9, update b3: 20196.0, preprocess_dataset: 122.2, unlink: 153.3
+
+EPOCH 10, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.16 - B3: 79.01 - CEAFE: 72.31 - LEA 76.89 - CoNLL 78.83
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 64.01 - CEAFE: 59.57 - LEA 60.30 - CoNLL 65.89
+dev - loss: 0.5339 - CN: 9745 - CL: 27899 - FN: 1898 - FL: 1714 - WL: 1041
+      ranking: 0.9640 - anaphoricity: 0.8436
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_0
+Times: metrics: 26.9, minibatch_prep: 812.8, compile: 42.7, train: 36376.9, link: 23946.6, update b3: 22426.1, preprocess_dataset: 122.2, unlink: 170.2
+
+EPOCH 11, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.12 - B3: 78.98 - CEAFE: 72.34 - LEA 76.82 - CoNLL 78.81
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.20 - B3: 64.11 - CEAFE: 59.54 - LEA 60.36 - CoNLL 65.95
+dev - loss: 0.5360 - CN: 9783 - CL: 27855 - FN: 1833 - FL: 1758 - WL: 1068
+      ranking: 0.9631 - anaphoricity: 0.8449
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_10
+Times: metrics: 29.7, minibatch_prep: 894.2, compile: 42.7, train: 40038.8, link: 26363.5, update b3: 24690.7, preprocess_dataset: 122.2, unlink: 187.5
+
+EPOCH 12, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.12 - B3: 79.04 - CEAFE: 72.36 - LEA 76.87 - CoNLL 78.84
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.16 - B3: 63.90 - CEAFE: 59.35 - LEA 60.18 - CoNLL 65.80
+dev - loss: 0.5338 - CN: 9698 - CL: 27963 - FN: 1942 - FL: 1650 - WL: 1044
+      ranking: 0.9640 - anaphoricity: 0.8437
+Best in last 10, saved to weights_10
+Times: metrics: 32.4, minibatch_prep: 977.5, compile: 42.7, train: 43755.2, link: 28835.0, update b3: 27005.6, preprocess_dataset: 122.2, unlink: 205.3
+
+EPOCH 13, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.25 - B3: 79.17 - CEAFE: 72.46 - LEA 77.09 - CoNLL 78.96
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.05 - B3: 63.74 - CEAFE: 59.48 - LEA 60.05 - CoNLL 65.76
+dev - loss: 0.5326 - CN: 9662 - CL: 28006 - FN: 1998 - FL: 1607 - WL: 1024
+      ranking: 0.9647 - anaphoricity: 0.8428
+Times: metrics: 35.0, minibatch_prep: 1059.9, compile: 42.7, train: 47405.4, link: 31230.0, update b3: 29248.4, preprocess_dataset: 122.2, unlink: 222.4
+
+EPOCH 14, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.24 - B3: 79.15 - CEAFE: 72.48 - LEA 77.05 - CoNLL 78.96
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.05 - B3: 63.74 - CEAFE: 59.54 - LEA 60.03 - CoNLL 65.77
+dev - loss: 0.5337 - CN: 9679 - CL: 27978 - FN: 1951 - FL: 1635 - WL: 1054
+      ranking: 0.9637 - anaphoricity: 0.8437
+Times: metrics: 37.8, minibatch_prep: 1142.8, compile: 42.7, train: 51028.4, link: 33608.2, update b3: 31474.9, preprocess_dataset: 122.2, unlink: 239.4
+
+EPOCH 15, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.35 - B3: 79.36 - CEAFE: 72.72 - LEA 77.29 - CoNLL 79.14
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.13 - B3: 63.87 - CEAFE: 59.63 - LEA 60.15 - CoNLL 65.88
+dev - loss: 0.5328 - CN: 9709 - CL: 27943 - FN: 1937 - FL: 1670 - WL: 1038
+      ranking: 0.9642 - anaphoricity: 0.8433
+Best in last 10, saved to weights_10
+Times: metrics: 40.5, minibatch_prep: 1229.2, compile: 42.7, train: 54698.6, link: 36023.1, update b3: 33736.1, preprocess_dataset: 122.2, unlink: 256.7
+
+EPOCH 16, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.28 - B3: 79.29 - CEAFE: 72.69 - LEA 77.20 - CoNLL 79.09
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.99 - B3: 63.66 - CEAFE: 59.46 - LEA 59.92 - CoNLL 65.70
+dev - loss: 0.5354 - CN: 9703 - CL: 27921 - FN: 1927 - FL: 1692 - WL: 1054
+      ranking: 0.9636 - anaphoricity: 0.8428
+Times: metrics: 43.2, minibatch_prep: 1309.6, compile: 42.7, train: 58325.6, link: 38408.1, update b3: 35969.6, preprocess_dataset: 122.2, unlink: 273.8
+
+EPOCH 17, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.29 - B3: 79.28 - CEAFE: 72.68 - LEA 77.18 - CoNLL 79.08
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.17 - B3: 63.91 - CEAFE: 59.72 - LEA 60.19 - CoNLL 65.93
+dev - loss: 0.5332 - CN: 9717 - CL: 27952 - FN: 1940 - FL: 1661 - WL: 1027
+      ranking: 0.9646 - anaphoricity: 0.8437
+Best in last 10, saved to weights_10
+Times: metrics: 45.9, minibatch_prep: 1391.3, compile: 42.7, train: 61955.8, link: 40793.1, update b3: 38201.7, preprocess_dataset: 122.2, unlink: 290.8
+
+EPOCH 18, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.35 - B3: 79.41 - CEAFE: 72.80 - LEA 77.31 - CoNLL 79.19
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.13 - B3: 64.06 - CEAFE: 59.62 - LEA 60.33 - CoNLL 65.94
+dev - loss: 0.5352 - CN: 9727 - CL: 27909 - FN: 1906 - FL: 1704 - WL: 1051
+      ranking: 0.9637 - anaphoricity: 0.8435
+Best in last 10, saved to weights_10
+Times: metrics: 48.9, minibatch_prep: 1473.6, compile: 42.7, train: 65594.2, link: 43183.3, update b3: 40439.5, preprocess_dataset: 122.2, unlink: 307.9
+
+EPOCH 19, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.36 - B3: 79.44 - CEAFE: 72.86 - LEA 77.33 - CoNLL 79.22
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.97 - B3: 63.77 - CEAFE: 59.53 - LEA 60.02 - CoNLL 65.76
+dev - loss: 0.5386 - CN: 9729 - CL: 27873 - FN: 1884 - FL: 1740 - WL: 1071
+      ranking: 0.9630 - anaphoricity: 0.8430
+Times: metrics: 51.6, minibatch_prep: 1556.5, compile: 42.7, train: 69252.8, link: 45584.1, update b3: 42688.0, preprocess_dataset: 122.2, unlink: 325.0
+
+EPOCH 20, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.34 - B3: 79.43 - CEAFE: 72.84 - LEA 77.34 - CoNLL 79.20
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.04 - B3: 63.98 - CEAFE: 59.59 - LEA 60.24 - CoNLL 65.87
+dev - loss: 0.5357 - CN: 9688 - CL: 27942 - FN: 1937 - FL: 1671 - WL: 1059
+      ranking: 0.9635 - anaphoricity: 0.8430
+Times: metrics: 54.3, minibatch_prep: 1639.1, compile: 42.7, train: 72900.6, link: 47981.7, update b3: 44933.1, preprocess_dataset: 122.2, unlink: 342.2
+
+EPOCH 21, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.43 - B3: 79.51 - CEAFE: 72.91 - LEA 77.45 - CoNLL 79.28
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.12 - B3: 64.01 - CEAFE: 59.74 - LEA 60.24 - CoNLL 65.96
+dev - loss: 0.5389 - CN: 9742 - CL: 27875 - FN: 1865 - FL: 1738 - WL: 1077
+      ranking: 0.9628 - anaphoricity: 0.8439
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_20
+Times: metrics: 57.2, minibatch_prep: 1719.2, compile: 42.7, train: 76532.8, link: 50366.1, update b3: 47165.5, preprocess_dataset: 122.2, unlink: 359.3
+
+EPOCH 22, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.32 - B3: 79.44 - CEAFE: 72.87 - LEA 77.33 - CoNLL 79.21
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.16 - B3: 64.21 - CEAFE: 59.79 - LEA 60.49 - CoNLL 66.05
+dev - loss: 0.5357 - CN: 9717 - CL: 27948 - FN: 1927 - FL: 1665 - WL: 1040
+      ranking: 0.9641 - anaphoricity: 0.8440
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_20
+Times: metrics: 59.9, minibatch_prep: 1800.5, compile: 42.7, train: 80155.1, link: 52746.2, update b3: 49394.4, preprocess_dataset: 122.2, unlink: 376.3
+
+EPOCH 23, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.50 - B3: 79.64 - CEAFE: 73.15 - LEA 77.57 - CoNLL 79.43
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.07 - B3: 63.87 - CEAFE: 59.71 - LEA 60.11 - CoNLL 65.88
+dev - loss: 0.5367 - CN: 9719 - CL: 27913 - FN: 1897 - FL: 1700 - WL: 1068
+      ranking: 0.9631 - anaphoricity: 0.8438
+Times: metrics: 62.6, minibatch_prep: 1881.4, compile: 42.7, train: 83757.5, link: 55112.2, update b3: 51609.5, preprocess_dataset: 122.2, unlink: 393.1
+
+EPOCH 24, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.53 - B3: 79.73 - CEAFE: 73.22 - LEA 77.64 - CoNLL 79.49
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.14 - B3: 64.07 - CEAFE: 59.91 - LEA 60.27 - CoNLL 66.04
+dev - loss: 0.5398 - CN: 9767 - CL: 27869 - FN: 1830 - FL: 1744 - WL: 1087
+      ranking: 0.9625 - anaphoricity: 0.8453
+Times: metrics: 65.4, minibatch_prep: 1962.4, compile: 42.7, train: 87402.1, link: 57506.7, update b3: 53852.0, preprocess_dataset: 122.2, unlink: 410.2
+
+EPOCH 25, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.41 - B3: 79.60 - CEAFE: 73.12 - LEA 77.49 - CoNLL 79.38
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.16 - B3: 64.13 - CEAFE: 59.67 - LEA 60.40 - CoNLL 65.99
+dev - loss: 0.5368 - CN: 9716 - CL: 27949 - FN: 1921 - FL: 1664 - WL: 1047
+      ranking: 0.9639 - anaphoricity: 0.8442
+Times: metrics: 68.1, minibatch_prep: 2044.1, compile: 42.7, train: 91029.1, link: 59890.4, update b3: 56084.6, preprocess_dataset: 122.2, unlink: 427.2
+
+EPOCH 26, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.54 - B3: 79.72 - CEAFE: 73.22 - LEA 77.68 - CoNLL 79.50
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.11 - B3: 64.18 - CEAFE: 59.65 - LEA 60.43 - CoNLL 65.98
+dev - loss: 0.5369 - CN: 9706 - CL: 27933 - FN: 1927 - FL: 1680 - WL: 1051
+      ranking: 0.9637 - anaphoricity: 0.8433
+Times: metrics: 71.0, minibatch_prep: 2126.9, compile: 42.7, train: 94656.4, link: 62272.1, update b3: 58314.4, preprocess_dataset: 122.2, unlink: 444.3
+
+EPOCH 27, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.54 - B3: 79.81 - CEAFE: 73.24 - LEA 77.75 - CoNLL 79.53
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 64.05 - CEAFE: 59.62 - LEA 60.31 - CoNLL 65.93
+dev - loss: 0.5368 - CN: 9711 - CL: 27945 - FN: 1915 - FL: 1668 - WL: 1058
+      ranking: 0.9635 - anaphoricity: 0.8443
+Times: metrics: 73.8, minibatch_prep: 2209.8, compile: 42.7, train: 98273.8, link: 64633.6, update b3: 60525.5, preprocess_dataset: 122.2, unlink: 461.2
+
+EPOCH 28, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.61 - B3: 79.86 - CEAFE: 73.38 - LEA 77.83 - CoNLL 79.62
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.16 - B3: 64.08 - CEAFE: 59.77 - LEA 60.31 - CoNLL 66.00
+dev - loss: 0.5413 - CN: 9805 - CL: 27807 - FN: 1785 - FL: 1806 - WL: 1094
+      ranking: 0.9621 - anaphoricity: 0.8452
+Times: metrics: 76.7, minibatch_prep: 2291.6, compile: 42.7, train: 101896.9, link: 67011.6, update b3: 62751.6, preprocess_dataset: 122.2, unlink: 478.2
+
+EPOCH 29, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.44 - B3: 79.68 - CEAFE: 73.27 - LEA 77.57 - CoNLL 79.46
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.12 - B3: 64.02 - CEAFE: 59.86 - LEA 60.25 - CoNLL 66.00
+dev - loss: 0.5393 - CN: 9748 - CL: 27888 - FN: 1860 - FL: 1725 - WL: 1076
+      ranking: 0.9629 - anaphoricity: 0.8447
+Times: metrics: 79.5, minibatch_prep: 2374.3, compile: 42.7, train: 105552.8, link: 69405.0, update b3: 64993.2, preprocess_dataset: 122.2, unlink: 495.4
+
+EPOCH 30, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.59 - B3: 79.84 - CEAFE: 73.36 - LEA 77.78 - CoNLL 79.60
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.22 - B3: 63.96 - CEAFE: 59.79 - LEA 60.23 - CoNLL 65.99
+dev - loss: 0.5379 - CN: 9769 - CL: 27874 - FN: 1840 - FL: 1739 - WL: 1075
+      ranking: 0.9629 - anaphoricity: 0.8452
+Times: metrics: 82.3, minibatch_prep: 2456.5, compile: 42.7, train: 109222.2, link: 71785.0, update b3: 67221.1, preprocess_dataset: 122.2, unlink: 512.3
+
+EPOCH 31, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.63 - B3: 79.91 - CEAFE: 73.47 - LEA 77.86 - CoNLL 79.67
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.07 - B3: 63.85 - CEAFE: 59.71 - LEA 60.11 - CoNLL 65.88
+dev - loss: 0.5403 - CN: 9734 - CL: 27892 - FN: 1887 - FL: 1721 - WL: 1063
+      ranking: 0.9633 - anaphoricity: 0.8436
+Times: metrics: 85.1, minibatch_prep: 2538.8, compile: 42.7, train: 112865.0, link: 74183.6, update b3: 69468.3, preprocess_dataset: 122.2, unlink: 529.4
+
+EPOCH 32, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.65 - B3: 79.98 - CEAFE: 73.56 - LEA 77.95 - CoNLL 79.73
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 64.04 - CEAFE: 59.90 - LEA 60.29 - CoNLL 66.02
+dev - loss: 0.5407 - CN: 9765 - CL: 27873 - FN: 1850 - FL: 1740 - WL: 1069
+      ranking: 0.9631 - anaphoricity: 0.8447
+Best in last 10, saved to weights_30
+Times: metrics: 87.7, minibatch_prep: 2621.8, compile: 42.7, train: 116589.9, link: 76654.0, update b3: 71781.4, preprocess_dataset: 122.2, unlink: 547.2
+
+EPOCH 33, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.61 - B3: 79.94 - CEAFE: 73.48 - LEA 77.86 - CoNLL 79.68
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.92 - B3: 63.98 - CEAFE: 59.92 - LEA 60.18 - CoNLL 65.94
+dev - loss: 0.5417 - CN: 9741 - CL: 27870 - FN: 1866 - FL: 1743 - WL: 1077
+      ranking: 0.9628 - anaphoricity: 0.8437
+Times: metrics: 90.8, minibatch_prep: 2706.2, compile: 42.7, train: 120324.4, link: 79123.3, update b3: 74094.0, preprocess_dataset: 122.2, unlink: 564.8
+
+EPOCH 34, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.70 - B3: 80.10 - CEAFE: 73.72 - LEA 78.04 - CoNLL 79.84
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.91 - B3: 63.81 - CEAFE: 59.71 - LEA 59.99 - CoNLL 65.81
+dev - loss: 0.5407 - CN: 9711 - CL: 27884 - FN: 1896 - FL: 1729 - WL: 1077
+      ranking: 0.9628 - anaphoricity: 0.8427
+Times: metrics: 93.5, minibatch_prep: 2791.2, compile: 42.7, train: 124076.0, link: 81608.3, update b3: 76420.6, preprocess_dataset: 122.2, unlink: 582.4
+
+EPOCH 35, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.66 - B3: 80.01 - CEAFE: 73.55 - LEA 77.98 - CoNLL 79.74
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.98 - B3: 63.95 - CEAFE: 59.87 - LEA 60.16 - CoNLL 65.93
+dev - loss: 0.5419 - CN: 9737 - CL: 27855 - FN: 1860 - FL: 1758 - WL: 1087
+      ranking: 0.9624 - anaphoricity: 0.8433
+Times: metrics: 96.4, minibatch_prep: 2875.7, compile: 42.7, train: 127797.1, link: 84070.5, update b3: 78725.7, preprocess_dataset: 122.2, unlink: 600.0
+
+EPOCH 36, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.71 - B3: 80.12 - CEAFE: 73.66 - LEA 78.08 - CoNLL 79.83
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.04 - B3: 64.02 - CEAFE: 59.95 - LEA 60.24 - CoNLL 66.00
+dev - loss: 0.5436 - CN: 9755 - CL: 27861 - FN: 1842 - FL: 1752 - WL: 1087
+      ranking: 0.9624 - anaphoricity: 0.8444
+Times: metrics: 99.3, minibatch_prep: 2960.5, compile: 42.7, train: 131544.4, link: 86556.7, update b3: 81053.6, preprocess_dataset: 122.2, unlink: 617.8
+
+EPOCH 37, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.70 - B3: 80.09 - CEAFE: 73.74 - LEA 78.03 - CoNLL 79.84
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.00 - B3: 64.06 - CEAFE: 59.75 - LEA 60.33 - CoNLL 65.93
+dev - loss: 0.5390 - CN: 9681 - CL: 27957 - FN: 1959 - FL: 1656 - WL: 1044
+      ranking: 0.9640 - anaphoricity: 0.8427
+Times: metrics: 102.2, minibatch_prep: 3044.8, compile: 42.7, train: 135285.9, link: 89027.9, update b3: 83368.3, preprocess_dataset: 122.2, unlink: 635.5
+
+EPOCH 38, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.75 - B3: 80.13 - CEAFE: 73.74 - LEA 78.11 - CoNLL 79.87
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.08 - B3: 63.88 - CEAFE: 59.63 - LEA 60.13 - CoNLL 65.87
+dev - loss: 0.5414 - CN: 9757 - CL: 27859 - FN: 1841 - FL: 1754 - WL: 1086
+      ranking: 0.9625 - anaphoricity: 0.8444
+Times: metrics: 105.1, minibatch_prep: 3129.1, compile: 42.7, train: 139021.8, link: 91500.4, update b3: 85683.9, preprocess_dataset: 122.2, unlink: 653.1
+
+EPOCH 39, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.72 - B3: 80.13 - CEAFE: 73.73 - LEA 78.09 - CoNLL 79.86
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.17 - B3: 64.23 - CEAFE: 59.87 - LEA 60.48 - CoNLL 66.09
+dev - loss: 0.5435 - CN: 9780 - CL: 27839 - FN: 1826 - FL: 1774 - WL: 1078
+      ranking: 0.9627 - anaphoricity: 0.8446
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_30
+Times: metrics: 108.1, minibatch_prep: 3214.6, compile: 42.7, train: 142782.8, link: 93995.3, update b3: 88019.9, preprocess_dataset: 122.2, unlink: 671.0
+
+EPOCH 40, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.70 - B3: 80.11 - CEAFE: 73.71 - LEA 78.07 - CoNLL 79.84
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.08 - B3: 64.12 - CEAFE: 59.71 - LEA 60.34 - CoNLL 65.97
+dev - loss: 0.5422 - CN: 9783 - CL: 27834 - FN: 1813 - FL: 1779 - WL: 1088
+      ranking: 0.9624 - anaphoricity: 0.8449
+Times: metrics: 110.9, minibatch_prep: 3299.8, compile: 42.7, train: 146564.6, link: 96502.9, update b3: 90368.2, preprocess_dataset: 122.2, unlink: 689.0
+
+EPOCH 41, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.75 - B3: 80.16 - CEAFE: 73.84 - LEA 78.12 - CoNLL 79.91
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 64.05 - CEAFE: 59.77 - LEA 60.25 - CoNLL 65.97
+dev - loss: 0.5447 - CN: 9798 - CL: 27808 - FN: 1801 - FL: 1805 - WL: 1085
+      ranking: 0.9624 - anaphoricity: 0.8446
+Times: metrics: 113.9, minibatch_prep: 3381.9, compile: 42.7, train: 150249.6, link: 98928.7, update b3: 92640.0, preprocess_dataset: 122.2, unlink: 706.3
+
+EPOCH 42, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.74 - B3: 80.17 - CEAFE: 73.77 - LEA 78.14 - CoNLL 79.90
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.15 - B3: 64.03 - CEAFE: 59.67 - LEA 60.30 - CoNLL 65.95
+dev - loss: 0.5437 - CN: 9731 - CL: 27885 - FN: 1887 - FL: 1728 - WL: 1066
+      ranking: 0.9632 - anaphoricity: 0.8434
+Best in last 10, saved to weights_40
+Times: metrics: 116.5, minibatch_prep: 3464.0, compile: 42.7, train: 153925.5, link: 101353.1, update b3: 94910.9, preprocess_dataset: 122.2, unlink: 723.6
+
+EPOCH 43, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.81 - B3: 80.26 - CEAFE: 73.88 - LEA 78.27 - CoNLL 79.99
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.21 - B3: 64.20 - CEAFE: 59.86 - LEA 60.42 - CoNLL 66.09
+dev - loss: 0.5415 - CN: 9762 - CL: 27879 - FN: 1866 - FL: 1734 - WL: 1056
+      ranking: 0.9635 - anaphoricity: 0.8443
+Best in last 10, saved to weights_40
+Times: metrics: 119.4, minibatch_prep: 3546.0, compile: 42.7, train: 157570.2, link: 103754.2, update b3: 97159.1, preprocess_dataset: 122.2, unlink: 740.8
+
+EPOCH 44, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.81 - B3: 80.27 - CEAFE: 73.91 - LEA 78.26 - CoNLL 80.00
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.14 - B3: 64.16 - CEAFE: 59.95 - LEA 60.36 - CoNLL 66.08
+dev - loss: 0.5451 - CN: 9793 - CL: 27816 - FN: 1826 - FL: 1797 - WL: 1065
+      ranking: 0.9631 - anaphoricity: 0.8439
+Times: metrics: 122.3, minibatch_prep: 3626.4, compile: 42.7, train: 161180.5, link: 106115.5, update b3: 99370.7, preprocess_dataset: 122.2, unlink: 757.6
+
+EPOCH 45, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.79 - B3: 80.26 - CEAFE: 73.97 - LEA 78.22 - CoNLL 80.01
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.15 - B3: 64.22 - CEAFE: 59.90 - LEA 60.42 - CoNLL 66.09
+dev - loss: 0.5446 - CN: 9798 - CL: 27799 - FN: 1793 - FL: 1814 - WL: 1093
+      ranking: 0.9622 - anaphoricity: 0.8445
+Best in last 10, saved to weights_40
+Times: metrics: 125.2, minibatch_prep: 3709.1, compile: 42.7, train: 164854.5, link: 108526.8, update b3: 101628.7, preprocess_dataset: 122.2, unlink: 774.8
+
+EPOCH 46, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.73 - B3: 80.17 - CEAFE: 73.83 - LEA 78.12 - CoNLL 79.91
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.08 - B3: 64.08 - CEAFE: 59.72 - LEA 60.26 - CoNLL 65.96
+dev - loss: 0.5457 - CN: 9828 - CL: 27767 - FN: 1734 - FL: 1846 - WL: 1122
+      ranking: 0.9612 - anaphoricity: 0.8459
+Times: metrics: 128.2, minibatch_prep: 3788.2, compile: 42.7, train: 168498.5, link: 110931.1, update b3: 103881.3, preprocess_dataset: 122.2, unlink: 792.1
+
+EPOCH 47, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.83 - B3: 80.36 - CEAFE: 74.06 - LEA 78.31 - CoNLL 80.09
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.14 - B3: 64.08 - CEAFE: 59.85 - LEA 60.30 - CoNLL 66.03
+dev - loss: 0.5434 - CN: 9778 - CL: 27844 - FN: 1817 - FL: 1769 - WL: 1089
+      ranking: 0.9624 - anaphoricity: 0.8450
+Times: metrics: 131.0, minibatch_prep: 3869.6, compile: 42.7, train: 172145.7, link: 113330.2, update b3: 106129.5, preprocess_dataset: 122.2, unlink: 809.1
+
+EPOCH 48, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.89 - B3: 80.40 - CEAFE: 74.06 - LEA 78.41 - CoNLL 80.11
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.08 - B3: 64.05 - CEAFE: 59.82 - LEA 60.25 - CoNLL 65.98
+dev - loss: 0.5428 - CN: 9777 - CL: 27843 - FN: 1832 - FL: 1770 - WL: 1075
+      ranking: 0.9628 - anaphoricity: 0.8444
+Times: metrics: 133.9, minibatch_prep: 3950.7, compile: 42.7, train: 175813.4, link: 115743.1, update b3: 108389.6, preprocess_dataset: 122.2, unlink: 826.4
+
+EPOCH 49, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.93 - B3: 80.47 - CEAFE: 74.17 - LEA 78.49 - CoNLL 80.19
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.12 - B3: 64.02 - CEAFE: 59.75 - LEA 60.20 - CoNLL 65.96
+dev - loss: 0.5428 - CN: 9803 - CL: 27823 - FN: 1792 - FL: 1790 - WL: 1089
+      ranking: 0.9623 - anaphoricity: 0.8455
+Times: metrics: 136.8, minibatch_prep: 4033.6, compile: 42.7, train: 179472.0, link: 118156.0, update b3: 110650.0, preprocess_dataset: 122.2, unlink: 843.7
+
+EPOCH 50, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.89 - B3: 80.41 - CEAFE: 74.14 - LEA 78.39 - CoNLL 80.14
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.16 - B3: 64.19 - CEAFE: 59.96 - LEA 60.42 - CoNLL 66.10
+dev - loss: 0.5416 - CN: 9756 - CL: 27889 - FN: 1855 - FL: 1724 - WL: 1073
+      ranking: 0.9630 - anaphoricity: 0.8450
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_40
+Times: metrics: 139.8, minibatch_prep: 4115.6, compile: 42.7, train: 183114.3, link: 120540.8, update b3: 112883.6, preprocess_dataset: 122.2, unlink: 860.8
+
+EPOCH 51, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.04 - B3: 80.63 - CEAFE: 74.34 - LEA 78.67 - CoNLL 80.34
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.22 - B3: 64.19 - CEAFE: 60.11 - LEA 60.37 - CoNLL 66.17
+dev - loss: 0.5483 - CN: 9847 - CL: 27751 - FN: 1731 - FL: 1862 - WL: 1106
+      ranking: 0.9617 - anaphoricity: 0.8457
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_50
+Times: metrics: 142.6, minibatch_prep: 4198.0, compile: 42.7, train: 186740.3, link: 122911.7, update b3: 115103.6, preprocess_dataset: 122.2, unlink: 877.8
+
+EPOCH 52, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.79 - B3: 80.29 - CEAFE: 73.98 - LEA 78.26 - CoNLL 80.02
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.15 - B3: 64.24 - CEAFE: 59.97 - LEA 60.42 - CoNLL 66.12
+dev - loss: 0.5479 - CN: 9818 - CL: 27787 - FN: 1753 - FL: 1826 - WL: 1113
+      ranking: 0.9615 - anaphoricity: 0.8458
+Best in last 10, saved to weights_50
+Times: metrics: 145.5, minibatch_prep: 4280.0, compile: 42.7, train: 190407.3, link: 125329.2, update b3: 117368.3, preprocess_dataset: 122.2, unlink: 895.1
+
+EPOCH 53, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.93 - B3: 80.48 - CEAFE: 74.24 - LEA 78.48 - CoNLL 80.22
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.21 - B3: 64.02 - CEAFE: 59.94 - LEA 60.21 - CoNLL 66.06
+dev - loss: 0.5454 - CN: 9817 - CL: 27812 - FN: 1774 - FL: 1801 - WL: 1093
+      ranking: 0.9622 - anaphoricity: 0.8460
+Times: metrics: 148.4, minibatch_prep: 4362.6, compile: 42.7, train: 194073.2, link: 127750.1, update b3: 119635.8, preprocess_dataset: 122.2, unlink: 912.4
+
+EPOCH 54, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.96 - B3: 80.55 - CEAFE: 74.32 - LEA 78.55 - CoNLL 80.28
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 63.80 - CEAFE: 59.71 - LEA 59.99 - CoNLL 65.87
+dev - loss: 0.5456 - CN: 9761 - CL: 27846 - FN: 1830 - FL: 1767 - WL: 1093
+      ranking: 0.9622 - anaphoricity: 0.8444
+Times: metrics: 151.2, minibatch_prep: 4444.6, compile: 42.7, train: 197704.3, link: 130136.3, update b3: 121870.9, preprocess_dataset: 122.2, unlink: 929.5
+
+EPOCH 55, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.98 - B3: 80.55 - CEAFE: 74.31 - LEA 78.55 - CoNLL 80.28
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.21 - B3: 64.07 - CEAFE: 60.01 - LEA 60.30 - CoNLL 66.09
+dev - loss: 0.5437 - CN: 9788 - CL: 27855 - FN: 1831 - FL: 1758 - WL: 1065
+      ranking: 0.9632 - anaphoricity: 0.8451
+Times: metrics: 153.9, minibatch_prep: 4527.9, compile: 42.7, train: 201363.2, link: 132544.8, update b3: 124125.8, preprocess_dataset: 122.2, unlink: 946.9
+
+EPOCH 56, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.02 - B3: 80.64 - CEAFE: 74.38 - LEA 78.66 - CoNLL 80.35
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.18 - B3: 64.12 - CEAFE: 60.02 - LEA 60.29 - CoNLL 66.10
+dev - loss: 0.5459 - CN: 9793 - CL: 27823 - FN: 1790 - FL: 1790 - WL: 1101
+      ranking: 0.9619 - anaphoricity: 0.8455
+Times: metrics: 156.7, minibatch_prep: 4609.2, compile: 42.7, train: 204994.0, link: 134925.7, update b3: 126354.8, preprocess_dataset: 122.2, unlink: 964.0
+
+EPOCH 57, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.03 - B3: 80.65 - CEAFE: 74.43 - LEA 78.66 - CoNLL 80.37
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.12 - B3: 64.14 - CEAFE: 59.96 - LEA 60.30 - CoNLL 66.08
+dev - loss: 0.5480 - CN: 9796 - CL: 27794 - FN: 1788 - FL: 1819 - WL: 1100
+      ranking: 0.9619 - anaphoricity: 0.8445
+Times: metrics: 159.6, minibatch_prep: 4691.6, compile: 42.7, train: 208630.6, link: 137319.4, update b3: 128596.6, preprocess_dataset: 122.2, unlink: 981.0
+
+EPOCH 58, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.95 - B3: 80.55 - CEAFE: 74.31 - LEA 78.54 - CoNLL 80.27
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 64.09 - CEAFE: 59.93 - LEA 60.27 - CoNLL 66.04
+dev - loss: 0.5444 - CN: 9764 - CL: 27863 - FN: 1836 - FL: 1750 - WL: 1084
+      ranking: 0.9626 - anaphoricity: 0.8449
+Times: metrics: 162.5, minibatch_prep: 4771.0, compile: 42.7, train: 212214.6, link: 139661.3, update b3: 130790.0, preprocess_dataset: 122.2, unlink: 997.7
+
+EPOCH 59, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.16 - B3: 80.82 - CEAFE: 74.59 - LEA 78.87 - CoNLL 80.52
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.18 - B3: 64.15 - CEAFE: 59.98 - LEA 60.30 - CoNLL 66.10
+dev - loss: 0.5488 - CN: 9831 - CL: 27767 - FN: 1733 - FL: 1846 - WL: 1120
+      ranking: 0.9612 - anaphoricity: 0.8460
+Times: metrics: 165.3, minibatch_prep: 4852.4, compile: 42.7, train: 215820.1, link: 142021.1, update b3: 132999.4, preprocess_dataset: 122.2, unlink: 1014.4
+
+EPOCH 60, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.00 - B3: 80.65 - CEAFE: 74.41 - LEA 78.62 - CoNLL 80.35
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.13 - B3: 64.06 - CEAFE: 59.95 - LEA 60.20 - CoNLL 66.05
+dev - loss: 0.5504 - CN: 9818 - CL: 27755 - FN: 1741 - FL: 1858 - WL: 1125
+      ranking: 0.9610 - anaphoricity: 0.8451
+Times: metrics: 168.1, minibatch_prep: 4931.8, compile: 42.7, train: 219442.8, link: 144404.8, update b3: 135231.4, preprocess_dataset: 122.2, unlink: 1031.5
+
+EPOCH 61, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.98 - B3: 80.62 - CEAFE: 74.41 - LEA 78.60 - CoNLL 80.34
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.18 - B3: 64.31 - CEAFE: 60.04 - LEA 60.50 - CoNLL 66.18
+dev - loss: 0.5457 - CN: 9783 - CL: 27866 - FN: 1810 - FL: 1747 - WL: 1091
+      ranking: 0.9623 - anaphoricity: 0.8462
+New best CoNLL F1, saving model
+Best in last 10, saved to weights_60
+Times: metrics: 170.8, minibatch_prep: 5014.3, compile: 42.7, train: 223095.0, link: 146804.3, update b3: 137478.5, preprocess_dataset: 122.2, unlink: 1048.7
+
+EPOCH 62, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.16 - B3: 80.82 - CEAFE: 74.62 - LEA 78.86 - CoNLL 80.53
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.15 - B3: 64.22 - CEAFE: 59.99 - LEA 60.39 - CoNLL 66.12
+dev - loss: 0.5472 - CN: 9809 - CL: 27780 - FN: 1767 - FL: 1833 - WL: 1108
+      ranking: 0.9616 - anaphoricity: 0.8449
+Best in last 10, saved to weights_60
+Times: metrics: 173.6, minibatch_prep: 5095.4, compile: 42.7, train: 226710.0, link: 149166.1, update b3: 139690.4, preprocess_dataset: 122.2, unlink: 1065.4
+
+EPOCH 63, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.05 - B3: 80.71 - CEAFE: 74.51 - LEA 78.72 - CoNLL 80.43
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.16 - B3: 64.13 - CEAFE: 59.84 - LEA 60.30 - CoNLL 66.04
+dev - loss: 0.5507 - CN: 9837 - CL: 27733 - FN: 1709 - FL: 1880 - WL: 1138
+      ranking: 0.9606 - anaphoricity: 0.8457
+Times: metrics: 176.5, minibatch_prep: 5175.4, compile: 42.7, train: 230320.4, link: 151532.0, update b3: 141906.6, preprocess_dataset: 122.2, unlink: 1082.3
+
+EPOCH 64, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.94 - B3: 80.62 - CEAFE: 74.37 - LEA 78.59 - CoNLL 80.31
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.17 - B3: 64.10 - CEAFE: 59.86 - LEA 60.28 - CoNLL 66.05
+dev - loss: 0.5465 - CN: 9790 - CL: 27848 - FN: 1807 - FL: 1765 - WL: 1087
+      ranking: 0.9624 - anaphoricity: 0.8457
+Times: metrics: 179.3, minibatch_prep: 5258.6, compile: 42.7, train: 234046.1, link: 154001.6, update b3: 144220.2, preprocess_dataset: 122.2, unlink: 1099.9
+
+EPOCH 65, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.12 - B3: 80.80 - CEAFE: 74.62 - LEA 78.83 - CoNLL 80.51
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.20 - B3: 64.14 - CEAFE: 59.82 - LEA 60.32 - CoNLL 66.05
+dev - loss: 0.5491 - CN: 9843 - CL: 27754 - FN: 1729 - FL: 1859 - WL: 1112
+      ranking: 0.9615 - anaphoricity: 0.8458
+Times: metrics: 182.3, minibatch_prep: 5341.8, compile: 42.7, train: 237739.5, link: 156442.3, update b3: 146505.9, preprocess_dataset: 122.2, unlink: 1117.4
+
+EPOCH 66, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.03 - B3: 80.66 - CEAFE: 74.47 - LEA 78.67 - CoNLL 80.38
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.09 - B3: 64.06 - CEAFE: 59.93 - LEA 60.17 - CoNLL 66.03
+dev - loss: 0.5487 - CN: 9818 - CL: 27766 - FN: 1741 - FL: 1847 - WL: 1125
+      ranking: 0.9611 - anaphoricity: 0.8455
+Times: metrics: 185.2, minibatch_prep: 5422.9, compile: 42.7, train: 241433.0, link: 158888.8, update b3: 148798.3, preprocess_dataset: 122.2, unlink: 1134.9
+
+EPOCH 67, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.05 - B3: 80.73 - CEAFE: 74.59 - LEA 78.72 - CoNLL 80.46
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.07 - B3: 63.92 - CEAFE: 59.78 - LEA 60.04 - CoNLL 65.92
+dev - loss: 0.5494 - CN: 9810 - CL: 27791 - FN: 1760 - FL: 1822 - WL: 1114
+      ranking: 0.9615 - anaphoricity: 0.8456
+Times: metrics: 187.9, minibatch_prep: 5506.7, compile: 42.7, train: 245142.9, link: 161340.4, update b3: 151095.2, preprocess_dataset: 122.2, unlink: 1152.4
+
+EPOCH 68, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.07 - B3: 80.75 - CEAFE: 74.63 - LEA 78.76 - CoNLL 80.48
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.18 - B3: 64.18 - CEAFE: 59.96 - LEA 60.33 - CoNLL 66.11
+dev - loss: 0.5518 - CN: 9861 - CL: 27726 - FN: 1704 - FL: 1887 - WL: 1119
+      ranking: 0.9612 - anaphoricity: 0.8460
+Times: metrics: 191.0, minibatch_prep: 5589.4, compile: 42.7, train: 248830.9, link: 163784.2, update b3: 153384.3, preprocess_dataset: 122.2, unlink: 1169.8
+
+EPOCH 69, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 85.93 - B3: 80.57 - CEAFE: 74.42 - LEA 78.56 - CoNLL 80.31
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.24 - B3: 64.08 - CEAFE: 59.98 - LEA 60.27 - CoNLL 66.10
+dev - loss: 0.5491 - CN: 9836 - CL: 27796 - FN: 1747 - FL: 1817 - WL: 1101
+      ranking: 0.9619 - anaphoricity: 0.8466
+Times: metrics: 193.7, minibatch_prep: 5673.2, compile: 42.7, train: 252548.9, link: 166240.0, update b3: 155685.1, preprocess_dataset: 122.2, unlink: 1187.4
+
+EPOCH 70, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.09 - B3: 80.79 - CEAFE: 74.64 - LEA 78.80 - CoNLL 80.51
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.13 - B3: 64.08 - CEAFE: 59.86 - LEA 60.25 - CoNLL 66.02
+dev - loss: 0.5484 - CN: 9829 - CL: 27765 - FN: 1750 - FL: 1848 - WL: 1105
+      ranking: 0.9617 - anaphoricity: 0.8453
+Times: metrics: 196.7, minibatch_prep: 5756.6, compile: 42.7, train: 256271.1, link: 168696.3, update b3: 157985.5, preprocess_dataset: 122.2, unlink: 1204.9
+
+EPOCH 71, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.08 - B3: 80.79 - CEAFE: 74.65 - LEA 78.80 - CoNLL 80.51
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.25 - B3: 64.18 - CEAFE: 60.05 - LEA 60.36 - CoNLL 66.16
+dev - loss: 0.5500 - CN: 9828 - CL: 27790 - FN: 1766 - FL: 1823 - WL: 1090
+      ranking: 0.9623 - anaphoricity: 0.8456
+Best in last 10, saved to weights_70
+Times: metrics: 199.5, minibatch_prep: 5841.6, compile: 42.7, train: 259963.7, link: 171135.7, update b3: 160270.0, preprocess_dataset: 122.2, unlink: 1222.4
+
+EPOCH 72, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.21 - B3: 80.95 - CEAFE: 74.83 - LEA 78.98 - CoNLL 80.66
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.06 - B3: 64.09 - CEAFE: 60.00 - LEA 60.24 - CoNLL 66.05
+dev - loss: 0.5492 - CN: 9793 - CL: 27804 - FN: 1805 - FL: 1809 - WL: 1086
+      ranking: 0.9624 - anaphoricity: 0.8442
+Best in last 10, saved to weights_70
+Times: metrics: 202.5, minibatch_prep: 5926.5, compile: 42.7, train: 263687.7, link: 173586.9, update b3: 162565.3, preprocess_dataset: 122.2, unlink: 1239.9
+
+EPOCH 73, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.16 - B3: 80.91 - CEAFE: 74.84 - LEA 78.92 - CoNLL 80.64
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.12 - B3: 64.02 - CEAFE: 60.04 - LEA 60.19 - CoNLL 66.06
+dev - loss: 0.5481 - CN: 9801 - CL: 27813 - FN: 1785 - FL: 1800 - WL: 1098
+      ranking: 0.9620 - anaphoricity: 0.8454
+Best in last 10, saved to weights_70
+Times: metrics: 205.4, minibatch_prep: 6012.3, compile: 42.7, train: 267411.0, link: 176043.6, update b3: 164865.6, preprocess_dataset: 122.2, unlink: 1257.5
+
+EPOCH 74, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.19 - B3: 80.93 - CEAFE: 74.81 - LEA 78.97 - CoNLL 80.64
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.05 - B3: 63.93 - CEAFE: 59.74 - LEA 60.05 - CoNLL 65.90
+dev - loss: 0.5491 - CN: 9773 - CL: 27813 - FN: 1811 - FL: 1800 - WL: 1100
+      ranking: 0.9620 - anaphoricity: 0.8441
+Times: metrics: 208.4, minibatch_prep: 6096.6, compile: 42.7, train: 271104.3, link: 178478.6, update b3: 167145.9, preprocess_dataset: 122.2, unlink: 1274.9
+
+EPOCH 75, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.19 - B3: 80.95 - CEAFE: 74.84 - LEA 78.97 - CoNLL 80.66
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.00 - B3: 64.09 - CEAFE: 59.94 - LEA 60.23 - CoNLL 66.01
+dev - loss: 0.5482 - CN: 9792 - CL: 27795 - FN: 1784 - FL: 1818 - WL: 1108
+      ranking: 0.9617 - anaphoricity: 0.8446
+Times: metrics: 211.2, minibatch_prep: 6181.9, compile: 42.7, train: 274816.4, link: 180935.8, update b3: 169446.5, preprocess_dataset: 122.2, unlink: 1292.4
+
+EPOCH 76, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.22 - B3: 80.99 - CEAFE: 74.87 - LEA 79.03 - CoNLL 80.69
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.09 - B3: 64.14 - CEAFE: 59.97 - LEA 60.27 - CoNLL 66.07
+dev - loss: 0.5527 - CN: 9856 - CL: 27694 - FN: 1718 - FL: 1919 - WL: 1110
+      ranking: 0.9615 - anaphoricity: 0.8442
+Best in last 10, saved to weights_70
+Times: metrics: 214.1, minibatch_prep: 6267.7, compile: 42.7, train: 278536.5, link: 183400.3, update b3: 171754.7, preprocess_dataset: 122.2, unlink: 1310.0
+
+EPOCH 77, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.07 - B3: 80.83 - CEAFE: 74.71 - LEA 78.81 - CoNLL 80.54
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 64.03 - CEAFE: 59.79 - LEA 60.21 - CoNLL 65.97
+dev - loss: 0.5481 - CN: 9804 - CL: 27783 - FN: 1792 - FL: 1830 - WL: 1088
+      ranking: 0.9623 - anaphoricity: 0.8441
+Times: metrics: 217.1, minibatch_prep: 6352.9, compile: 42.7, train: 282294.7, link: 185891.9, update b3: 174088.9, preprocess_dataset: 122.2, unlink: 1327.8
+
+EPOCH 78, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.28 - B3: 81.06 - CEAFE: 75.01 - LEA 79.11 - CoNLL 80.78
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.16 - B3: 64.14 - CEAFE: 59.84 - LEA 60.33 - CoNLL 66.05
+dev - loss: 0.5532 - CN: 9871 - CL: 27689 - FN: 1709 - FL: 1924 - WL: 1104
+      ranking: 0.9617 - anaphoricity: 0.8446
+Times: metrics: 220.1, minibatch_prep: 6440.8, compile: 42.7, train: 286142.8, link: 188468.9, update b3: 176503.0, preprocess_dataset: 122.2, unlink: 1346.2
+
+EPOCH 79, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.09 - B3: 80.88 - CEAFE: 74.79 - LEA 78.88 - CoNLL 80.59
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.14 - B3: 64.18 - CEAFE: 59.83 - LEA 60.37 - CoNLL 66.05
+dev - loss: 0.5505 - CN: 9850 - CL: 27731 - FN: 1739 - FL: 1882 - WL: 1095
+      ranking: 0.9620 - anaphoricity: 0.8447
+Times: metrics: 223.2, minibatch_prep: 6528.3, compile: 42.7, train: 289943.2, link: 191004.5, update b3: 178877.9, preprocess_dataset: 122.2, unlink: 1364.3
+
+EPOCH 80, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.20 - B3: 80.98 - CEAFE: 74.92 - LEA 78.99 - CoNLL 80.70
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.20 - B3: 64.13 - CEAFE: 59.98 - LEA 60.33 - CoNLL 66.11
+dev - loss: 0.5493 - CN: 9810 - CL: 27796 - FN: 1795 - FL: 1817 - WL: 1079
+      ranking: 0.9626 - anaphoricity: 0.8445
+Best in last 10, saved to weights_70
+Times: metrics: 226.1, minibatch_prep: 6615.5, compile: 42.7, train: 293756.2, link: 193541.8, update b3: 181254.4, preprocess_dataset: 122.2, unlink: 1382.4
+
+EPOCH 81, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.29 - B3: 81.08 - CEAFE: 74.95 - LEA 79.14 - CoNLL 80.77
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.17 - B3: 64.09 - CEAFE: 59.88 - LEA 60.24 - CoNLL 66.04
+dev - loss: 0.5554 - CN: 9889 - CL: 27653 - FN: 1662 - FL: 1960 - WL: 1133
+      ranking: 0.9606 - anaphoricity: 0.8452
+Times: metrics: 229.1, minibatch_prep: 6701.7, compile: 42.7, train: 297545.7, link: 196060.5, update b3: 183613.0, preprocess_dataset: 122.2, unlink: 1400.4
+
+EPOCH 82, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.08 - B3: 80.84 - CEAFE: 74.76 - LEA 78.84 - CoNLL 80.56
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.10 - B3: 63.95 - CEAFE: 59.90 - LEA 60.13 - CoNLL 65.99
+dev - loss: 0.5522 - CN: 9818 - CL: 27767 - FN: 1772 - FL: 1846 - WL: 1094
+      ranking: 0.9621 - anaphoricity: 0.8444
+Best in last 10, saved to weights_80
+Times: metrics: 231.9, minibatch_prep: 6786.8, compile: 42.7, train: 301275.3, link: 198536.8, update b3: 185932.9, preprocess_dataset: 122.2, unlink: 1418.1
+
+EPOCH 83, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.24 - B3: 81.06 - CEAFE: 74.95 - LEA 79.11 - CoNLL 80.75
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.15 - B3: 64.11 - CEAFE: 60.10 - LEA 60.30 - CoNLL 66.12
+dev - loss: 0.5520 - CN: 9842 - CL: 27742 - FN: 1730 - FL: 1871 - WL: 1112
+      ranking: 0.9615 - anaphoricity: 0.8454
+Best in last 10, saved to weights_80
+Times: metrics: 234.8, minibatch_prep: 6872.5, compile: 42.7, train: 304992.2, link: 200987.6, update b3: 188228.1, preprocess_dataset: 122.2, unlink: 1435.7
+
+EPOCH 84, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.24 - B3: 81.08 - CEAFE: 75.00 - LEA 79.11 - CoNLL 80.77
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.15 - B3: 64.04 - CEAFE: 59.96 - LEA 60.20 - CoNLL 66.05
+dev - loss: 0.5523 - CN: 9859 - CL: 27738 - FN: 1721 - FL: 1875 - WL: 1104
+      ranking: 0.9617 - anaphoricity: 0.8458
+Times: metrics: 237.8, minibatch_prep: 6957.3, compile: 42.7, train: 308714.9, link: 203444.8, update b3: 190529.3, preprocess_dataset: 122.2, unlink: 1453.3
+
+EPOCH 85, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.22 - B3: 81.03 - CEAFE: 74.92 - LEA 79.06 - CoNLL 80.72
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.22 - B3: 64.15 - CEAFE: 60.02 - LEA 60.33 - CoNLL 66.13
+dev - loss: 0.5534 - CN: 9885 - CL: 27709 - FN: 1689 - FL: 1904 - WL: 1110
+      ranking: 0.9615 - anaphoricity: 0.8462
+Best in last 10, saved to weights_80
+Times: metrics: 240.8, minibatch_prep: 7041.4, compile: 42.7, train: 312433.0, link: 205903.0, update b3: 192831.1, preprocess_dataset: 122.2, unlink: 1470.9
+
+EPOCH 86, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.17 - B3: 80.98 - CEAFE: 74.91 - LEA 78.98 - CoNLL 80.68
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.19 - B3: 64.10 - CEAFE: 59.78 - LEA 60.29 - CoNLL 66.02
+dev - loss: 0.5495 - CN: 9825 - CL: 27787 - FN: 1763 - FL: 1826 - WL: 1096
+      ranking: 0.9621 - anaphoricity: 0.8456
+Times: metrics: 243.6, minibatch_prep: 7126.7, compile: 42.7, train: 316146.1, link: 208350.5, update b3: 195123.6, preprocess_dataset: 122.2, unlink: 1488.4
+
+EPOCH 87, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.32 - B3: 81.13 - CEAFE: 75.05 - LEA 79.18 - CoNLL 80.83
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.03 - B3: 64.03 - CEAFE: 59.72 - LEA 60.15 - CoNLL 65.92
+dev - loss: 0.5523 - CN: 9871 - CL: 27703 - FN: 1704 - FL: 1910 - WL: 1109
+      ranking: 0.9615 - anaphoricity: 0.8453
+Times: metrics: 246.3, minibatch_prep: 7211.9, compile: 42.7, train: 319842.9, link: 210797.0, update b3: 197414.4, preprocess_dataset: 122.2, unlink: 1505.9
+
+EPOCH 88, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.23 - B3: 81.06 - CEAFE: 75.01 - LEA 79.08 - CoNLL 80.77
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.20 - B3: 64.12 - CEAFE: 59.95 - LEA 60.31 - CoNLL 66.09
+dev - loss: 0.5511 - CN: 9858 - CL: 27746 - FN: 1731 - FL: 1867 - WL: 1095
+      ranking: 0.9620 - anaphoricity: 0.8457
+Times: metrics: 249.3, minibatch_prep: 7295.6, compile: 42.7, train: 323541.1, link: 213241.5, update b3: 199704.1, preprocess_dataset: 122.2, unlink: 1523.4
+
+EPOCH 89, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.23 - B3: 81.03 - CEAFE: 74.88 - LEA 79.08 - CoNLL 80.71
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.08 - B3: 64.17 - CEAFE: 59.96 - LEA 60.31 - CoNLL 66.07
+dev - loss: 0.5544 - CN: 9866 - CL: 27697 - FN: 1697 - FL: 1916 - WL: 1121
+      ranking: 0.9611 - anaphoricity: 0.8452
+Times: metrics: 252.4, minibatch_prep: 7379.6, compile: 42.7, train: 327241.3, link: 215684.5, update b3: 201991.8, preprocess_dataset: 122.2, unlink: 1540.9
+
+EPOCH 90, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.14 - B3: 80.95 - CEAFE: 74.87 - LEA 78.94 - CoNLL 80.66
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.22 - B3: 64.21 - CEAFE: 60.01 - LEA 60.41 - CoNLL 66.15
+dev - loss: 0.5532 - CN: 9858 - CL: 27718 - FN: 1731 - FL: 1895 - WL: 1095
+      ranking: 0.9620 - anaphoricity: 0.8447
+Best in last 10, saved to weights_80
+Times: metrics: 255.2, minibatch_prep: 7462.6, compile: 42.7, train: 330930.8, link: 218129.6, update b3: 204282.1, preprocess_dataset: 122.2, unlink: 1558.4
+
+EPOCH 91, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.22 - B3: 81.07 - CEAFE: 74.99 - LEA 79.09 - CoNLL 80.76
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.96 - B3: 63.78 - CEAFE: 59.79 - LEA 59.86 - CoNLL 65.85
+dev - loss: 0.5565 - CN: 9865 - CL: 27654 - FN: 1674 - FL: 1959 - WL: 1145
+      ranking: 0.9602 - anaphoricity: 0.8445
+Times: metrics: 258.2, minibatch_prep: 7545.8, compile: 42.7, train: 334640.6, link: 220581.6, update b3: 206578.5, preprocess_dataset: 122.2, unlink: 1575.9
+
+EPOCH 92, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.16 - B3: 81.01 - CEAFE: 74.99 - LEA 79.00 - CoNLL 80.72
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.01 - B3: 63.83 - CEAFE: 59.67 - LEA 59.98 - CoNLL 65.83
+dev - loss: 0.5517 - CN: 9778 - CL: 27831 - FN: 1816 - FL: 1782 - WL: 1090
+      ranking: 0.9623 - anaphoricity: 0.8446
+Best in last 10, saved to weights_90
+Times: metrics: 261.1, minibatch_prep: 7629.2, compile: 42.7, train: 338426.5, link: 223022.2, update b3: 208864.2, preprocess_dataset: 122.2, unlink: 1593.4
+
+EPOCH 93, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.42 - B3: 81.27 - CEAFE: 75.22 - LEA 79.38 - CoNLL 80.97
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.03 - B3: 63.88 - CEAFE: 59.73 - LEA 59.99 - CoNLL 65.88
+dev - loss: 0.5545 - CN: 9863 - CL: 27713 - FN: 1692 - FL: 1900 - WL: 1129
+      ranking: 0.9609 - anaphoricity: 0.8460
+Best in last 10, saved to weights_90
+Times: metrics: 264.0, minibatch_prep: 7712.8, compile: 42.7, train: 342118.0, link: 225454.1, update b3: 211141.4, preprocess_dataset: 122.2, unlink: 1610.7
+
+EPOCH 94, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.22 - B3: 81.07 - CEAFE: 75.05 - LEA 79.07 - CoNLL 80.78
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.11 - B3: 64.07 - CEAFE: 59.81 - LEA 60.20 - CoNLL 66.00
+dev - loss: 0.5556 - CN: 9887 - CL: 27684 - FN: 1663 - FL: 1929 - WL: 1134
+      ranking: 0.9606 - anaphoricity: 0.8463
+Best in last 10, saved to weights_90
+Times: metrics: 266.9, minibatch_prep: 7795.7, compile: 42.7, train: 345837.0, link: 227910.7, update b3: 213443.0, preprocess_dataset: 122.2, unlink: 1628.2
+
+EPOCH 95, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.25 - B3: 81.13 - CEAFE: 75.12 - LEA 79.15 - CoNLL 80.83
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.03 - B3: 63.86 - CEAFE: 59.78 - LEA 59.99 - CoNLL 65.89
+dev - loss: 0.5586 - CN: 9887 - CL: 27632 - FN: 1646 - FL: 1981 - WL: 1151
+      ranking: 0.9600 - anaphoricity: 0.8450
+Times: metrics: 269.9, minibatch_prep: 7878.6, compile: 42.7, train: 349538.5, link: 230352.5, update b3: 215730.4, preprocess_dataset: 122.2, unlink: 1645.7
+
+EPOCH 96, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.11 - B3: 80.95 - CEAFE: 74.88 - LEA 78.94 - CoNLL 80.65
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.89 - B3: 63.84 - CEAFE: 59.45 - LEA 59.95 - CoNLL 65.73
+dev - loss: 0.5580 - CN: 9876 - CL: 27625 - FN: 1667 - FL: 1988 - WL: 1141
+      ranking: 0.9603 - anaphoricity: 0.8439
+Times: metrics: 272.8, minibatch_prep: 7962.3, compile: 42.7, train: 353259.6, link: 232809.8, update b3: 218031.9, preprocess_dataset: 122.2, unlink: 1663.3
+
+EPOCH 97, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.19 - B3: 81.04 - CEAFE: 74.94 - LEA 79.05 - CoNLL 80.72
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 73.97 - B3: 63.87 - CEAFE: 59.68 - LEA 59.95 - CoNLL 65.84
+dev - loss: 0.5565 - CN: 9876 - CL: 27647 - FN: 1664 - FL: 1966 - WL: 1144
+      ranking: 0.9603 - anaphoricity: 0.8448
+Times: metrics: 275.7, minibatch_prep: 8045.6, compile: 42.7, train: 356951.6, link: 235245.4, update b3: 220313.3, preprocess_dataset: 122.2, unlink: 1680.6
+
+EPOCH 98, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.25 - B3: 81.12 - CEAFE: 75.07 - LEA 79.13 - CoNLL 80.81
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.03 - B3: 63.89 - CEAFE: 59.81 - LEA 59.98 - CoNLL 65.91
+dev - loss: 0.5571 - CN: 9892 - CL: 27643 - FN: 1656 - FL: 1970 - WL: 1136
+      ranking: 0.9605 - anaphoricity: 0.8451
+Times: metrics: 278.7, minibatch_prep: 8129.1, compile: 42.7, train: 360648.9, link: 237695.6, update b3: 222608.9, preprocess_dataset: 122.2, unlink: 1698.2
+
+EPOCH 99, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.21 - B3: 81.08 - CEAFE: 75.08 - LEA 79.07 - CoNLL 80.79
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.04 - B3: 63.88 - CEAFE: 59.84 - LEA 60.03 - CoNLL 65.92
+dev - loss: 0.5536 - CN: 9826 - CL: 27752 - FN: 1744 - FL: 1861 - WL: 1114
+      ranking: 0.9614 - anaphoricity: 0.8450
+Times: metrics: 281.5, minibatch_prep: 8213.4, compile: 42.7, train: 364348.0, link: 240142.7, update b3: 224900.6, preprocess_dataset: 122.2, unlink: 1715.7
+
+EPOCH 100, model = ./data/models/reward_rescaling/
+Running over training set
+train - MUC: 86.38 - B3: 81.25 - CEAFE: 75.20 - LEA 79.31 - CoNLL 80.94
+Setting costs
+Training
+Testing on dev set
+dev - MUC: 74.01 - B3: 63.81 - CEAFE: 59.79 - LEA 59.93 - CoNLL 65.87
+dev - loss: 0.5558 - CN: 9860 - CL: 27709 - FN: 1695 - FL: 1904 - WL: 1129
+      ranking: 0.9609 - anaphoricity: 0.8457
+Times: metrics: 284.4, minibatch_prep: 8297.3, compile: 42.7, train: 368038.9, link: 242581.4, update b3: 227184.5, preprocess_dataset: 122.2, unlink: 1733.1
+
+Loading data
+Building model
+Setting weights from reward_rescaling
+Evaluating model on dev
+Writing output
+dev - MUC: 74.11 - B3: 64.07 - CEAFE: 59.81 - LEA 60.20 - CoNLL 66.00
+dev - loss: 0.5556 - CN: 9887 - CL: 27684 - FN: 1663 - FL: 1929 - WL: 1134
+      ranking: 0.9606 - anaphoricity: 0.8463
+Loading data
+Building model
+Setting weights from reward_rescaling
+Evaluating model on test
+Writing output
+test - MUC: 0.00 - B3: 0.00 - CEAFE: 0.00 - LEA 0.00 - CoNLL 0.00
+test - loss: 1.2834 - CN: 0 - CL: 29837 - FN: 0 - FL: 13599 - WL: 0
+      ranking: 1.0000 - anaphoricity: 0.0000

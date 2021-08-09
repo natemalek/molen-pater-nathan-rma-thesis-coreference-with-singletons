@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -t 5:00:00
+
+. scripts/setup-cartesius.sh
+. output/e2e/venv/bin/activate
+
+cat scripts/e2e/experiments-cross-eval.conf >> e2e-coref/experiments.conf
+rm -f e2e-coref/logs/cross-eval?
+ln -s `pwd`/e2e-coref/logs/train-orig-gold-retrain-2019-06-06 e2e-coref/logs/cross-eval1
+ln -s `pwd`/e2e-coref/logs/train-no-internal-gold-retrain-2019-06-06 e2e-coref/logs/cross-eval2
+export output_dir=`pwd`/output/e2e # to be used in config files
+
+cd e2e-coref
+python -u test_single.py cross-eval1 | tee $1/cross-eval1.log
+python -u test_single.py cross-eval2 | tee $1/cross-eval2.log
+
+deactivate

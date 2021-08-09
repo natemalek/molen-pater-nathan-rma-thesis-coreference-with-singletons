@@ -1,0 +1,45 @@
+#!/bin/bash
+#SBATCH -t 5-00:00:00
+#SBATCH -p gpu
+#SBATCH --export=NONE
+
+# train up to 4 models at once to take advantage of Cartesius's hardware
+
+set -x
+
+. scripts/setup-cartesius.sh
+. scripts/deep-coref/init-cartesius-gpu.sh
+
+cd deep-coref
+
+if [ $# -eq 0 ]
+then
+    echo "Please provide at least one path"
+    exit 1
+fi
+
+if [ $# -gt 4 ]
+then
+    echo "This script doesn't support training more than 4 models"
+    exit 1
+fi
+
+# training the first model
+THEANO_FLAGS='device=gpu0,floatX=float32' python -u run_all.py $1 &
+
+if [ ! -z "$2" ] # if a second path is provided
+then 
+    THEANO_FLAGS='device=gpu1,floatX=float32' python -u run_all.py $2 &
+fi
+
+if [ ! -z "$3" ] # if a third path is provided
+then 
+    THEANO_FLAGS='device=gpu0,floatX=float32' python -u run_all.py $3 &
+fi
+
+if [ ! -z "$4" ] # if a forth path is provided
+then 
+    THEANO_FLAGS='device=gpu1,floatX=float32' python -u run_all.py $4 &
+fi
+
+wait

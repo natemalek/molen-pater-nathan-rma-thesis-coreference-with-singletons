@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -p normal
+#SBATCH -t 3-00:00:00
+
+set -x
+
+. scripts/setup-cartesius.sh
+# YES="-a"
+
+~/drake $YES output/e2e/results.csv # assuming you have trained e2e models
+# ~/drake $YES output/e2e/eval_all_cross_results.csv
+# ~/drake $YES output/deep-coref/results.csv # assuming you have evaluated deep-coref models

@@ -1,0 +1,17 @@
+!classes/.gitignore
+*.pyc
+*.swp
+*.swo
+*.o
+*.so
+.DS_Store
+.settings/**
+/target/
+/stanford-corenlp-models-current.jar
+/stanford-english-corenlp-models-current.jar
+/stanford-english-kbp-corenlp-models-current.jar
+/nohup.out
+/conlloutput-*
+/log_*
+/.vscode
+drake.log

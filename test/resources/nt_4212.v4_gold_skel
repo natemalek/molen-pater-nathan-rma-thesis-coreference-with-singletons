@@ -1,0 +1,47 @@
+#begin document (pt/nt/42/nt_4212); part 000
+pt/nt/42/nt_4212   1    0    [WORD]    XX        (TOP*                -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1    1    [WORD]    IN    (S(PP(PP*                -    -   -    Luke  *    (ARGM-TMP*     -
+pt/nt/42/nt_4212   1    2    [WORD]    RB       (ADVP*))              -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1    3    [WORD]    RB       (ADVP*))              -    -   -    Luke  *             *)    -
+pt/nt/42/nt_4212   1    4    [WORD]     ,            *                -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1    5    [WORD]    DT      (NP(NP*                -    -   -    Luke  *        (ARG1*     -
+pt/nt/42/nt_4212   1    6    [WORD]    NN            *)               -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1    7    [WORD]    IN         (PP*                -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1    8    [WORD]    CD         (NP*)))             -    -   -    Luke  *             *)    -
+pt/nt/42/nt_4212   1    9    [WORD]    MD         (VP*                -    -   -    Luke  *    (ARGM-MOD*)    -
+pt/nt/42/nt_4212   1   10    [WORD]    VB         (VP*                be   -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1   11    [WORD]   VBN         (VP*            divide  02   -    Luke  *           (V*)    -
+pt/nt/42/nt_4212   1   12    [WORD]     ,            *                -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1   13    [WORD]    CD   (NP(NP(NP*)               -    -   -    Luke  *    (ARGM-MNR*     -
+pt/nt/42/nt_4212   1   14    [WORD]    IN         (PP*                -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1   15    [WORD]    CD         (NP*)))             -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1   16    [WORD]     ,            *                -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1   17    [WORD]    CC            *                -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1   18    [WORD]    CD      (NP(NP*)               -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1   19    [WORD]    IN         (PP*                -    -   -    Luke  *             *     -
+pt/nt/42/nt_4212   1   20    [WORD]    CD         (NP*)))))))         -    -   -    Luke  *             *)    -
+pt/nt/42/nt_4212   1   21    [WORD]     .            *))              -    -   -    Luke  *             *     -
+
+pt/nt/42/nt_4212   1    0    [WORD]   PRP    (TOP(S(NP*)                   -    -   -    Luke  *    (ARG0*)              *           *           *      (45)
+pt/nt/42/nt_4212   1    1    [WORD]   VBP          (VP*                  tell  01   -    Luke  *       (V*)              *           *           *        -
+pt/nt/42/nt_4212   1    2    [WORD]   PRP          (NP*)                   -    -   -    Luke  *    (ARG2*)              *           *           *       (0)
+pt/nt/42/nt_4212   1    3    [WORD]     ,             *                    -    -   -    Luke  *         *               *           *           *        -
+pt/nt/42/nt_4212   1    4    [WORD]   PRP   (SBAR(S(NP*)                   -    -   -    Luke  *    (ARG1*          (ARG0*)          *           *       (0)
+pt/nt/42/nt_4212   1    5    [WORD]    MD          (VP*                    -    -   -    Luke  *         *      (ARGM-MOD*)          *           *        -
+pt/nt/42/nt_4212   1    6    [WORD]    RB             *                    -    -   -    Luke  *         *      (ARGM-NEG*)          *           *        -
+pt/nt/42/nt_4212   1    7    [WORD]    VB          (VP*                   get  05   -    Luke  *         *             (V*)          *           *        -
+pt/nt/42/nt_4212   1    8    [WORD]    IN          (PP*                    -    -   -    Luke  *         *          (ARG2*           *           *        -
+pt/nt/42/nt_4212   1    9    [WORD]    IN          (PP*                    -    -   -    Luke  *         *               *           *           *        -
+pt/nt/42/nt_4212   1   10    [WORD]    RB        (ADVP*)))                 -    -   -    Luke  *         *               *)          *           *        -
+pt/nt/42/nt_4212   1   11    [WORD]    IN        (SBAR*                    -    -   -    Luke  *         *      (ARGM-TMP*           *           *        -
+pt/nt/42/nt_4212   1   12    [WORD]   PRP        (S(NP*)                   -    -   -    Luke  *         *               *      (ARG0*)          *       (0)
+pt/nt/42/nt_4212   1   13    [WORD]   VBP          (VP*                  have   -   -    Luke  *         *               *           *           *        -
+pt/nt/42/nt_4212   1   14    [WORD]   VBN          (VP*                   pay  01   -    Luke  *         *               *         (V*)          *        -
+pt/nt/42/nt_4212   1   15    [WORD]    DT       (NP(NP*                    -    -   -    Luke  *         *               *      (ARG1*      (ARG1*        -
+pt/nt/42/nt_4212   1   16    [WORD]    NN             *)                   -    -   -    Luke  *         *               *           *           *)       -
+pt/nt/42/nt_4212   1   17    [WORD]   PRP   (SBAR(S(NP*)                   -    -   -    Luke  *         *               *           *      (ARG0*)      (0)
+pt/nt/42/nt_4212   1   18    [WORD]   VBP          (VP*)))))))))))))      owe  01   -    Luke  *         *)              *)          *)        (V*)       -
+pt/nt/42/nt_4212   1   19    [WORD]     .             *                    -    -   -    Luke  *         *               *           *           *        -
+pt/nt/42/nt_4212   1   20    [WORD]    ''             *))                  -    -   -    Luke  *         *               *           *           *        -
+
+#end document

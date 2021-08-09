@@ -1,0 +1,131 @@
+... following to SurfSARA's instructions: https://doc.hpccloud.surfsara.nl/gpu-attach
+sudo apt-get remove --purge nvidia-375 nvidia-375-dev nvidia-opencl-icd-375 libcuda1-375
+sudo apt-get install -y libglu1-mesa libxi-dev libxmu-dev libglu1-mesa-dev
+sudo apt-get install -y nvidia-367 nvidia-367-dev nvidia-opencl-icd-367 libcuda1-367 
+sudo apt-mark hold nvidia-367
+sudo apt-mark hold nvidia-367-dev
+sudo apt-mark hold nvidia-opencl-icd-367
+sudo apt-mark hold libcuda1-367
+sudo reboot
+... and connect again
+nvidia-smi
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
+sudo apt-get install -y gcc make g++
+sudo apt-get install -y build-essential linux-headers-`uname -r` dkms
+sudo service lightdm stop
+sudo sh cuda_8.0.61_375.26_linux-run
+... and answer like this (IMPORTANT! say no to the driver):
+Do you accept the previously read EULA?
+accept/decline/quit: accept
+
+Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 375.26?
+(y)es/(n)o/(q)uit: no
+
+Install the CUDA 8.0 Toolkit?
+(y)es/(n)o/(q)uit: yes
+
+Enter Toolkit Location
+ [ default is /usr/local/cuda-8.0 ]:
+
+Do you want to install a symbolic link at /usr/local/cuda?
+(y)es/(n)o/(q)uit: yes
+
+Install the CUDA 8.0 Samples?
+(y)es/(n)o/(q)uit: yes
+
+Enter CUDA Samples Location
+ [ default is /home/ubuntu ]:
+... end of answers
+sudo sh -c 'echo "export PATH=/usr/local/cuda-8.0/bin:\$PATH" >> /etc/profile.d/nvidia.sh'
+sudo sh -c 'echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:\$LD_LIBRARY_PATH" >> /etc/profile.d/nvidia.sh'
+sudo chmod 755 /etc/profile.d/nvidia.sh
+echo "export PATH=/usr/local/cuda-8.0/bin:\$PATH" >> .bashrc
+echo "export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:\$LD_LIBRARY_PATH" >> .bashrc 
+sudo reboot
+... and connect again
+nvidia-smi
+
+... time for Hello world
+wget http://developer.download.nvidia.com/compute/developertrainingmaterials/samples/cuda_c/HelloWorld.zip
+unzip HelloWorld.zip
+nvcc hello.cu
+./a.out
+
+... now install Theano 
+sudo apt-get install -y python-numpy python-scipy python-dev python-pip python-nose libopenblas-dev git python-setuptools
+sudo pip install Theano
+
+... following this blog post: https://medium.com/@wchccy/install-theano-cuda-8-in-ubuntu-16-04-bdb02773e1ea
+sudo apt-get install -y g++-4.9
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 20
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 10
+
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 20
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 10
+
+sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30
+sudo update-alternatives --set cc /usr/bin/gcc
+
+sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30
+sudo update-alternatives --set c++ /usr/bin/g++
+
+# Work around a glibc bug
+echo -e "\n[nvcc]\nflags=-D_FORCE_INLINES\n" >> ~/.theanorc
+
+... test Theano and GPU
+wget https://gist.githubusercontent.com/minhlab/98dc421c5496fe466398ee3a3239633b/raw/ce7de6c81d19494a4060ee7f68643784133e2b82/theano-test-gpu.py
+THEANO_FLAGS=mode=FAST_RUN,device=cpu,floatX=float32 python theano-test-gpu.py
+THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32 python theano-test-gpu.py
+... you should notice a big difference!
+
+... now it's time for EvEn
+sudo apt-get install -y python-pip rsync git unzip mc maven libhdf5-dev python-dev libblas-dev liblapack-dev libatlas-base-dev gfortran 
+sudo apt-get install -y software-properties-common python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install -y oracle-java8-installer
+
+sudo pip install scikit-learn h5py
+
+sudo mkfs.ext3 /dev/vdb
+sudo mkdir /data
+sudo mount /dev/vdb /data
+sudo chmod 777 /data
+df -h
+
+cd /data
+git clone https://bitbucket.org/cltl/even.git
+cd even
+
+... put CoNLL-2012 into data folder
+... run preprocessing script (takes a lot of time)
+cd CoreNLP
+mvn package
+wget http://nlp.stanford.edu/software/stanford-corenlp-models-current.jar http://nlp.stanford.edu/software/stanford-english-corenlp-models-current.jar http://nlp.stanford.edu/software/stanford-english-kbp-corenlp-models-current.jar
+printf "coref.algorithm = neural\ncoref.conll = true\ncoref.data = /data/data/conll-2012/\n" > neural-english-conll.properties
+cat neural-english-conll.properties
+java -Xmx2g -cp target/stanford-corenlp-3.7.0.jar:stanford-corenlp-models-current.jar:stanford-english-corenlp-models-current.jar:stanford-english-kbp-corenlp-models-current.jar:`ls lib/*.jar | sed ':a;N;$!ba;s/\n/:/g'` edu.stanford.nlp.coref.neural.NeuralCorefDataExporter neural-english-conll.properties ../deep-coref/data
+# make a coffee and wait patiently
+wc ../deep-coref/data/data_raw/train
+#  2802   66587900 1283373446 ../deep-coref/data/data_raw/train
+wc ../deep-coref/data/gold/train
+#  2802   2802 562990 ../deep-coref/data/gold/train
+
+... this is to bypass the preparation of CoNLL-2012 and the preprocessing step
+... run on my local:
+scp /Users/cumeo/Projects/spinoza/ulm-4/EvEn/data.zip ubuntu@145.100.59.58:/data/even/
+scp /Users/cumeo/Projects/spinoza/ulm-4/EvEn/deep-coref/data-full.zip ubuntu@145.100.59.58:/data/even/deep-coref/
+
+... run on the VM:
+unzip data.zip 
+cd deep-coref/
+unzip data-full.zip
+ln -s data-full data 
+cd modified_keras/
+sudo python setup.py install
+cd ..
+
+echo "export THEANO_FLAGS=mode=FAST_RUN,device=gpu,floatX=float32" >> .bashrc
+. .bashrc 
+nohup python run_all.py &

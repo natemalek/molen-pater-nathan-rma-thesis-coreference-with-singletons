@@ -1,0 +1,123 @@
+#view-pane {
+    display: none;
+}
+
+#annotate-pane.linking {
+	cursor: crosshair;
+}
+
+.mention {
+    /* background-color: yellow; */
+    cursor: pointer;
+}
+
+.mention.todo {
+    background-color: red;
+}
+
+.blank {
+    text-decoration: underline;
+}
+
+.chain-id {
+    vertical-align: sub;
+    font-size: small;
+}
+
+/* second-level mention to handle, well, nested mentions */
+.mention.target, .mention.todo.target,
+.mention.target .mention, .mention.todo.target .mention,
+.mention.target input, .mention.todo.target input {
+	/* background-color: yellow; */
+	font-weight: bold;
+}
+
+.mention.selected, .mention.todo.selected,
+.mention.selected .mention, .mention.todo.selected .mention {
+    /* background-color: green; */
+	font-weight: bold;
+    /* color: black; */
+}
+
+.mention-note {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    text-align: center;
+}
+
+#instructions {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    padding: 10px 10px 10px 10px;
+    width: 800px;
+    background-color: burlywood;
+}
+
+#submission-info {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    padding: 10px 10px 10px 10px;
+    background-color: burlywood;
+}
+
+#replay-dialog {
+    display: none;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    padding: 10px 10px 10px 10px;
+    background-color: burlywood;
+}
+
+#notification-wrapper.highlighted {
+    background-color: lightyellow;
+}
+
+#sentence-counter {
+    color: darkgray;
+}
+
+#link-to-the-top {
+    color: darkgray;
+    text-decoration: none;
+}
+
+#toolbar {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#toolbar li {
+    float: left;
+}
+
+#toolbar li button {
+    display: block;
+    text-align: center;
+    margin: 0 2px 0 0;
+    padding: 8px;
+}
+
+#form-submission-error-message {
+    color: red;
+}
+
+#summary li a {
+    color: inherit;
+}
+
+
+.sentence-end {
+    display: inline-block;
+    vertical-align: sub;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAACrgAAAq4BbewyGgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF4SURBVCiRjZJBT9pgAIaffnzQUlJKgQKbgiQMZtxu4+BpB+Mf8L/u4E0PJmZZwoGNGNgYQnQrkrVSCB3Rft1t8cjzB543eV5t9OXTz/L+YeLUWiv/18jWhEic2pvQ//09D1B81Q4D70c+UUozrPKAbRQOkh3xpv2Z0ERKsSPFWmspfW9sV+rv+XZ9zXazQcUxb7tdMrpO7/ISKSUAzaMjnIojpFNprhZ3dwB0T09JkgQVx0TrNYZp8uHk5L9hPvtqSU2kVM62mV9dYZgmtYMDLMcBYBUETAYDAKqNBsVaayl8b2zn8nk+np1hmCa9iwtmwyEAumFQcF0Krkta10lULKRdaqyVUmQMg3qnQ862md7cUKxWyWSzOJXKi0lDS8pM9vlxsWDU6yHTabZRxLvjYzRNw/c8Pp+fA7DfbuPuNVd40/5s1w7bKBwIu9RY79oheLi15Mq//7MJHyYvL1B83VkG3thS8ZMo7R0uH+cT6/npb6pQrvf/AfXM6iTrACjNAAAAAElFTkSuQmCC');
+    width: 12px;
+    height: 12px;
+}

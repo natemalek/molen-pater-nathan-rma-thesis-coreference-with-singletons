@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -t 23:00:00
+#SBATCH -p gpu
+#SBATCH --export=NONE
+
+set -x
+
+. scripts/setup-cartesius.sh
+. output/e2e/venv/bin/activate 
+
+cd e2e-coref
+
+BASH=${2-"../scripts/e2e/portable-timeout.sh 3600"}
+sleep 600 && $BASH python -u evaluator.py $1 &
+GPU=1 $BASH python -u singleton.py $1
+
+deactivate

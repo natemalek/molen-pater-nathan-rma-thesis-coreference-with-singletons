@@ -1,0 +1,78 @@
+<head>
+        <style>{css_content}</style>
+        <script type="text/javascript" src=https://code.jquery.com/jquery-3.3.1.min.js></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+        <script>
+                {js_content}
+        </script>
+</head>
+<body>
+<a name="top"></a>
+<form id="form" action={form_action} method="post">
+<div id="instructions">
+<h3>Instructions <button id="btn_close_instructions" type="button">Close</button></h3>
+<p>In this HIT we investigate how language is used to refer to the same thing (or person) multiple times.</p>
+<h4>The Task</h4>
+<p>People can use pronouns (for example <em>they</em>, <em>he</em>, <em>she</em>), repeat a name 
+(for example <em>John</em>, <em>the US</em>), and other ways to point to people or things in the world.
+Your task is to put all expressions that refer to the same thing, person, location, etc.
+into one group, marked by a number. For example:</p>
+<blockquote><em>[Martha]<sub>1</sub> is very kind. [She]<sub>1</sub> often helps [her]<sub>1</sub> neighbors.</em></blockquote>
+<p>Not only people and objects can be referred to but also events. In those cases, we mark the verb, for example:</p>
+<blockquote><em>Robert [won]<sub>2</sub> his third race in a year. [It]<sub>2</sub> makes me jealous.</em></blockquote>
+<h4>User Interface</h4>
+<ul>
+        <li>Once you finish annotating the first sentence, the second will appear and so on.</li>
+        <li>Click on any highlighted expressions to select an existing group or start a new one.</li>
+        <li>When a group is selected (printed in bold), click on an expression to add/remove it to/from the group.</li>
+        <li>To save the annotation and move on to a new group (you can always come back), use the button "Save" (hot key: Enter or Space).</li>
+        <li>To ignore the current grouping and revert back to the last time you press "Save", use the button "Cancel".</li>
+        <li>To skip one expression (only when you're not certain about its grouping), use the button "Skip".</li>
+        <li>Each blank represents one word. Blanks are editable. While you are editing, use Tab to move to the next blank
+                and Shift+Tab to go to the previous one. You are encouraged to fill them to support your memory 
+                but they are not used to grade your work.</li>
+        <li>Notice that an expression might enclose one another -- you need to put each of them in its right group.</li>
+        <li>These instructions can be shown using the button "Instructions".</li>
+</ul>
+</div>
+<div>
+<ul id="toolbar">
+        <!-- <li><button id="btn_start_grouping" type="button">Group (hot key: g)</button></li> -->
+        <li><button id="btn_save_grouping" type="button">Save (hot key: Enter or Space)</button></li>
+        <li><button id="btn_cancel_grouping" type="button">Cancel</button></li>
+        <li><button id="btn_skip_expression" type="button">Skip</button></li>
+        <li><button id="btn_display_instructions" type="button">Instructions</button></li>
+        <li><button id="btn_submit" type="submit" name="submit">Submit</button></li>
+</ul>
+<div id="notification-wrapper">
+        &nbsp;
+        <span id="notification"></span>
+</div>
+</div>
+
+<div id="annotate-pane">
+{content}
+</div>
+<div id="sentence-counter"></div>
+<input type="hidden" name="doc" value="{doc.identifier}"/>
+<input type="hidden" name="conll_file" value="{inp_path}"/>
+<input type="hidden" name="sent_begin" value="{sent_begin}"/>
+<input type="hidden" name="sent_end" value="{sent_end}"/>
+<input type="hidden" name="chains" value="" id="chains"/>
+<input type="hidden" name="blanks" value="" id="blanks"/>
+<input type="hidden" name="events" value="" id="events"/>
+<h4>Marked persons/things/locations/events:</h4>
+<ol id="summary"></ol>
+<p>
+<label>What did you find difficult in this HIT (if any)?<br/>
+<textarea name="problems" rows=2 cols=80></textarea>
+</label>
+</p>
+<p>
+<label>How can we improve this HIT?<br/>
+<textarea name="improvement" rows=2 cols=80></textarea>
+</label>
+</p>
+<a id="link-to-the-top" href="#top">^^^ Go to the top ^^^</a>
+</form>
+</body>

@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH -p short
+#SBATCH -t 01:00:00
+
+. output/cort/venv/bin/activate
+
+# fix a problem on my Mac, doesn't hurt elsewhere
+export CFLAGS=-I`python3 -c 'import numpy; print(numpy.get_include())'`
+
+python3 -u scripts/cort/train_all.py --num_processes=$4 --type=$1 $2 $3
+script_exit_code=$?
+
+deactivate
+
+exit $script_exit_code

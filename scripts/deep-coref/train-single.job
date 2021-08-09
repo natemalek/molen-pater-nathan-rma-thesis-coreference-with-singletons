@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH -t 2-00:00:00
+#SBATCH -p gpu
+#SBATCH --export=NONE
+
+# NOTICE: training only one model on a Cartesius node is wasteful,
+# please use this for testing only
+
+set -x
+
+. scripts/deep-coref/init-cartesius-gpu.sh
+
+cd deep-coref
+python -u run_all.py $1

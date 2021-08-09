@@ -1,0 +1,415 @@
+;=============================
+; Transformations
+;=============================
+
+data/conll-2012 <- data/ontonotes-release-5.0 [-timecheck]
+    # git checkout 9683407 && 
+    scripts/setup-conll-2012.sh
+
+conll_2012_flat=data/conll-2012-flat
+
+; timecheck is disabled to reduce drake startup time
+$[conll_2012_flat] <- data/conll-2012 [-timecheck]
+    # git checkout 2a8f166 && 
+    python3 create-flattened-conll-2012.py
+
+conll_2012_transformed_mencon=output/conll-2012-transformed-mentions-context
+conll_2012_transformed_names=output/conll-2012-transformed-names
+conll_2012_transformed=output/conll-2012-transformed
+
+$[conll_2012_transformed_mencon], $[conll_2012_transformed_mencon]/.SUCCESS <- $[conll_2012_flat] [-timecheck]
+    rm -rf $OUTPUTS
+    python3 -u scripts/transformations/mask_mentions_or_context.py $INPUTS $OUTPUT0 && touch $OUTPUT1
+
+$[conll_2012_transformed_names], $[conll_2012_transformed_names]/.SUCCESS <- $[conll_2012_flat] [-timecheck]
+    rm -rf $OUTPUTS
+    python3 -u scripts/transformations/replace_names.py $INPUTS $OUTPUT0 && touch $OUTPUT1
+
+; timecheck is disabled because the links make drake think that the outputs are as recent as inputs and suggest to recompute them all the time
+; added a symbolic link from output/conll-2012-transformed.v2 to output/conll-2012-transformed for compatibility with some old annotation data
+$[conll_2012_transformed], $[conll_2012_transformed]/.SUCCESS <- $[conll_2012_transformed_mencon], $[conll_2012_transformed_names], $[conll_2012_transformed_mencon]/.SUCCESS, $[conll_2012_transformed_names]/.SUCCESS [-timecheck]
+    rm -rf $OUTPUTS $OUTPUT0.v2
+    mkdir $OUTPUT0 && ln -s $INPUT0/* $OUTPUT0/ && ln -s $INPUT1/* $OUTPUT0/ && ln -s $OUTPUT0 $OUTPUT0.v2 && touch $OUTPUT1
+
+conll_2012_consolidated=output/conll-2012-consolidated
+conll_2012_by_genre=output/conll-2012-by_genre
+conll_2012_resampled=output/conll-2012-transformed-resampled
+
+; timecheck is disabled because the corpus is so massive it would take too long
+; if you change a previous step, make sure to `rm -rf` this step
+$[conll_2012_consolidated], $[conll_2012_consolidated].SUCCESS <- $[conll_2012_transformed] [-timecheck]
+    rm -rf $OUTPUT0
+    python3 -u scripts/transformations/consolidate_copora.py $INPUTS $OUTPUT0 && touch $OUTPUT1
+
+; timecheck is disabled because the corpus is so massive it would take too long
+; if you change a previous step, make sure to `rm -rf` this step
+$[conll_2012_by_genre], $[conll_2012_by_genre].SUCCESS <- $[conll_2012_transformed] [-timecheck]
+    rm -rf $OUTPUT0
+    python3 -u scripts/transformations/consolidate_copora.py $INPUTS $OUTPUT0 --genre && touch $OUTPUT1
+
+$[conll_2012_resampled], $[conll_2012_resampled]/.SUCCESS <- $[conll_2012_consolidated], $[conll_2012_consolidated].SUCCESS [-timecheck]
+    rm -rf $OUTPUTS
+    python3 -u scripts/resampling/generate_resamples.py --dsname=dev_test.m_gold_conll $INPUT0 $OUTPUT0 && touch $OUTPUT1
+    
+
+;=============================
+; Statistics
+;=============================
+
+output/genre_name_coverage.pdf <- data/conll-2012
+    python3 -m nbconvert --execute --ExecutePreprocessor.timeout=0 notebooks/stats_name_coverage.ipynb
+
+output/pct_unique_names.tex <- data/conll-2012
+    python3 -m nbconvert --execute --ExecutePreprocessor.timeout=0 notebooks/stats_unique_tokens.ipynb
+
+
+;=============================
+; Baselines
+;=============================
+
+baselines=output/baselines
+
+$[baselines], $[baselines]/.SUCCESS <- $[conll_2012_resampled], $[conll_2012_resampled]/.SUCCESS 
+    rm -rf $OUTPUT0
+    echo -n "Started: " && date
+    python3 -u scripts/run_baselines.py --n_jobs=16 --out_dir=$OUTPUT0 $INPUT0/sample*/*/*_conll && touch $OUTPUT1
+    echo -n "Finished: " && date
+
+$[baselines]-results.csv <- $[baselines]
+    export PYTHONPATH=$PYTHONPATH:.
+    python3 -u scripts/extract_results_baselines.py --out=$OUTPUT0 $INPUT0/*.log
+
+
+;=============================
+; Stanford sieve
+;=============================
+
+stanford_sieve=output/stanford-sieve
+
+$[stanford_sieve], $[stanford_sieve]/.SUCCESS <- $[conll_2012_resampled]
+    rm -rf $OUTPUT0
+    echo -n "Started: " && date
+    python3 -u scripts/run_stanford_sieve.py --n_jobs=12 --out_dir=$OUTPUT0 $INPUT0/sample*/*/*_conll && touch $OUTPUT1
+    echo -n "Finished: " && date
+
+$[stanford_sieve]-results.csv <- $[stanford_sieve]
+    python3 scripts/extract_results_stanford_sieve.py --out=$OUTPUT0 $INPUT0/*.log
+
+
+;=============================
+; bert-coref
+;=============================
+
+conll_minimized=output/e2e/conll-2012-minimized
+conll_resampled_minimized=output/e2e/conll-2012-resampled-minimized
+
+output/bert/venv <- scripts/bert/setup.sh
+    printf "\n\n\nSetting up venv for bert: see bert.md\n\n\n"
+    exit 1
+
+
+;=============================
+; e2e-coref
+;=============================
+
+conll_minimized=output/e2e/conll-2012-minimized
+conll_resampled_minimized=output/e2e/conll-2012-resampled-minimized
+
+output/e2e/venv <- scripts/e2e/setup.sh
+    printf "\n\n\nSetting up venv for e2e: see README.md\n\n\n"
+    exit 1
+
+$[conll_minimized], $[conll_minimized]/.SUCCESS <- $[conll_2012_consolidated], output/e2e/venv
+    rm -rf $OUTPUTS
+    python3 -u scripts/e2e/gencmd_minimize_datasets.py $INPUTS $conll_minimized.sh $OUTPUT0 && bash $conll_minimized.sh && touch $OUTPUT1
+
+$[conll_resampled_minimized], $[conll_resampled_minimized]/.SUCCESS <- $[conll_2012_resampled], output/e2e/venv
+    rm -rf $OUTPUTS
+    python3 -u scripts/e2e/gencmd_minimize_datasets.py $INPUTS $OUTPUT0.sh $OUTPUT0 && bash $conll_resampled_minimized.sh && touch $OUTPUT1
+
+e2e_model_suffix=2019-06-06
+e2e_sample_trained_model=e2e-coref/logs/train-orig-gold-retrain-$[e2e_model_suffix]
+e2e_train_all=output/e2e/train_all
+e2e_evaluate_all=output/e2e/eval
+
+$[e2e_train_all].sh <- $[conll_2012_consolidated], $[conll_minimized]
+    # git checkout 4bf245867a909a6725968bf190541f52d82dc991
+    rm -rf $OUTPUTS
+    python3 -u scripts/e2e/gencmd_train_all.py $INPUTS $e2e_model_suffix $e2e_train_all.sh
+
+$[e2e_sample_trained_model] <- $[e2e_train_all].sh
+    bash -x output/e2e/train_all.sh sbatch ""
+    echo "Wait until all models are trained (less than a day)"
+    exit 1
+
+output/e2e/eval_scripts <- $[conll_2012_resampled], $[conll_resampled_minimized] [-timecheck]
+    rm -rf $OUTPUTS
+    python3 -u scripts/e2e/gencmd_eval_all.py --suffix=$e2e_model_suffix $INPUTS $OUTPUT0 $e2e_evaluate_all && chmod -R a+x $OUTPUT0
+
+$[e2e_evaluate_all] <- output/e2e/eval_scripts
+    rm -rf $OUTPUTS
+    mkdir $OUTPUT0
+    for eval_script in $(ls $INPUT0)
+    do
+        sbatch $INPUT0/$eval_script
+    done
+    printf "\n\n\nPlease wait until all scripts finish\n\n\n"
+
+output/e2e/eval-cross <- $[conll_2012_resampled], $[conll_resampled_minimized] [-timecheck]
+    rm -rf $OUTPUTS
+    mkdir $OUTPUT0
+    sbatch scripts/e2e/eval-cross.job $OUTPUT0
+
+output/e2e/results.csv <- $[e2e_evaluate_all]
+    python3 -u scripts/e2e/extract_results.py $INPUT0 $OUTPUT0
+
+output/e2e/eval_all_cross_logs, output/e2e/eval_all_cross_logs/.SUCCESS <- output/e2e/eval_all_cross.job
+    rm -rf $OUTPUTS
+    mkdir $OUTPUT0
+    echo "Submitting and waiting for SLURM job to finish... Please run squeue and check job log for progress."
+    sbatch -W $INPUT0
+    touch $OUTPUT1
+
+output/e2e/eval_all_cross_results.csv <- output/e2e/eval_all_cross_logs, output/e2e/eval_all_cross_logs/.SUCCESS
+    exit 1 # TODO
+
+;=============================
+; cort
+;=============================
+
+output/cort/venv/bin/cort-train, output/cort/setup.SUCCESS <- [-timecheck]
+    rm -rf output/cort/venv
+    scripts/cort/setup.sh > output/cort/setup.log && touch $OUTPUT1
+
+; because different types of models have different memeory requirement
+; we train them using separate commands
+
+output/cort/models-pair, output/cort/models-pair/.SUCCESS <- output/cort/setup.SUCCESS, $[conll_2012_consolidated]
+    NUM_JOBS=8 # 8 concurrent jobs for thin nodes in Cartesius with 64GB RAM
+    rm -rf $OUTPUT0
+    scripts/cort/train_all.job pair $INPUT1 $OUTPUT0 $NUM_JOBS && touch $OUTPUT1
+
+output/cort/models-tree, output/cort/models-tree/.SUCCESS <- output/cort/setup.SUCCESS, $[conll_2012_consolidated]
+    rm -rf $OUTPUT0
+    NUM_JOBS=4 # 4 concurrent jobs for thin nodes in Cartesius with 64GB RAM
+    scripts/cort/train_all.job tree $INPUT1 $OUTPUT0 $NUM_JOBS && touch $OUTPUT1
+
+output/cort/models-latent, output/cort/models-latent/.SUCCESS <- output/cort/setup.SUCCESS, $[conll_2012_consolidated]
+    rm -rf $OUTPUT0
+    NUM_JOBS=4 # 4 concurrent jobs for thin nodes in Cartesius with 64GB RAM
+    scripts/cort/train_all.job latent $INPUT1 $OUTPUT0 $NUM_JOBS && touch $OUTPUT1
+
+output/cort/models, output/cort/models/.SUCCESS <- output/cort/models-pair, output/cort/models-tree, output/cort/models-latent
+    rm -rf $OUTPUTS
+    mkdir $OUTPUT0 && cp $INPUT0/* $OUTPUT0/ && cp $INPUT1/* $OUTPUT0/ && cp $INPUT2/* $OUTPUT0/ && touch $OUTPUT1
+
+output/cort/eval, output/cort/eval/.SUCCESS <- output/cort/models, $[conll_2012_resampled]
+    rm -rf $OUTPUTS
+    scripts/cort/eval_all.job --n_jobs=8 --model_dir=$INPUT0 --out_dir=$OUTPUT0 $INPUT1/sample*/*/*_conll && touch $OUTPUT1
+
+output/cort/results.csv <- output/cort/eval
+    python3 -u scripts/cort/extract_results.py --out=$OUTPUT0 $INPUT0/*/*/*.log
+
+;=============================
+; deep-coref
+;=============================
+
+scratch=/scratch-shared/minhle/EvEn
+deep_coref_conll=output/deep-coref/conll-2012-transformed-reformatted
+deep_coref_conll_exported=$[scratch]/output/deep-coref/conll-2012-transformed-exported
+deep_coref_conll_resampled=$[scratch]/output/deep-coref/conll-2012-transformed-resampled
+deep_coref_conll_resampled_reformatted=$[scratch]/output/deep-coref/conll-2012-transformed-resampled-reformatted
+deep_coref_conll_resampled_exported=$[scratch]/output/deep-coref/conll-2012-transformed-resampled-exported
+deep_coref_model_sample=$[scratch]/output/deep-coref/conll-2012-transformed-exported/orig/models/reward_rescaling/best_weights.hdf5
+
+; timecheck is disabled to reduce drake startup time
+$[deep_coref_conll], $[deep_coref_conll]/.SUCCESS <- $[conll_2012_transformed] [-timecheck]
+    rm -rf $OUTPUT0
+    python3 -u scripts/deep-coref/join_dev_test.py $INPUT0 $OUTPUT0 && touch $OUTPUT1
+
+; timecheck is disabled to reduce drake startup time
+$[deep_coref_conll_exported], $[deep_coref_conll_exported]/.SUCCESS <- $[deep_coref_conll] [-timecheck]
+    # last tested commit: 195e92b116cc8c175429b40cef895b48cce7bf37
+    rm -rf $OUTPUT0
+    python3 -u scripts/deep-coref/export_all_datasets.py \
+            --command=`pwd`/scripts/deep-coref/export_dataset.sh \
+            $INPUT0 $OUTPUT0 && touch $OUTPUT1
+
+; timecheck is disabled to reduce drake startup time
+$[deep_coref_conll_resampled], $[deep_coref_conll_resampled]/.SUCCESS <- $[conll_2012_resampled] [-timecheck]
+    rm -rf $OUTPUT0
+    python3 -u scripts/deep-coref/unpack_corpora.py $INPUT0 $OUTPUT0 && touch $OUTPUT1
+
+; we need to depend on ".SUCCESS" instead of the whole folder because 
+; the training process itself writes into the folder, causing drake to repeat steps
+output/deep-coref/train_all.sh <- $[deep_coref_conll_exported]/.SUCCESS
+    python3 -u scripts/deep-coref/gencmd_train_all.py $deep_coref_conll_exported $OUTPUT0 && chmod a+x $OUTPUT0
+
+$[deep_coref_model_sample] <- output/deep-coref/train_all.sh
+    # last run: cfed3743561e4190ad5d87ea45c9058f2afc9fee
+    rm output/deep-coref/train_all.SUCCESS
+    bash -x $INPUT sbatch
+    printf "\n\n\nPlease wait until all models are trained (5-7 days)\n\n\n"
+    printf "Press enter to exit (drake will show an error, please ignore)\n"
+    read
+    exit 1
+
+output/deep-coref/train_all.SUCCESS <- output/deep-coref/train_all.sh
+    printf "\n\n\nPlease check that all deep-coref models were trained...\n"
+    printf "If yes, please run \"touch output/deep-coref/train_all.SUCCESS\"\n\n\n"
+    printf "Press enter to exit (drake will show an error, please ignore)\n"
+    read
+    exit 1
+
+; we don't need this any more because the input folder already contain a joined dataset
+;; timecheck is disabled to reduce drake startup time
+;$[deep_coref_conll_resampled_reformatted], $[deep_coref_conll_resampled_reformatted]/.SUCCESS <- $[deep_coref_conll_resampled] [-timecheck]
+;    rm -rf $OUTPUT0
+;    for sample in $(ls $INPUT0)
+;    do
+;        python3 -u scripts/deep-coref/join_dev_test.py $INPUT0/$sample $OUTPUT0/$sample
+;    done;
+;    touch $OUTPUT1
+
+; timecheck is disabled to reduce drake startup time
+$[deep_coref_conll_resampled_exported], $[deep_coref_conll_resampled_exported]/.SUCCESS <- $[deep_coref_conll_resampled] [-timecheck]
+    # last tested commit: 97f493093aa00f99b817cf42d79c7595acf4d3bd
+    echo rm -rf $OUTPUT0
+    for sample in $(ls $INPUT0)
+    do
+        python3 -u scripts/deep-coref/export_all_datasets.py \
+                --command=`pwd`/scripts/deep-coref/export_dataset.sh \
+                $INPUT0/$sample $OUTPUT0/$sample && touch $OUTPUT1
+    done;
+
+output/deep-coref/logs <- $[deep_coref_conll_resampled_exported], $[deep_coref_conll_exported] [-timecheck] ;, output/deep-coref/train_all.SUCCESS
+    rm -rf $OUTPUT0 
+    sbatch scripts/deep-coref/eval-multiple-python-models-multiple-samples.job $INPUT0 $INPUT1 $OUTPUT0
+    printf "\n\n\nPlease wait until all models are evaluated (a few hours)\n\n\n"
+    printf "Press enter to exit (drake will show an error, please ignore)\n"
+    read
+    exit 1
+
+output/deep-coref/results.csv <- output/deep-coref/logs
+    python3 scripts/deep-coref/extract_results.py --out=$OUTPUT0 $INPUT0/*/*.log
+
+;=============================
+; Mechanical Turk/Student annotation experiments
+;=============================
+
+mturk_input_dir = $[conll_2012_transformed]
+
+;
+; CLTL annotations (23rd Jan 2019)
+;
+
+mturk_cltl_all=output/mturk/cltl-2019-01-23
+mturk_cltl_unmasked_conf=mturk/configs/cltl-2019-01-23-unmasked.conf
+mturk_cltl_unmasked=output/mturk/cltl-2019-01-23-unmasked
+mturk_cltl_masked_conf=mturk/configs/cltl-2019-01-23-masked.conf
+mturk_cltl_masked=output/mturk/cltl-2019-01-23-masked
+
+$[mturk_cltl_unmasked], $[mturk_cltl_unmasked]/.SUCCESS <- $[mturk_input_dir].SUCCESS [-timecheck]
+    # git checkout 4bf4d66
+    rm -rf $OUTPUT0
+    python3 -u mturk/gen_document.py $mturk_cltl_unmasked_conf && touch $OUTPUT1
+
+$[mturk_cltl_masked], $[mturk_cltl_masked]/.SUCCESS <- $[mturk_input_dir].SUCCESS [-timecheck]
+    # git checkout 4bf4d66
+    rm -rf $OUTPUT0
+    python3 -u mturk/gen_document.py $mturk_cltl_masked_conf && touch $OUTPUT1
+
+$[mturk_cltl_unmasked].submit <- $[mturk_cltl_unmasked].SUCCESS
+    python3 -u mturk/submit.py $mturk_cltl_unmasked_conf && touch $OUTPUT0
+
+$[mturk_cltl_masked].submit <- $[mturk_cltl_masked].SUCCESS
+    python3 -u mturk/submit.py $mturk_cltl_masked_conf && touch $OUTPUT0
+
+$[mturk_cltl_unmasked]-annotations.csv <- $[mturk_cltl_unmasked].submit
+    # git checkout 1af3313e988734205c3d50a91e863e55474e651f
+    python3 -u mturk/download.py $mturk_cltl_unmasked_conf $OUTPUT0
+
+$[mturk_cltl_masked]-annotations.csv <- $[mturk_cltl_unmasked].submit
+    # git checkout 1af3313e988734205c3d50a91e863e55474e651f
+    python3 -u mturk/download.py $mturk_cltl_masked_conf $OUTPUT0
+
+$[mturk_cltl_all]-evaluate, $[mturk_cltl_all]-evaluate/.SUCCESS <- $[mturk_cltl_unmasked]-annotations.csv, $[mturk_cltl_masked]-annotations.csv
+    rm -rf $OUTPUT0
+    python3 -u mturk/evaluate_full_annotation.py --out=$OUTPUT0 $INPUTS && touch $OUTPUT1
+
+$[mturk_cltl_all].csv <- $[mturk_cltl_all]-evaluate/transformations, $[mturk_cltl_all]-evaluate/.SUCCESS
+    python3 -u mturk/extract_results.py --out=$OUTPUT0 $INPUT0/*.log
+
+;
+; Annotations by student assistants 
+;
+
+; the folder should match with "local_dir" param in config
+student_practice = output/mturk/student2-practice
+
+$[student_practice], $[student_practice]/.SUCCESS <- $[mturk_input_dir].SUCCESS
+    rm -rf $OUTPUT0
+    python3 -u mturk/gen_document.py mturk/configs/student-shared-practice.conf && touch $OUTPUT1
+
+; the folder should match with "local_dir" param in config
+student1 = output/mturk/student1-2019-03-14 
+
+$[student1], $[student1]/.SUCCESS <- $[mturk_input_dir].SUCCESS
+    rm -rf $OUTPUT0
+    python3 -u mturk/gen_document.py mturk/configs/student1-2019-03-14.conf && touch $OUTPUT1
+
+output/mturk/student3-test <- $[mturk_input_dir].SUCCESS
+    rm -rf $OUTPUT0
+    python3 -u mturk/gen_document.py mturk/configs/student3-test.conf
+
+output/mturk/student3-test-results <- data/annotations/Student3-test.csv, output/mturk/student3-test
+    rm -rf $OUTPUT0
+    python3 -m mturk.score_submissions --out=$OUTPUT0 $INPUT0
+
+output/mturk/student2-practice-results <- data/annotations/Student2-practice.csv, output/mturk/student2-practice
+    rm -rf $OUTPUT0
+    python3 -m mturk.score_submissions --out=$OUTPUT0 $INPUT0
+
+output/mturk/student2-2019-03-29 <- $[mturk_input_dir].SUCCESS
+    rm -rf $OUTPUT0
+    python3 -u mturk/gen_document.py mturk/configs/student2-2019-03-29.conf
+
+output/mturk/student3-2019-03-29 <- $[mturk_input_dir].SUCCESS
+    rm -rf $OUTPUT0
+    python3 -u mturk/gen_document.py mturk/configs/student3-2019-03-29.conf
+
+output/mturk/author1 <- $[mturk_input_dir].SUCCESS
+    rm -rf $OUTPUT0
+    python3 -u mturk/gen_document.py mturk/configs/author1.conf
+
+;gen_document_all <- $[student1], output/mturk/student2-2019-03-29, output/mturk/student3-2019-03-29, output/mturk/author1
+;   echo "Done!"
+
+;output/mturk/student-official-annotations <- data/annotations/Coref-annotation.csv, data/annotations/Coref-annotation-too-long.csv, $[student1]/.SUCCESS, output/mturk/student2-2019-03-29, output/mturk/student3-2019-03-29
+;    rm -rf $OUTPUT0
+;    python3 -m mturk.score_submissions --out=$OUTPUT0 $INPUT0 $INPUT1
+
+
+;=============================
+; Report
+;=============================
+
+notebooks/process-summaries.html, output/summaries_formatted.json <- data/annotations/summary.csv
+    python3 -m nbconvert --execute --ExecutePreprocessor.timeout=0 notebooks/process-summaries.ipynb
+
+notebooks/process-annotations.html, output/mturk/students-results.csv <- data/annotations/Coref-annotation.csv, data/annotations/Coref-annotation-too-long.csv
+    python3 -m nbconvert --execute --ExecutePreprocessor.timeout=0 notebooks/process-annotations.ipynb
+
+notebooks/results-paper.html <- $[baselines]-results.csv, $[stanford_sieve]-results.csv, output/e2e/results.csv, output/summaries_formatted.json, output/students-results.csv
+    python3 -m nbconvert --execute --ExecutePreprocessor.timeout=0 notebooks/results-paper.ipynb
+
+
+;=============================
+; Utils
+;=============================
+
+%save-disk-space <-
+    rm -v $stanford_sieve/*.txt
+    rm -v $baselines/*_conll
+    rm -v output/cort/eval/*/*/*_conll
+    rm -v output/cort/eval/*/*/*antecedents    

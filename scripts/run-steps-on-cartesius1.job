@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -p normal
+#SBATCH -t 3-00:00:00
+
+set -x
+
+. scripts/setup-cartesius.sh
+YES="-a"
+
+scratch=/scratch-shared/minhle/EvEn
+
+# ~/drake $YES output/conll-2012-transformed-resampled
+# ~/drake $YES output/baselines-results.csv
+# ~/drake $YES output/stanford-sieve-results.csv
+# ~/drake $YES output/cort/results.csv # enable this to get cort results
+# ~/drake $YES output/e2e/train_all.sh # prepare for e2e-coref training 
+# ~/drake $YES output/e2e/eval_scripts # prepare for e2e-coref evaluation 
+~/drake $YES $scratch/output/deep-coref/conll-2012-transformed-exported  # prepare of deep-coref training
+~/drake $YES $scratch/output/deep-coref/conll-2012-transformed-resampled-exported  # prepare of deep-coref evaluation

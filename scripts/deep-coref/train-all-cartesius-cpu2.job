@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH -t 5-00:00:00
+#SBATCH -p normal
+
+# this is adapted from an automatically generated script
+# I use it to train multiple models on a CPU
+
+BASH=bash
+$BASH scripts/deep-coref/train-single.job /nfs/home2/minhle/EvEn/output/deep-coref/conll-2012-transformed-exported/men_20 &
+$BASH scripts/deep-coref/train-single.job /nfs/home2/minhle/EvEn/output/deep-coref/conll-2012-transformed-exported/men_40 &
+$BASH scripts/deep-coref/train-single.job /nfs/home2/minhle/EvEn/output/deep-coref/conll-2012-transformed-exported/men_100 &
+$BASH scripts/deep-coref/train-single.job /nfs/home2/minhle/EvEn/output/deep-coref/conll-2012-transformed-exported/nonmen_20 &
+$BASH scripts/deep-coref/train-single.job /nfs/home2/minhle/EvEn/output/deep-coref/conll-2012-transformed-exported/nonmen_80 &
+wait
